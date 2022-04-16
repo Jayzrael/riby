@@ -4,7 +4,7 @@ const Section2 = () => {
    return (
       <div className="container">
       <section className="lady">
-         <img src="images/Rectangle.png" alt="" className="block" />
+         <img src="/Rectangle.png" alt="" className="block" />
          <img src="/fresh.png" alt="" className="rek" />        
          <h1 className='rio'>Our Business Offerings</h1>
          <div className="block1">

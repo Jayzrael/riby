@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom"
+import {Link} from 'react-router-dom'
 
 
 const header = () => {
@@ -6,15 +7,11 @@ const header = () => {
     <header>
       <div className="container">
         <div className="container1"> 
-            <div className="brand">
+        <div className="brand">
               <img src="/Logo.png" alt="" className="logo" />
             </div>
             <div className="menu">
-            <h1 className="l1">Products
-              <ul>
-                <li></li>
-              </ul>
-            </h1>
+            <h1 className="l1">Products</h1>
                <img src="/Vector.png" alt="" className="row" />
                <h1 className="l2">Business</h1>
                <img src="/Vector.png" alt="" className="arrow" />
