@@ -6,7 +6,7 @@ import Section2 from './component/Section2'
 import Section3 from './component/Section3'
 import Section4 from './component/Section4'
 import Slider from './component/Slider'
-import Menu from './component/Menu'
+
 
 function App() {
   return (

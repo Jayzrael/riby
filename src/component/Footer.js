@@ -7,7 +7,8 @@ const Footer = () => {
         <h1 className='hello'>Say Hello </h1>
         <h3 className='loc'>Block G, House 4, Moore Road, Yaba, Lagos.</h3>
         <img src="/phone.png" alt="" className="fone" />
-        <h3 className='num'> 08092222109 </h3>
+        <h3 className='num'> 01-2914247 </h3>
+        <h3 className='num1'> 08092222109 </h3>
         <img src="/mail.png" alt="" className='mole' />
         <h3 className='mail'>info@riby.me</h3>
         <h3 className="follow">Follow Us: </h3>
@@ -24,6 +25,8 @@ const Footer = () => {
         <h3 className="q3">Contact Us</h3>
         <h3 className="q4">Partners & Programs</h3>
         <h3 className="q5">Career</h3>
+        <h3 className="q6">Terms of use</h3>
+        <h3 className="q7">Privacy Notice</h3>
         <h1 className="news">Newsletter</h1>
         <h4 className="sb">Be the first to know about our news.</h4>
         <label for="email_input">Enter your email address:</label>

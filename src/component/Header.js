@@ -1,28 +1,36 @@
-import { NavLink } from "react-router-dom"
-import {Link} from 'react-router-dom'
+import { Menu, Dropdown } from 'antd';
+import { DownOutlined } from '@ant-design/icons';
 
+const menu = (
+  <Menu
+    items={[
+      {
+        label: (
+          <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
+            1st menu item
+          </a>
+        ),
+        key: '0',
+      },
+      {
+        label: (
+          <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
+            2nd menu item
+          </a>
+        ),
+        key: '1',
+      },
+      {
+        type: 'divider',
+      },
+    ]}
+  />
+);
 
-const header = () => {
-  return (
-    <header>
-      <div className="container">
-        <div className="container1"> 
-        <div className="brand">
-              <img src="/Logo.png" alt="" className="logo" />
-            </div>
-            <div className="menu">
-            <h1 className="l1">Products</h1>
-               <img src="/Vector.png" alt="" className="row" />
-               <h1 className="l2">Business</h1>
-               <img src="/Vector.png" alt="" className="arrow" />
-              <h1 className="l3">About us</h1>
-              <h1 className="l4">Blogs</h1>
-              <h1 className="l5">Contact</h1>
-            </div> 
-        </div>
-      </div>
-    </header>
-  )
-}
-
-export default header
+export default () => (
+  <Dropdown overlay={menu}>
+    <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
+      Hover me <DownOutlined />
+    </a>
+  </Dropdown>
+);
