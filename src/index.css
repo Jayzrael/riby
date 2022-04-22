@@ -32,147 +32,16 @@ header {
 }
 
 .logo {
-  position: absolute;
+cursor: pointer;
+position: absolute;
 width: 87.63px;
 height: 27.06px;
 left: 180px;
 top: 71px;
 }
 
-.menu {
-  display: flex;
- margin-left: 582px;
- margin-top: 68px;
-  
-}
 
 
-
-
-.menu .l1 {
-  position: absolute;
-  width: 101px;
-  height: 30px;
-  left: 581px;
-  top: 68px;
-  
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  /* identical to box height */
-  
-  
-  color: #000000;
-}
-
-
-
-
-.sub-menu {
-  display: none;
-}
-
-.sub-menu ul {
-  list-style: none;
-}
-
-
-
-
-
-.menu .l2 {
-  position: absolute;
-width: 101px;
-height: 30px;
-left: 740px;
-top: 68px;
-
-font-family: 'Poppins', sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 30px;
-/* identical to box height */
-
-
-color: #000000;
-}
-
-.menu .l3 {
-  position: absolute;
-  width: 93px;
-  height: 30px;
-  left: 904px;
-  top: 68px;
-  
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  /* identical to box height */
-  
-  
-  color: #000000;
-}
-
-.menu .l4 {
-  position: absolute;
-  width: 73px;
-  height: 30px;
-  left: 1045px;
-  top: 68px;
-  
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  /* identical to box height */
-  
-  
-  color: #000000;
-}
-
-.menu .l5 {
-  position: absolute;
-  width: 100px;
-  height: 30px;
-  left: 1150px;
-  top: 68px;
-  
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  /* identical to box height */
-  
-  
-  color: #000000;
-}
-
-.arrow{
-  position: absolute;
-left: 55.5%;
-right: 42.79%;
-top: 80.9px;
-bottom: 98.11%;
-width: 13px;
-
-}
-
-.row{
-  position: absolute;
-left: 46%;
-right: 42.79%;
-top: 80.9px;
-bottom: 98.11%;
-width: 13px;
-
-}
 
 .body1 {
   position: absolute;
@@ -1508,4 +1377,9 @@ color: #FFFFFF;
   padding-right: 50px;
   width: 19%;
  }
+
+
+
+
+ 
 
