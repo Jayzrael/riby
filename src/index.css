@@ -9,59 +9,6 @@
   
 }
 
-
-
-.container1 {
-  position: absolute;
-  width: 1512px;
-  height: 896.64px;
-  left: -1px;
-  top: -50px;
-  
-
-
-background: url(/public/Pattern.png);
-}
-
-header {
-  position: absolute;
-  width: 1512px;
-  height: 114px;
-  left: 0px;
-  top: 26px;
-}
-
-.logo {
-cursor: pointer;
-position: absolute;
-width: 87.63px;
-height: 27.06px;
-left: 180px;
-top: 71px;
-}
-
-
-
-
-.body1 {
-  position: absolute;
-  width: 518px;
-  height: 159px;
-  left: 181px;
-  top: 257px;
-  text-align: start;
-  
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 35px;
-  line-height: 52px;
-  
-  color: #0F0738;
-  
-  text-shadow: 0px 8px 0px rgba(0, 0, 0, 0.1);
-}
-
 .small {
   position: absolute;
 width: 445px;
@@ -108,6 +55,25 @@ line-height: 27px;
 color: #FFFFFF;
 }
 
+.btn-link {
+color: white;
+text-decoration: none;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+  }
+
+  .lm-link {
+    color: red;
+  }
+
+  .lm-link:hover {
+    color: red;
+    text-decoration: none;
+  }
+
+
 .box1 {
   position: absolute;
   width: 320px;
@@ -115,8 +81,6 @@ color: #FFFFFF;
   left: 100px;
   top: 811px;
   padding: 50px 50px 310px 50px;
-  
-  
   background-color: #FFFFFF;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
@@ -126,21 +90,25 @@ color: #FFFFFF;
 .box1 h1 {
   font-size: 24px;
   margin-bottom: 25px;
+  text-align: center;
   
 }
 
 .box2 h1 {
   font-size: 24px;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .box3 h1 {
   font-size: 24px;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .smart {
   font-size: 15px;
+  text-align: center;
 }
 
 
@@ -170,22 +138,17 @@ color: #FFFFFF;
   border-radius: 10px;
 }
 
+.frame1 {
+  margin-left: 70px;
+  }
 
 
-.Frame2 {
-  position: absolute;
-width: 60px;
-height: 49.37px;
-left: 728px;
-top: 844px;
+.frame2 {
+  margin-left: 70px;
 }
 
-.Frame3 {
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  left: 1149px;
-  top: 842px;
+.frame3 {
+  margin-left: 70px;
 }
 
 .block {
@@ -206,21 +169,18 @@ left: 116px;
 top: 1485px;
 }
 
-.lady h1 {
+.rio {
   position: absolute;
   width: 552px;
   height: 72px;
-  left: 665px;
-  top: 1300px;
+  left: 676px;
+  top: 1280px;
   
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 550;
   font-size: 45px;
   line-height: 72px;
-  /*text-decoration: underline;
-  text-decoration-color: red;*/
-  /* identical to box height */
   
   
   color: #0F0738;
@@ -242,6 +202,7 @@ top: 1485px;
   width: 324px;
   height: 36px;
   margin-top: 40px;
+  margin-left: 30px;
   
   font-family: 'Poppins';
   font-style: normal;
@@ -293,7 +254,7 @@ top: 1485px;
   width: 324px;
   height: 36px;
   margin-top: 40px;
-  margin-left: -10px;
+  margin-left: 30px;
   
   font-family: 'Poppins';
   font-style: normal;
@@ -342,16 +303,13 @@ top: 1485px;
   width: 324px;
   height: 36px;
   margin-top: 40px;
-  margin-left: 17px;
+  margin-left: 30px;
   
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 36px;
-  /* identical to box height */
-  
-  
   color: #0F0738;
 }
 
@@ -1357,7 +1315,7 @@ color: #FFFFFF;
 
 
 .marq {
- margin-top: 3300px;
+ margin-top: 2320px;
 }
 
 .marq1 {
@@ -1378,8 +1336,56 @@ color: #FFFFFF;
   width: 19%;
  }
 
+.foxes {
+  margin-top: 300px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+  display: flex;
+  margin-left: 200px;
 
+}
 
+.foxes .fox {
+  float: left;
+  width: 100%;
+  height: 320px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 120px;
 
- 
+  text-align: start;
+  
+  margin: 10px;
+    
+  background: #FFFFFF;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+}
 
+ .foxes .fox img {
+   
+width: 180px;
+float: left;
+ }
+
+ .foxes .fox p {
+   margin-top: 50px;
+  width: 621px;
+  height: 69px;
+   white-space: pre-wrap;
+   font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+
+color: #000000;
+ }
+
+ .foxes .fox h3 {
+  
+
+color: #000000;
+}
