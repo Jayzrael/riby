@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import '../index.css'
 import Testify from '../component/Testify'
+import Footer from '../component/Footer'
 import Marquee from 'react-fast-marquee'
 import { AiFillTwitterCircle } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
@@ -15,6 +16,7 @@ const Home = () => {
    left: 181px;
    top: 240px;
    text-align: start;
+   margin-top:-50px;
    
    font-family: 'Poppins', sans-serif;
    font-style: normal;
@@ -31,13 +33,13 @@ const Home = () => {
    width: 1512px;
    height: 896.64px;
    left: -1px;
-   top: -50px;
  background: url(/Pattern.png);
    `
 
 
   return (
-    <>
+     <>
+        <div className="marze">
     <Dip>
         <Enable>ENABLING ACCESS TO COLLECTIVE GROWTH FOR BANKED AND UNBANKED.</Enable>
     </Dip>
@@ -62,14 +64,14 @@ const Home = () => {
        <h1>Invest Together</h1>
        <p className='smart'>Investment plans and options are available for savings made by Individuals, cooperatives and groups. Put your savings to work and earn awesome returns.</p>
            </div>
-
+           </div>
 
 
 
         
        
-      <div>
-      <section className="lady">
+        <div>
+              <section className="lady">
          <img src="/Rectangle.png" alt="" className="block" />
          <img src="/fresh.png" alt="" className="rek" />        
          <h1 className='rio'>Our Business Offerings</h1>
@@ -99,10 +101,8 @@ const Home = () => {
                <img src="/Vector2.png" alt="" className="vtr2" />
             
          </div>
-
-         
-         </section>
-         </div>
+              </section>
+              </div>
 
         
 
@@ -148,80 +148,62 @@ const Home = () => {
       <div className='sct4'>
         <h1 className='per'>Our Partners</h1>
         <div className="marq">  
-            <Marquee className="marq1" behavior="scroll" direction="left" speed={80}>
-              <img src="/Interswitch 1.png" alt="" />
-              <img src="/Providus 1.png" alt="" /> 
-              <img src="/UnionBank 1.png" alt="" />
-              <img src="/Sterling 1.png" alt="" />
-              <img src="/grill.png" alt="" />
-              <img src="/bank.png" alt="" />
-              <img src="/UnionBank 1.png" alt="" />
-              <img src="/Sterling 1.png" alt="" />
+              <Marquee className="marq1" behavior="scroll" direction="left" speed={100}>
+              <img src="/partners/29-298755_mercy-corps-logo-png.png" alt="" />
+              <img src="/partners/bank of industry logo.png" alt="" /> 
+              <img src="/partners/echo logo.png" alt="" />
+              <img src="/partners/efina logo.png" alt="" />
+              <img src="/partners/fincra logo.png" alt="" />
+              <img src="/partners/Flutterwave.png" alt="" />
+              <img src="/partners/google-developers-launchpad.png" alt="" />
+                 <img src="/partners/green capital.jpg" alt="" />
+                 <img src="/partners/Growth capital.png" alt="" />
+                 <img src="/partners/I8+id46_bf9Gs+UsjHIbe5y8lBTCg6S2ZQOWTLhYA72Clto4uVRgHDoBL749RVJXYpUxoOTEcPLVlVNgc7PFv1Jt+srNJHE+MaL6AjDeWJJ38OvLd16G91C3IU6wrTAa+5BqAwlhDG_Knwy98583X50IdZkAFs1D8Du2MvYDdrJqcbWc+xZ_WRsOZIAOsfkEsfUizIMccgZzpnzdPl67A4+F_L1.jpg" alt="" />
+                 <img src="/partners/ILO logo.png" alt="" />
+                 <img src="/partners/interswitch.jpg" alt="" />
+                 <img src="/partners/Lofty-Heights_logo-2.jpg" alt="" />
+                 <img src="/partners/lux logo.png" alt="" />
+                 <img src="/partners/microtraction.png" alt="" />
+                 <img src="/partners/nepc logo.png" alt="" />
+                 <img src="/partners/norishing africa.jpg" alt="" />
+                 <img src="/partners/Passion incubator.png" alt="" />
+                 <img src="/partners/Providus-Bank-Limited-Logo.png" alt="" />
+                 <img src="/partners/sterling-logo.png" alt="" />
+                 <img src="/partners/Verve-logo.jpg" alt="" />
+                 <img src="/partners/vfd group.jpg" alt="" />
+                 <img src="/partners/VFD-Group.png" alt="" />
             </Marquee>
             <Marquee className="marq2" behavior="scroll" direction="right" speed={80}>
-             <img src="/Interswitch 1.png" alt="" />
-             <img src="/Providus 1.png" alt="" />           
-             <img src="/UnionBank 1.png" alt="" />
-             <img src="/Sterling 1.png" alt="" />
-             <img src="/grill.png" alt="" />
-             <img src="/bank.png" alt="" />
-             <img src="/UnionBank 1.png" alt="" />
-             <img src="/Sterling 1.png" alt="" />
+            <img src="/partners/29-298755_mercy-corps-logo-png.png" alt="" />
+              <img src="/partners/bank of industry logo.png" alt="" /> 
+              <img src="/partners/echo logo.png" alt="" />
+              <img src="/partners/efina logo.png" alt="" />
+              <img src="/partners/fincra logo.png" alt="" />
+              <img src="/partners/Flutterwave.png" alt="" />
+              <img src="/partners/google-developers-launchpad.png" alt="" />
+                 <img src="/partners/green capital.jpg" alt="" />
+                 <img src="/partners/Growth capital.png" alt="" />
+                 <img src="/partners/I8+id46_bf9Gs+UsjHIbe5y8lBTCg6S2ZQOWTLhYA72Clto4uVRgHDoBL749RVJXYpUxoOTEcPLVlVNgc7PFv1Jt+srNJHE+MaL6AjDeWJJ38OvLd16G91C3IU6wrTAa+5BqAwlhDG_Knwy98583X50IdZkAFs1D8Du2MvYDdrJqcbWc+xZ_WRsOZIAOsfkEsfUizIMccgZzpnzdPl67A4+F_L1.jpg" alt="" />
+                 <img src="/partners/ILO logo.png" alt="" />
+                 <img src="/partners/interswitch.jpg" alt="" />
+                 <img src="/partners/Lofty-Heights_logo-2.jpg" alt="" />
+                 <img src="/partners/lux logo.png" alt="" />
+                 <img src="/partners/microtraction.png" alt="" />
+                 <img src="/partners/nepc logo.png" alt="" />
+                 <img src="/partners/norishing africa.jpg" alt="" />
+                 <img src="/partners/Passion incubator.png" alt="" />
+                 <img src="/partners/Providus-Bank-Limited-Logo.png" alt="" />
+                 <img src="/partners/sterling-logo.png" alt="" />
+                 <img src="/partners/Verve-logo.jpg" alt="" />
+                 <img src="/partners/vfd group.jpg" alt="" />
+                 <img src="/partners/VFD-Group.png" alt="" />
            </Marquee>
          
               <h2 className='par'>What People Are Saying About Us</h2>
               <Testify />
          </div>            
-      </div>
-    
-
-        
-
-
-
-
-
-        
-
-   <div className='foot'>
-      <footer>
-        <h1 className='hello'>Say Hello </h1>
-        <h3 className='loc'>Block G, House 4, Moore Road, Yaba, Lagos.</h3>
-        <img src="/phone.png" alt="" className="fone" />
-        <h3 className='num'> 01-2914247 </h3>
-        <h3 className='num1'> 08092222109 </h3>
-        <img src="/mail.png" alt="" className='mole' />
-        <h3 className='mail'>info@riby.me</h3>
-        <h3 className="follow">Follow Us: </h3>
-        <img src="/book.png" alt="" className="book" />
-        <a href="https://instagram.com/ribyhq/"><img src="/hole.png" alt="" className="hole" /></a>
-        <a href="https://www.linkedin.com/company/riby-finance/"><img src="/inked.png" alt="" className="inked" /></a>
-        <img src="/tweet.png" alt="" className="tweet" />
-        <img src="/emm.png" alt="" className="emm" />
-        <img src="/call.png" alt="" className="call" />
-        <a href="https://www.youtube.com/channel/UC4R1hiwCXMQT-_VFS6Q0LcA"><img src="/tube.png" alt="" className="tube" /></a>
-        <h1 className="quick">Quick Links</h1>
-        <h3 className="q1">About Us</h3>
-        <h3 className="q2">Blogs</h3>
-        <h3 className="q3">Contact Us</h3>
-        <h3 className="q4">Partners & Programs</h3>
-        <h3 className="q5">Career</h3>
-        <h3 className="q6">Terms of use</h3>
-        <h3 className="q7">Privacy Notice</h3>
-        <h1 className="news">Newsletter</h1>
-        <h4 className="sb">Be the first to know about our news.</h4>
-        <label for="email_input">Enter your email address:</label>
-        <input type="email" name="email" id="email_input" placeholder="Enter your mail"></input>
-        <input type="submit" className="xbtn" value='Subscribe' />
-
-        <hr className="dij" />
-        <h3 className="cop">©2016-2022 Riby. RC: 1214343</h3>
-
-
-      </footer>
-   </div>
-
-
+        </div>
+      <Footer />
 </>
 
   )

@@ -5,9 +5,17 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; 
+ padding: 0;
   
 }
+
+.marze {
+  padding-right: 70px;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
 
 .small {
   position: absolute;
@@ -16,6 +24,7 @@ height: 54px;
 left: 181px;
 top: 432px;
 text-align: start;
+margin-top: -50px;
 
 font-family: 'Poppins', sans-serif;
 font-style: normal;
@@ -41,6 +50,7 @@ top: 195px;
   height: 50px;
   left: 181px;
   top: 580px;
+  margin-top: -50px;
   
   background: #EE095B;
   border-radius: 33px;
@@ -84,6 +94,7 @@ text-decoration: none;
   background-color: #FFFFFF;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
+  margin-top: -50px;
 }
 
 
@@ -119,6 +130,7 @@ text-decoration: none;
   left: 500px;
   top: 811px;
   padding: 50px 50px 310px 50px;
+  margin-top: -50px;
   
   background: #FFFFFF;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
@@ -132,6 +144,7 @@ text-decoration: none;
   left: 900px;
   top: 805px;
   padding: 50px 50px 310px 50px;
+  margin-top: -50px;
   
   background: #FFFFFF;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
@@ -149,6 +162,11 @@ text-decoration: none;
 
 .frame3 {
   margin-left: 70px;
+}
+
+.lady {
+  padding-right: 5px;
+  background-color: red;
 }
 
 .block {
@@ -797,15 +815,16 @@ color: #000000;
     color: #000000;
       }
 
-      .foot {
-    position: absolute;
-    width: 1512px;
-    height: 504px;
-    left: -3.97px;
-    top: 4296px;
-    
-    background: #0D233D;
-      }
+.foot {
+  position: absolute;
+  width: 1512px;
+  height: 504px;
+  left: 2.03px;
+  margin-top: 80px;
+  
+  background: #0D233D;
+}
+
 
 .hello {
 position: absolute;
@@ -1118,6 +1137,7 @@ border-radius: 0px 10px 10px 0px
   }
 
   .par{
+    margin-top: 340px;
     color:green;
     display:inline-block;
     position:relative;
@@ -1248,33 +1268,9 @@ background: none;
   background: none;
 }
 
-.emm {
-  position: absolute;
-  left: 23%;
-  right: 2%;
-  top: 56%;
-  bottom: 2%;
-  width: 20px;
-  height: auto;
-  
-  background: none;
-}
-
-.call {
-  position: absolute;
-  left: 25%;
-  right: 2%;
-  top: 56%;
-  bottom: 2%;
-  width: 20px;
-  height: auto;
-  
-  background: none;
-}
-
 .tube {
   position: absolute;
-  left: 27%;
+  left: 23%;
   right: 2%;
   top: 56%;
   bottom: 2%;
@@ -1316,34 +1312,43 @@ color: #FFFFFF;
 
 .marq {
  margin-top: 2320px;
+ width: 100%;
 }
 
 .marq1 {
   margin-top: -80px;
   overflow: hidden; 
   white-space: nowrap;
+  width: 100%;
  }
 
  .marq2 {
-  margin-top: 140px;
+  margin-top: 9px;
   overflow: hidden; 
   white-space: nowrap;
  }
 
+
  .marq img {
   padding-left: 50px;
   padding-right: 50px;
-  width: 19%;
+  width: 2%;
  }
 
 .foxes {
   margin-top: 300px;
   overflow-y: hidden;
-  overflow-x: scroll;
+  overflow-x: auto;
   white-space: nowrap;
   display: flex;
-  margin-left: 200px;
 
+  width: 100%;
+  height: 100%;
+  
+}
+
+.foxes::-webkit-scrollbar {
+  width: 10;
 }
 
 .foxes .fox {
@@ -1357,7 +1362,8 @@ color: #FFFFFF;
 
   text-align: start;
   
-  margin: 10px;
+  /*margin: 10px;*/
+  margin-right: 20px;
     
   background: #FFFFFF;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
@@ -1390,4 +1396,10 @@ color: #000000;
 color: #000000;
 }
 
+
+.foxes .fox h4 {
+  margin-top: -29px;
+  font-weight: 400;
+  color: #000000;
+  }
 /* edit later */
