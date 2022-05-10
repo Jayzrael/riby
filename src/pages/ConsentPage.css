@@ -1,0 +1,42 @@
+.consent-container {
+ width: 80%;
+ margin: auto;
+ overflow: hidden;
+ padding-top: 30px;
+}
+
+h5 {
+   font-size: 20px;
+   font-weight: 670;
+   padding-top: 50px;
+   padding-bottom: 15px;
+}
+
+li {
+   padding: 15px;
+}
+
+table,th,td {
+   border: 1px solid;
+}
+
+th {
+   text-align: center;
+   padding: 20px;
+}
+
+td {
+   padding: 20px;
+}
+
+.browsers li{
+   padding: 5px;
+}
+
+.browsers li a{
+   color: blue;
+}
+
+ .lastp {
+    padding-top: 20px;
+ }

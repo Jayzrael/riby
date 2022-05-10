@@ -243,7 +243,7 @@ top: 1485px;
 .block1 h5 {
   text-align: start;
   margin-left: 30px;
-  margin-top: 80px;
+  margin-top: 30px;
   font-size: small;
   color: red;
 }
@@ -293,6 +293,7 @@ top: 1485px;
 .block2 h5 {
   text-align: start;
   margin-left: 30px;
+  margin-top: -49px;
   font-size: small;
   color: red;
 }
@@ -338,7 +339,7 @@ top: 1485px;
 
 .block3 h5 {
   text-align: start;
-  margin-top: 40px;
+  margin-top: -25px;
   margin-left: 30px;
   font-size: small;
   color: red;
@@ -1318,22 +1319,24 @@ color: #FFFFFF;
 .marq1 {
   margin-top: -80px;
   overflow: hidden; 
-  white-space: nowrap;
+  white-space: wrap;
   width: 100%;
  }
 
  .marq2 {
   margin-top: 9px;
-  overflow: hidden; 
   white-space: nowrap;
  }
 
 
  .marq img {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 70px;
+  padding-right:70px;
   width: 2%;
+  height: auto;
  }
+
+
 
 .foxes {
   margin-top: 300px;
@@ -1344,7 +1347,6 @@ color: #FFFFFF;
 
   width: 100%;
   height: 100%;
-  
 }
 
 .foxes::-webkit-scrollbar {
@@ -1372,7 +1374,7 @@ color: #FFFFFF;
 
  .foxes .fox img {
    
-width: 180px;
+width: 70px;
 float: left;
  }
 
@@ -1391,9 +1393,9 @@ color: #000000;
  }
 
  .foxes .fox h3 {
-  
-
+  font-weight: 600;
 color: #000000;
+margin-left: 90px;
 }
 
 
@@ -1401,5 +1403,9 @@ color: #000000;
   margin-top: -29px;
   font-weight: 400;
   color: #000000;
+  margin-left: 60px;
   }
-/* edit later */
+
+  .lm-link {
+    padding-top: 0px;
+  }

@@ -5,7 +5,7 @@ import Footer from '../component/Footer'
 import Marquee from 'react-fast-marquee'
 import { AiFillTwitterCircle } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-
+import Consent from '../component/Consent'
 
 const Home = () => {
 
@@ -173,7 +173,7 @@ const Home = () => {
                  <img src="/partners/vfd group.jpg" alt="" />
                  <img src="/partners/VFD-Group.png" alt="" />
             </Marquee>
-            <Marquee className="marq2" behavior="scroll" direction="right" speed={80}>
+            <Marquee className="marq2" behavior="scroll" direction="right" speed={100}>
             <img src="/partners/29-298755_mercy-corps-logo-png.png" alt="" />
               <img src="/partners/bank of industry logo.png" alt="" /> 
               <img src="/partners/echo logo.png" alt="" />
@@ -203,6 +203,7 @@ const Home = () => {
               <Testify />
          </div>            
         </div>
+        <Consent />
       <Footer />
 </>
 

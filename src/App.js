@@ -8,6 +8,7 @@ import Business from './pages/business'
 import About from './pages/about'
 import Blogs from './pages/blogs'
 import Contact from './pages/contact'
+import ConsentPage from './pages/ConsentPage'
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
            <Route path='/business' element={<Business />} />
            <Route path='/about' element={<About />} />
            <Route path='/blogs' element={<Blogs />} />
-           <Route  path = '/contact'  element = {<Contact />} />
+           <Route path='/contact' element={<Contact />} />
+           <Route path='/ConsentPage' element={<ConsentPage />} />
         </Routes>
     </Router>
   )
