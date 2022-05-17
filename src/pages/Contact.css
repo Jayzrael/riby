@@ -3,36 +3,23 @@
 
 .cnt-container{
 position: relative;
-width: 1512px;
-height: 2489px;
+width: 100%;
+height:auto;
 
 background: rgba(248, 254, 255, 0.99);
 }
 
 .cnt1 {
-position: absolute;
-width: 1512px;
-padding-bottom: 600px;
+width: 100%;
+padding-top: 150px;
+text-align: center;
 height: 493px;
-left: 0px;
-top: 11px;
 background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(/public/rung.png);
 }
 
 .cnt1 h1 {
-   position: absolute;
-width: 271px;
-height: 72px;
-text-align: center;
-margin-top: 10%;
-margin-left: 550px;
-padding-top: 70px;
-
-font-family: 'Poppins';
-font-style: normal;
 font-weight: 700;
 font-size: 48px;
-line-height: 72px;
 /* identical to box height */
 
 
@@ -40,15 +27,7 @@ color: #FFFFFF;
 }
 
 .cnt1 p {
-   position: absolute;
-width: 645px;
-height: 60px;
-left: 370px;
-top: 150px;
-padding-top: 150px;
 
-font-family: 'Poppins';
-font-style: normal;
 font-weight: 400;
 font-size: 40px;
 line-height: 60px;
@@ -61,11 +40,8 @@ color: #FFFFFF;
 
 
 .cnt2 h1 {
-   position: absolute;
 width: 304px;
 height: 72px;
-left: 181px;
-top: 724px;
 
 font-family: 'Poppins';
 font-style: normal;
@@ -78,12 +54,16 @@ line-height: 72px;
 color: #000000;
 }
 
+.contact-form{
+   display: flex;
+   justify-content: space-between;
+   padding: 40px 120px;
+}
+
 .cnpa {
-   position: absolute;
 width: 400px;
 height: 78px;
-left: 181px;
-top: 822px;
+
 
 font-family: 'Poppins';
 font-style: normal;
@@ -95,11 +75,9 @@ color: #000000;
 }
 
 .cntpa {
-   position: absolute;
 width: 252px;
 height: 117px;
-left: 179px;
-top: 1032px;
+
 
 font-family: 'Poppins';
 font-style: normal;
@@ -115,7 +93,6 @@ color: #000000;
 }
 
 hr {
-   position: absolute;
 width: 496.01px;
 height: 0px;
 left: 179px;
@@ -125,12 +102,9 @@ border: 1px solid rgba(0, 0, 0, 0.18);
 }
 
 .formm {
-   position: absolute;
-width: 573px;
+width:40%;
 height: 570px;
-left: 759px;
-top: 739px;
-
+padding:0 30px;
 background: rgba(196, 196, 196, 0.21);
 border-radius: 10px;
 }
@@ -142,48 +116,40 @@ font-style: normal;
 font-weight: 600;
 font-size: 20px;
 line-height: 30px;
-padding-left: 31px;
 padding-top: 31px;
-padding-right: 66px;
 
 color: #000000;
 }
 
 input {
-   position: absolute;
-width: 493px;
+width: 100%;
 background: #FFFFFF;
 height: 60px;
 border: none;
+
 }
 
 .formp2 {
-   position: absolute;
-   width: 493px;
+   width: 100%;
    height: 60px;
    background: #FFFFFF;
    border-radius: 5px;
    margin-top: 38px;
-   margin-left: 39px;
+   margin-bottom: 20px;
 }
 
 .formp3 {
-   position: absolute;
-   width: 493px;
+   width: 100%;
    height: 60px;
    background: #FFFFFF;
    border-radius: 5px;
-   margin-top: 129px;
-   margin-left: 39px;
+   margin-bottom: 20px;
 }
 
 .formp4 input {
-   position: absolute;
-   width: 493px;
+   width: 100%;
    height: 108px;
    background: #FFFFFF;
-   margin-top: 220px;
-   margin-left: 39px;
 }
 
 ::placeholder {
@@ -196,11 +162,8 @@ border: none;
 }
 
 .formm button {
-   position: absolute;
 width: 176px;
 height: 55px;
-margin-top: 365px;
-margin-left: 44px;
 background: #EE095B;
 border-radius: 27px;
 color: white;

@@ -148,7 +148,7 @@ const Home = () => {
       <div className='sct4'>
         <h1 className='per'>Our Partners</h1>
         <div className="marq">  
-              <Marquee className="marq1" behavior="scroll" direction="left" speed={100}>
+              <Marquee className="marq1" behavior="scroll" direction="left" speed={40}>
               <img src="/partners/29-298755_mercy-corps-logo-png.png" alt="" />
               <img src="/partners/bank of industry logo.png" alt="" /> 
               <img src="/partners/echo logo.png" alt="" />
@@ -173,7 +173,7 @@ const Home = () => {
                  <img src="/partners/vfd group.jpg" alt="" />
                  <img src="/partners/VFD-Group.png" alt="" />
             </Marquee>
-            <Marquee className="marq2" behavior="scroll" direction="right" speed={100}>
+            <Marquee className="marq2" behavior="scroll" direction="right" speed={40}>
             <img src="/partners/29-298755_mercy-corps-logo-png.png" alt="" />
               <img src="/partners/bank of industry logo.png" alt="" /> 
               <img src="/partners/echo logo.png" alt="" />

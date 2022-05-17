@@ -1,18 +1,27 @@
 import React from 'react'
 import Footer from '../component/Footer'
+import Map from '../component/map/Map'
 import './Contact.css'
 
+const location = {
+  address: 'Block G House 4, Moore Road, Yaba, Lagos.',
+  lat: 6.51381,
+  lng: 3.37850,
+}
 const Contact = () => {
   return (
+    <>
     <div className="cnt-container">
       <div className="cnt1">
         <h1>Contact Us</h1>
         <p>We are always available for you.</p>
       </div>
-      <hr />
+      
+      <div className='contact-form'>
       <div className='cnt2'>
         <h1>Get in Touch</h1>
         <p className="cnpa">Block G, House 4, Moore Road, Yaba, Lagos.</p>
+        <hr />
         <p className="cntpa"> <span className='redfo'>info@riby.me </span> <br /> +234 809 222 2109 <br /> 01 291 4247</p>
       </div>
       <form className="formm">
@@ -23,8 +32,13 @@ const Contact = () => {
           <p className='formp4' type="Message:"><input placeholder="Message"></input></p>
           <button>Send</button>
       </form>
-
+      </div>
     </div>
+
+    <Map location={location} zoomLevel={17} />
+
+    <Footer />
+    </>
   )
 }
 

@@ -6,6 +6,7 @@
   box-sizing: border-box;
   margin: 0;
  padding: 0;
+ font-family: 'Poppins', sans-serif;
   
 }
 
@@ -26,7 +27,7 @@ top: 432px;
 text-align: start;
 margin-top: -50px;
 
-font-family: 'Poppins', sans-serif;
+
 font-style: normal;
 font-weight: 400;
 font-size: 12px;
@@ -1318,14 +1319,14 @@ color: #FFFFFF;
 
 .marq1 {
   margin-top: -80px;
-  overflow: hidden; 
-  white-space: wrap;
+  /* overflow: hidden;  */
+  /* white-space: wrap; */
   width: 100%;
  }
 
  .marq2 {
   margin-top: 9px;
-  white-space: nowrap;
+  /* white-space: nowrap; */
  }
 
 
@@ -1350,7 +1351,7 @@ color: #FFFFFF;
 }
 
 .foxes::-webkit-scrollbar {
-  width: 10;
+  display: none;
 }
 
 .foxes .fox {
@@ -1408,4 +1409,12 @@ margin-left: 90px;
 
   .lm-link {
     padding-top: 0px;
+  }
+
+
+  button{
+    border: none;
+  }
+  p{
+    font-size: 13px;
   }
