@@ -1,0 +1,31 @@
+.cardbox {
+   background-color: white;
+   width: 354px;
+   height: 246px;
+   margin-left: 70px;
+   margin-top: 40px;
+   cursor: pointer;
+}
+
+.cardbox :hover {
+   transform: scale(1.5);
+}
+
+.cardbox>p {
+   font-size: 16px;
+   font-family: 'Poppins', sans-serif;
+   padding: 10px 30px;
+   transition: all 0.5s ease-in;
+}
+
+.cardbox>span {
+   position: relative;
+   font-size: 24px;
+   border: none;
+   border-radius: 50%;
+   padding: 10px 20px;
+   margin-left: 30px;
+   top: -18px;
+   background-color: #EE095B;
+   color: white;
+}

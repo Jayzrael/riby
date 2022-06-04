@@ -31,43 +31,44 @@ const menu = (
         ),
       },
       {
-         label: (
-           <a target="_blank" rel="noopener noreferrer" href="">
-             RibyGo
-           </a>
-         ),
-       }
+        label: (
+          <a target="_blank" rel="noopener noreferrer" href="">
+            RibyGo
+          </a>
+        ),
+      }
     ]}
   />
 );
 
 const business = (
-   <Menu
-     items={[
-       {
-         label: (
-           <a target="_blank" rel="noopener noreferrer" href="">
-             Cooperative Management
-           </a>
-         ),
-       },
-       {
-         label: (
-           <a target="_blank" rel="noopener noreferrer" href="">
-             Agent  Business Network
-           </a>
-         ),
-       },
-       {
-         label: (
-           <a target="_blank" rel="noopener noreferrer" href="">
-             Financial Inclusion Programs
-           </a>
-         ),
-       }
-     ]}
-   />
- );
+  <Menu
+    items={[
+      {
+        label: (
+          //  <a target="_blank" rel="noopener noreferrer" href="">
+
+          <Link to='/Cooperative'> Cooperative Management</Link>
+          //  </a>
+        ),
+      },
+      {
+        label: (
+          <a target="_blank" rel="noopener noreferrer" href="">
+            Agent  Business Network
+          </a>
+        ),
+      },
+      {
+        label: (
+          <a target="_blank" rel="noopener noreferrer" href="">
+            Financial Inclusion Programs
+          </a>
+        ),
+      }
+    ]}
+  />
+);
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -75,7 +76,7 @@ const Navbar = () => {
   const handleClick = () => setClick(!click);
 
 
- 
+
 
   return (
     <>
@@ -88,7 +89,7 @@ const Navbar = () => {
           <ul>
             <li className="nav-item">
               <Dropdown overlay={menu}>
-                <a onClick={(e) => e.preventDefault()} style={{fontWeight:"500"}}>
+                <a onClick={(e) => e.preventDefault()} style={{ fontWeight: "500" }}>
                   <Space>
                     Products
                     <DownOutlined />
@@ -100,7 +101,7 @@ const Navbar = () => {
               className="nav-item"
             >
               <Dropdown overlay={business}>
-                <a onClick={(e) => e.preventDefault()} style={{fontWeight:"500"}}>
+                <a onClick={(e) => e.preventDefault()} style={{ fontWeight: "500" }}>
                   <Space>
                     Business
                     <DownOutlined />

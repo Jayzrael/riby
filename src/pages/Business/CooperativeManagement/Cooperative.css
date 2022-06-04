@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.main-section {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), url(/src/component/Images/Cooperative.png);
+   width: 100%;
+   height: 53px;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.main-section>h1 {
+   color: white;
+   font-size: 35px;
+   font-weight: 700;
+   font-family: 'Poppins', sans-serif;
+}
+
+.main-section>p {
+   color: white;
+   font-size: 16px;
+   font-weight: 400;
+   font-family: 'Poppins', sans-serif;
+   text-align: center;
+}
+
+.second-section {
+   background-color: transparent;
+   display: flex;
+
+   width: 100%;
+   height: 100%;
+   min-height: 96vh;
+   margin-top: 50px;
+}
+
+.second-section-text {
+   background-color: transparent;
+   width: 46%;
+   height: 40%;
+   margin-top: 130px;
+   margin-left: 120px;
+}
+
+.second-section-text>h1 {
+   font-size: 30px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 700;
+   line-height: 40px;
+}
+
+.second-section-text>p {
+   font-size: 16px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 400;
+   line-height: 25px;
+   padding-top: 26px;
+}
+
+.second-section>img {
+   width: 460px;
+   height: 358px;
+   margin-left: 20px;
+   margin-top: 85px;
+}
+
+
+
+
+
+
+
+
+
+
+.third-section {
+   background-color: transparent;
+   display: flex;
+
+   width: 100%;
+   height: 100%;
+   min-height: 96vh;
+}
+
+.third-section-text {
+   background-color: transparent;
+   width: 46%;
+   height: 40%;
+   margin-top: 250px;
+   margin-left: 120px;
+}
+
+.third-section-text>h1 {
+   font-size: 30px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 700;
+   line-height: 40px;
+}
+
+.third-section-text>p {
+   font-size: 16px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 400;
+   line-height: 25px;
+   padding-top: 26px;
+}
+
+.third-section>img {
+   width: 466px;
+   height: 559px;
+   margin-left: 20px;
+   margin-top: 85px;
+}
+
+
+.fouth-section {
+   display: flex;
+   margin-top: 90px;
+}
+
+.last-section {
+   background-color: transparent;
+   width: 100%;
+   height: 100%;
+   min-height: 40vh;
+   margin-top: 60px;
+}
+
+.last-section>h1 {
+   color: black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.list-section {
+   display: flex;
+   font-size: 14px;
+   justify-content: center;
+   padding: 10px 20px;
+}
+
+.list-section ul {
+   display: flex;
+}
+
+.list-section ul li {
+   padding-right: 40px;
+}

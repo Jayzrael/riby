@@ -10,6 +10,7 @@ import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import ConsentPage from "./pages/Consent";
 import "antd/dist/antd.css";
+import Cooperative from "./pages/Business/CooperativeManagement/Cooperative";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/ConsentPage" element={<ConsentPage />} />
+        <Route path="/Cooperative" element={<Cooperative />} />
       </Routes>
     </Router>
   );
