@@ -61,9 +61,8 @@ const business = (
       },
       {
         label: (
-          <a target="_blank" rel="noopener noreferrer" href="">
-            Financial Inclusion Programs
-          </a>
+
+          <Link to='/FinancialInclusion'> Financial Inclusion Programs</Link>
         ),
       }
     ]}

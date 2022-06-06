@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 import ConsentPage from "./pages/Consent";
 import "antd/dist/antd.css";
 import Cooperative from "./pages/Business/CooperativeManagement/Cooperative";
+import FinancialInclusion from "./pages/Business/Financial Inclusion/FinancialInclusion";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/ConsentPage" element={<ConsentPage />} />
         <Route path="/Cooperative" element={<Cooperative />} />
+        <Route path="/FinancialInclusion" element={<FinancialInclusion />} />
       </Routes>
     </Router>
   );
