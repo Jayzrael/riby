@@ -1,57 +1,58 @@
 import React from "react";
-import "../../index.css";
+import "./Footer.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faEnvelope, faFacebook, faPhone, faKey } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faEnvelope, faPhone, faKey);
+
 
 const Footer = () => {
-  return (
-    <div className="foot">
-      <footer>
-        <h1 className="hello">Say Hello </h1>
-        <h3 className="loc">Block G, House 4, Moore Road, Yaba, Lagos.</h3>
-        <img src="/phone.png" alt="" className="fone" />
-        <a href="tel: 01-2914247">
-          <h3 className="num"> 01-2914247 </h3>
-        </a>
-        <a href="tel: 08092222109">
-          <h3 className="num1"> 08092222109 </h3>
-        </a>
-        <img src="/mail.png" alt="" className="mole" />
-        <a href="mailto:info@riby.me">
-          <h3 className="mail">info@riby.me</h3>
-        </a>
-        <h3 className="follow">Follow Us: </h3>
-        <a href="https://web.facebook.com/ribyhq/">
-          <img src="/book.png" alt="" className="book" />
-        </a>
-        <a href="https://instagram.com/ribyhq/">
-          <img src="/hole.png" alt="" className="hole" />
-        </a>
-        <a href="https://www.linkedin.com/company/riby-finance/">
-          <img src="/inked.png" alt="" className="inked" />
-        </a>
-        <a href="https://twitter.com/riby_hq?t=7CylrG781oG-LCKYhG0s0Q&s=09">
-          <img src="/tweet.png" alt="" className="tweet" />
-        </a>
-        <a href="https://www.youtube.com/channel/UC4R1hiwCXMQT-_VFS6Q0LcA">
-          <img src="/tube.png" alt="" className="tube" />
-        </a>
-        <h1 className="quick">Quick Links</h1>
-        <h3 className="q1">About Us</h3>
-        <h3 className="q2">Blogs</h3>
-        <h3 className="q3">Contact Us</h3>
-        <h3 className="q4">Partners & Programs</h3>
-        <h3 className="q5">Career</h3>
-        <h3 className="q6">Terms of use</h3>
-        <h3 className="q7">Privacy Notice</h3>
-        <h1 className="news">Newsletter</h1>
-        <h4 className="sb">Be the first to know about our news.</h4>
-        <label for="email_input">Enter your email address:</label>
-        <input type="email" name="email" id="email_input" placeholder="Enter your mail"></input>
-        <input type="submit" className="xbtn" value="Subscribe" />
 
-        <hr className="dij" />
-        <h3 className="cop">©2016-2022 Riby. RC: 1214343</h3>
+  const coffee = <FontAwesomeIcon icon="envelope" style={{ paddingRight: '15px' }} />
+  const phone = <FontAwesomeIcon icon="phone" style={{ paddingRight: '15px' }} />
+
+
+  return (
+    <>
+      <footer>
+        <div className="footer-section">
+          <div className="footer-column1">
+            <h1>Say Hello</h1>
+            <p>Block G, House 4, Moore Road, Yaba, Lagos.</p>
+            <a href="tel: 01-2914247"><span>{phone}01-2914247</span> <br /></a>
+            <a href="tel:  08092222109"> <span className="first-number">08092222109</span> <br /></a>
+            <a href="mailto:info@riby.me"><h3 className="mailto">{coffee}info@riby.me</h3></a>
+            <div className="follow-path">
+              <h3>Follow Us: </h3>
+
+            </div>
+          </div>
+          <div className="footer-column2">
+            <div className="quicklinks">
+              <h1>Quick Links</h1>
+              <a href=""><span>About Us</span></a>
+              <a href=""><span>Blogs</span></a>
+              <a href=""><span>Contact Us</span></a>
+              <a href=""><span>Partners & Programs</span></a>
+              <a href=""><span>Career</span></a>
+              <a href=""><span>Terms of use</span></a>
+              <a href=""><span>Privacy Notice</span></a>
+            </div>
+          </div>
+          <div className="footer-column3">
+            <h1>Newsletter</h1>
+            <p>Be the first to know about our news.</p>
+            <div className="newsletter">
+              <input type="email" name="" className="emailbox" placeholder="Enter Your Mail:" />
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <hr style={{ backgroundColor: 'white', width: '1512.06px', marginTop: '-10px' }} />
+        <span className="copy">©2016-2022 Riby. RC: 1214343</span>
       </footer>
-    </div>
+    </>
   );
 };
 

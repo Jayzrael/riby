@@ -20,24 +20,6 @@ const Cooperative = () => {
       }
    ]
 
-   // const listItems = [
-   //    {
-   //       activity: 'Customer Identification'
-   //    },
-   //    {
-   //       activity: 'Customer Education'
-   //    },
-   //    {
-   //       activity: 'Customer On-boarding'
-   //    },
-   //    {
-   //       activity: 'Activation and Engagement'
-   //    },
-   //    {
-   //       activity: 'Management'
-   //    }
-   // ]
-
    return (
       <>
          <div className='main-section'>

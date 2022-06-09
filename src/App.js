@@ -12,6 +12,11 @@ import ConsentPage from "./pages/Consent";
 import "antd/dist/antd.css";
 import Cooperative from "./pages/Business/CooperativeManagement/Cooperative";
 import FinancialInclusion from "./pages/Business/Financial Inclusion/FinancialInclusion";
+import CobankingApp from "./pages/Product/CobankingApp/CobankingApp";
+import AgentBusiness from "./pages/Business/AgentBusiness/AgentBusiness";
+
+
+
 
 function App() {
   return (
@@ -26,7 +31,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/ConsentPage" element={<ConsentPage />} />
         <Route path="/Cooperative" element={<Cooperative />} />
+        <Route path="/AgentBusiness" element={<AgentBusiness />} />
         <Route path="/FinancialInclusion" element={<FinancialInclusion />} />
+        <Route path="/CobankingApp" element={<CobankingApp />} />
       </Routes>
     </Router>
   );

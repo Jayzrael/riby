@@ -11,9 +11,7 @@ const menu = (
     items={[
       {
         label: (
-          <a target="_blank" rel="noopener noreferrer" href="">
-            Riby Cobanking
-          </a>
+          <Link to='/CobankingApp'> Riby Cobanking</Link>
         ),
       },
       {
@@ -54,9 +52,7 @@ const business = (
       },
       {
         label: (
-          <a target="_blank" rel="noopener noreferrer" href="">
-            Agent  Business Network
-          </a>
+          <Link to='/AgentBusiness'> Agent  Business Network</Link>
         ),
       },
       {
