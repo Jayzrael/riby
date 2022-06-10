@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faEnvelope, faFacebook, faPhone, faKey } from '@fortawesome/free-solid-svg-icons';
@@ -35,7 +36,7 @@ const Footer = () => {
               <a href=""><span>Blogs</span></a>
               <a href=""><span>Contact Us</span></a>
               <a href=""><span>Partners & Programs</span></a>
-              <a href=""><span>Career</span></a>
+              <Link to='/Career' style={{ color: 'white' }}>Career</Link>
               <a href=""><span>Terms of use</span></a>
               <a href=""><span>Privacy Notice</span></a>
             </div>
@@ -49,7 +50,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr style={{ backgroundColor: 'white', width: '1512.06px', marginTop: '-10px' }} />
+        <hr style={{ backgroundColor: 'white', width: '1512.06px', marginTop: '-20px' }} />
         <span className="copy">©2016-2022 Riby. RC: 1214343</span>
       </footer>
     </>

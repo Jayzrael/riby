@@ -14,6 +14,7 @@ import Cooperative from "./pages/Business/CooperativeManagement/Cooperative";
 import FinancialInclusion from "./pages/Business/Financial Inclusion/FinancialInclusion";
 import CobankingApp from "./pages/Product/CobankingApp/CobankingApp";
 import AgentBusiness from "./pages/Business/AgentBusiness/AgentBusiness";
+import Career from "./pages/Career/Career";
 
 
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/AgentBusiness" element={<AgentBusiness />} />
         <Route path="/FinancialInclusion" element={<FinancialInclusion />} />
         <Route path="/CobankingApp" element={<CobankingApp />} />
+        <Route path="/Career" element={<Career />} />
       </Routes>
     </Router>
   );
