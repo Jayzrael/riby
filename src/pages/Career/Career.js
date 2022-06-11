@@ -4,6 +4,7 @@ import Footer from '../../component/Footer/Footer'
 import RoleCard from '../../component/RoleCard/RoleCard'
 
 const Career = () => {
+
    return (
       <>
          <div className="career-section">
@@ -30,9 +31,9 @@ const Career = () => {
          </div>
          <section className="career-section4">
             <RoleCard career='Product Designer' />
-            <RoleCard career='Product Designer' />
-            <RoleCard career='Product Designer' />
-            <RoleCard career='Product Designer' />
+            <RoleCard career='Frontend Developer Intern' />
+            <RoleCard career='Data Analyst' />
+            <RoleCard career='Senior Frontend Developer' />
          </section>
 
          <section className="career-section5">

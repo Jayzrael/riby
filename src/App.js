@@ -15,6 +15,7 @@ import FinancialInclusion from "./pages/Business/Financial Inclusion/FinancialIn
 import CobankingApp from "./pages/Product/CobankingApp/CobankingApp";
 import AgentBusiness from "./pages/Business/AgentBusiness/AgentBusiness";
 import Career from "./pages/Career/Career";
+import ScrollToTop from "./component/ScrollToTop";
 
 
 
@@ -22,6 +23,7 @@ import Career from "./pages/Career/Career";
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
