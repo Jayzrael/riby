@@ -1,164 +1,158 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 footer {
-   background-color: #0D233D;
-   /* width: 100%; */
+    background-color: #0d233d;
+    /* width: 100%; */
 }
 
 .footer-section {
-   width: 100%;
-   height: 100%;
-   min-height: 70vh;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-section .footer-column1 {
-   background-color: transparent;
-   height: 70%;
-   padding: 20px;
-   margin-right: 80px;
-   margin-top: -10px;
-   /* line-height: 60px; */
+    background-color: transparent;
+    height: 70%;
+    padding: 20px;
+    margin-right: 80px;
+    margin-top: -10px;
+    align-items: flex-start;
+    /* line-height: 60px; */
 }
 
 .footer-section .footer-column1>h1 {
-   font-family: 'Poppins';
-   font-weight: 600;
-   font-size: 28px;
-   color: white;
-   padding-bottom: 10px;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 28px;
+    color: white;
+    padding-bottom: 10px;
 }
 
 .footer-section .footer-column1>p {
-   font-family: 'Poppins';
-   font-weight: 500;
-   font-size: 15px;
-   color: white;
-   padding-left: 20px;
-   padding-bottom: 16px;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    padding-left: 20px;
+    padding-bottom: 16px;
 }
 
 .footer-section .footer-column1>a {
-   padding-left: 27px;
+    padding-left: 27px;
 }
 
 .mailto {
-   color: white;
-   font-family: 'Poppins';
-   font-weight: 500;
-   font-size: 15px;
-   padding-left: 27px;
-   padding-bottom: 14px;
+    color: white;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 15px;
+    padding-left: 27px;
+    padding-bottom: 14px;
 }
 
 .first-number {
-   padding-left: 30px;
+    padding-left: 30px;
 }
 
 span,
 a {
-   font-family: 'Poppins';
-   font-weight: 500;
-   font-size: 15px;
-   color: white;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
 }
 
 .footer-section .footer-column1 .follow-path>h3 {
-   color: white;
+    color: white;
 }
 
-
-
 .footer-section .footer-column2 {
-   background-color: transparent;
-   margin-left: 10px;
-   margin-right: 90px;
-   margin-top: 25px;
-
+    background-color: transparent;
+    margin-left: 10px;
+    margin-right: 90px;
+    margin-top: 25px;
 }
 
 .footer-section .footer-column2 .quicklinks {
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
-
 .footer-section .footer-column2 .quicklinks>h1 {
-   font-family: 'Poppins';
-   font-weight: 600;
-   font-size: 28px;
-   color: white;
-   padding-bottom: 10px;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 28px;
+    color: white;
+    padding-bottom: 10px;
 }
 
 .footer-section .footer-column2 .quicklinks>a {
-   padding-bottom: 10px;
-   padding-left: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
 }
 
 .footer-section .footer-column3 {
-   background-color: transparent;
-   margin-right: 60px;
-   margin-top: -95px;
+    background-color: transparent;
+    margin-right: 60px;
+    margin-top: -95px;
 }
 
 .footer-section .footer-column3>h1 {
-   font-family: 'Poppins';
-   font-weight: 600;
-   font-size: 28px;
-   color: white;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 28px;
+    color: white;
 }
 
 .footer-section .footer-column3>p {
-   font-family: 'Poppins';
-   font-weight: 400;
-   font-size: 16px;
-   color: white;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
 }
 
 .follow-path>h3 {
-   font-family: 'Poppins', sans-serif;
-   font-size: 16px;
-   font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .footer-section .footer-column3 .newsletter {
-   padding-left: 20px;
-   display: flex;
+    padding-left: 20px;
+    display: flex;
 }
 
-
 .emailbox {
-   background: white;
-   border-radius: 10px;
-   padding: 10px 150px 10px 10px;
-   width: 353px;
-   border: none;
+    background: white;
+    border-radius: 10px;
+    padding: 10px 150px 10px 10px;
+    width: 353px;
+    border: none;
 }
 
 .emailbox::placeholder {
-   padding-left: 0px;
+    padding-left: 0px;
 }
 
 .footer-section .footer-column3 .newsletter>button {
-   width: 100%;
-   height: 62px;
-   color: white;
-   font-size: 16px;
-   margin-top: -1px;
-   margin-left: -95.5px;
-   background: #D80C1B;
-   border-radius: 0px 10px 10px 0px
+    width: 100%;
+    height: 62px;
+    color: white;
+    font-size: 16px;
+    margin-top: -1px;
+    margin-left: -95.5px;
+    background: #d80c1b;
+    border-radius: 0px 10px 10px 0px;
 }
 
 .footer-section .footer-column3 .newsletter>button:hover {
-   background-color: darkred;
+    background-color: darkred;
 }
 
 .copy {
-   margin-left: 7%;
+    margin-left: 7%;
 }

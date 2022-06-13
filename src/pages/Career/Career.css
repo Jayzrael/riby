@@ -1,211 +1,217 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .career-section {
-   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/public/Images/career.png);
-   width: 100%;
-   min-height: 140vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/public/Images/career.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .career-section>h1 {
-   font-family: 'Poppins', sans-serif;
-   font-weight: 700;
-   font-size: 48px;
-   color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
 }
 
 .career-section>p {
-   font-family: 'Poppins';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 40px;
-   line-height: 60px;
-   text-align: center;
-   color: white;
-   width: 864px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    width: 20em;
+    text-align: center;
 }
 
 .career-section2 {
-   background-color: transparent;
-   width: 100%;
-   min-height: 100vh;
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row-reverse;
-   justify-content: center;
-   align-items: center;
-   margin-top: 60px;
+    background-color: transparent;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .career-section2>p {
-   background-color: transparent;
-   font-family: 'Poppins', sans-serif;
-   font-weight: 400;
-   font-size: 25px;
-   line-height: 38px;
-   width: 505px;
-   margin-right: 80px;
+    background-color: transparent;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 38px;
+    width: 500px;
 }
+
 
 /* .career-section2>img {
    
 } */
 
 .career-section3 {
-   width: 100%;
-   min-height: 100vh;
-   background-color: transparent;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-top: 70px;
+    width: 100%;
+    min-height: 70vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .career-section3 .video {
-   background-color: gray;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 512px;
-   height: 440px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 512px;
+    height: 350px;
 }
 
 .careerSection3-text {
-   background-color: transparent;
-   width: 512px;
-   margin-left: 90px;
+    background-color: transparent;
+    width: 500px;
+    /* width: 512px;
+    margin-left: 90px; */
 }
 
 .careerSection3-text>h2 {
-   width: 312px;
-   font-family: 'Poppins', sans-serif;
-   font-weight: 600;
-   font-size: 32px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
 }
 
 .careerSection3-text>p {
-   width: 505px;
-   margin-top: 40px;
-   font-family: 'Poppins', sans-serif;
-   font-weight: 400;
-   font-size: 25px;
-   line-height: 38px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 38px;
 }
 
 .joinGeng-text {
-   background-color: transparent;
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-top: 180px;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 180px; */
 }
 
 .joinGeng-text>h1 {
-   font-family: 'Poppins';
-   font-weight: 600;
-   font-size: 40px;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 2rem;
 }
 
 .career-section4 {
-   background-color: transparent;
-   width: 100%;
-   min-height: 70vh;
-   display: grid;
-   grid-template-columns: auto auto;
-   justify-content: space-around;
-   align-items: center;
-   margin-top: 40px;
+    background-color: transparent;
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 40px; */
+    flex-wrap: wrap;
 }
 
-.career-section5 {
-   background-color: #0D233D;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 1156px;
-   min-height: 100vh;
-   margin-top: 50px;
-   margin-bottom: 80px;
-   margin-left: 120px;
-   padding: 50px;
-   border-radius: 20px;
+.careerSection {
+    width: 100%;
+    height: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.career-section5 .preparing-for-success {
-   background-color: white;
-   width: 535px;
-   height: 535px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   margin-right: 5px;
+.preprationContent {
+    width: 700px;
+    height: 100%;
+    min-height: 50vh;
+    border: 20px solid #0d233d;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.career-section5 .preparing-for-success>h2 {
-   font-family: 'Poppins';
-   font-weight: 500;
-   font-size: 30px;
-   margin-left: -100px;
+.page1>p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 
-.career-section5 .preparing-for-success .paragraph-1 {
-   width: 430px;
-   font-family: 'Poppins';
-   font-weight: 500;
-   font-size: 14px;
-   line-height: 21px;
+.page1>img {
+    width: 250px;
 }
 
-.career-section5 .preparing-for-success .paragraph-2 {
-   width: 430px;
-   font-family: 'Poppins';
-   font-weight: 500;
-   font-size: 14px;
-   line-height: 21px;
+.page1>.pageText {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    width: 250px;
 }
 
-
-
-.career-section5 .preparing-for-success2 {
-   background-color: white;
-   width: 535px;
-   height: 535px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+.page2 ul {
+    padding: 0;
+    margin: 0;
+    width: 250px;
 }
 
-.career-section5 .preparing-for-success2>ul {
-   background-color: transparent;
-   width: 431px;
-   min-height: 80vh;
-   margin-top: 140px;
+.page2 ul li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
 }
 
-.career-section5 .preparing-for-success2 ul li {
-   font-family: 'Poppins';
-   font-weight: 500;
-   font-size: 14px;
-   line-height: 21px;
-   margin-top: -33px;
-}
-
-.career-section5 .preparing-for-success2 ul li>span {
-   color: black;
-   margin-left: -16px;
-}
-
-.career-section5 .preparing-for-success2 ul h5 {
-   font-family: 'Poppins';
-   font-weight: 700;
-   font-size: 15px;
-   margin-top: -30px;
-   margin-left: -16px;
-
+@media (max-width: 768px) {
+    .career-section>p {
+        width: 100%;
+    }
+    .career-section2> {
+        text-align: center;
+    }
+    .careerSection3-text,
+    .career-section2 {
+        width: 100%;
+        padding: 10px;
+        /* display: none; */
+    }
+    .career-section2>p,
+    .careerSection3-text>p {
+        font-size: 1.2rem;
+    }
+    .career-section2 img {
+        width: 350px;
+    }
+    .career-section {
+        width: 100%;
+        min-height: 60vh;
+        height: 100%;
+    }
+    .career-section h1 {
+        font-size: 2rem;
+    }
+    .career-section p {
+        font-size: 1.3rem;
+    }
+    .career-section3 .video {
+        width: 350px;
+    }
+    .preprationContent {
+        width: 100%;
+    }
 }
