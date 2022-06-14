@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Navbar from "./component/Navbar/Navbar";
+import Navbar from "./component/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages";
 // import Products from "./pages/Product";
@@ -31,11 +31,11 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/ConsentPage" element={<ConsentPage />} />
-        <Route path="/Cooperative" element={<Cooperative />} />
-        <Route path="/AgentBusiness" element={<AgentBusiness />} />
-        <Route path="/FinancialInclusion" element={<FinancialInclusion />} />
-        <Route path="/CobankingApp" element={<CobankingApp />} />
-        <Route path="/agentbank" element={<AgentBankApp />} />
+        <Route path="/business/Cooperative" element={<Cooperative />} />
+        <Route path="/business/AgentBusiness" element={<AgentBusiness />} />
+        <Route path="/business/FinancialInclusion" element={<FinancialInclusion />} />
+        <Route path="/product/CobankingApp" element={<CobankingApp />} />
+        <Route path="/product/agentbank" element={<AgentBankApp />} />
 
         <Route path="/Career" element={<Career />} />
       </Routes>

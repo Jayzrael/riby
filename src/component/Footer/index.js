@@ -70,7 +70,7 @@ const Footer = () => {
             <UlP to="/about">About Us</UlP>
             <UlP to="/blogs">Blogs</UlP>
             <UlP to="/contact">Contact Us</UlP>
-            <UlP to="/partners">Partners ad Program</UlP>
+            {/* <UlP to="/partners">Partners ad Program</UlP>` */}
             <UlP to="/career">Career </UlP>
           </Ul>
         </Column>

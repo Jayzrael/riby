@@ -1,6 +1,6 @@
 import React from "react";
 import "./Cooperative.css";
-import Footer from "../../../component/Footer/Footer";
+import Footer from "../../../component/Footer";
 import Cardbox from "../../../component/Cardbox/Cardbox";
 
 const Cooperative = () => {
