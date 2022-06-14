@@ -1,170 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-
-.cnt-container{
-position: relative;
-width: 100%;
-height:auto;
-
-background: rgba(248, 254, 255, 0.99);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.cnt-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: rgba(248, 254, 255, 0.99);
 }
 
 .cnt1 {
-width: 100%;
-padding-top: 150px;
-text-align: center;
-height: 493px;
-background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(/public/rung.png);
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/public/rung.png);
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
 }
 
 .cnt1 h1 {
-font-weight: 700;
-font-size: 48px;
-/* identical to box height */
-
-
-color: #FFFFFF;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff;
 }
 
 .cnt1 p {
-
-font-weight: 400;
-font-size: 40px;
-line-height: 60px;
-/* identical to box height */
-
-
-color: #FFFFFF;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    width: 70%;
 }
 
-
-
-.cnt2 h1 {
-width: 304px;
-height: 72px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 48px;
-line-height: 72px;
-/* identical to box height */
-
-
-color: #000000;
+.contact-form {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
 }
 
-.contact-form{
-   display: flex;
-   justify-content: space-between;
-   padding: 40px 120px;
+.contactInfo {
+    width: 400px;
+    margin: 20px 5px;
 }
 
-.cnpa {
-width: 400px;
-height: 78px;
-
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 26px;
-line-height: 39px;
-
-color: #000000;
-}
-
-.cntpa {
-width: 252px;
-height: 117px;
-
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 26px;
-line-height: 39px;
-
-color: #000000;
-}
-
-.redfo {
-   color: #A12029;
+.contactInfo>p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
 }
 
 hr {
-width: 496.01px;
-height: 0px;
-left: 179px;
-top: 960.5px;
-
-border: 1px solid rgba(0, 0, 0, 0.18);
+    height: 0px;
+    /* left: 179px;
+    top: 960.5px; */
+    border: 1px solid rgba(0, 0, 0, 0.18);
 }
 
 .formm {
-width:40%;
-height: 570px;
-padding:0 30px;
-background: rgba(196, 196, 196, 0.21);
-border-radius: 10px;
+    width: 550px;
+    height: 100%;
+    min-height: 40vh;
+    padding: 20px 30px;
+    background: rgba(196, 196, 196, 0.21);
+    border-radius: 10px;
+    margin: 20px 5px;
 }
 
-h4 {
-align-self: center;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 30px;
-padding-top: 31px;
-
-color: #000000;
+.formm>h4 {
+    align-self: center;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
 }
 
-input {
-width: 100%;
-background: #FFFFFF;
-height: 60px;
-border: none;
-
+.formm>input {
+    width: 100%;
+    background: #ffffff;
+    height: 60px;
+    border: none;
+    margin: 10px 5px;
+    outline-color: #ee095b;
+    padding-left: 20px;
 }
 
-.formp2 {
-   width: 100%;
-   height: 60px;
-   background: #FFFFFF;
-   border-radius: 5px;
-   margin-top: 38px;
-   margin-bottom: 20px;
-}
-
-.formp3 {
-   width: 100%;
-   height: 60px;
-   background: #FFFFFF;
-   border-radius: 5px;
-   margin-bottom: 20px;
-}
-
-.formp4 input {
-   width: 100%;
-   height: 108px;
-   background: #FFFFFF;
-}
-
-::placeholder {
-   padding-left: 21px;
-}
-
-
-.mft {
- top: 198px;
-}
-
-.formm button {
-width: 176px;
-height: 55px;
-background: #EE095B;
-border-radius: 27px;
-color: white;
+.formm .btn-submit {
+    width: 176px;
+    height: 55px;
+    background: #ee095b;
+    border-radius: 27px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
 }
