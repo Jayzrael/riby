@@ -1,0 +1,10 @@
+.privacy-container {
+   width: 80%;
+   margin: auto;
+}
+
+.privacy-container>h1 {
+   margin-top: 50px;
+   font-size: 1.7rem;
+   text-align: center;
+}

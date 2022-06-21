@@ -15,8 +15,10 @@ import FinancialInclusion from "./pages/Business/Financial Inclusion";
 import CobankingApp from "./pages/Product/CobankingApp";
 import AgentBusiness from "./pages/Business/AgentBusiness";
 import Career from "./pages/Career";
+import Terms from "./pages/Terms/Terms";
 import ScrollToTop from "./component/ScrollToTop";
 import AgentBankApp from "./pages/Product/AgentBank";
+import Privacy from "./pages/Privacy/Privacy";
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
         <Route path="/business/FinancialInclusion" element={<FinancialInclusion />} />
         <Route path="/product/CobankingApp" element={<CobankingApp />} />
         <Route path="/product/agentbank" element={<AgentBankApp />} />
+        <Route path='/Terms' element={<Terms />} />
+        <Route path='/Privacy' element={<Privacy />} />
 
         <Route path="/Career" element={<Career />} />
       </Routes>

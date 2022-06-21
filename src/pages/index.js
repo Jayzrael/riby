@@ -7,6 +7,7 @@ import Business from "../component/Home/Business";
 import Sponsors from "../component/Home/Sponsors";
 import Testimonies from "../component/Home/Testimonies";
 import Footer from "../component/Footer";
+import Consent from "../component/Consent/Consent";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <Sponsors />
         <Testimonies />
       </Container>
+      <Consent />
       <Footer />
     </>
   );
