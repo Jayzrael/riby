@@ -33,14 +33,29 @@ const Business = () => {
         </TopFlex>
         <BusinessContainer>
           {data.map((data) => (
-            <BusinessCard>
+            <div style={{
+              display: "flex",
+              justifyContent: "space-between",
+              width: "100%",
+            }}>
+              <div style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-start",
+                width: "50%",
+              }}>
               <h5>{data.productTitle}</h5>
               <p>{data.productDesc}</p>
               <LinkButton to={data.link}>
                 <button>Learn More </button>
                 <BsArrowRight />
               </LinkButton>
-            </BusinessCard>
+              </div>
+              
+              <BusinessCard>
+                
+              </BusinessCard>
+              </div>
           ))}
         </BusinessContainer>
       </Wrapper>
@@ -82,7 +97,7 @@ const BusinessCard = styled.div`
     font-family: "Outfit";
     font-style: normal;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 24px;
     color: #0f0738;
   }
@@ -90,7 +105,7 @@ const BusinessCard = styled.div`
     font-family: "Outfit";
     font-style: normal;
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 16px;
     color: #0f0738;
   }

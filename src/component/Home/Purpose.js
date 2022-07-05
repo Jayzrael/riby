@@ -54,7 +54,7 @@ const Content = styled.div`
   h6 {
     font-family: "Outfit";
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     color: #0f0738;
     font-size: 1.2rem;
   }
@@ -62,7 +62,7 @@ const Content = styled.div`
     margin: 0;
     font-family: "Outfit";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.9rem;
     line-height: 16px;
     color: #0f0738;
