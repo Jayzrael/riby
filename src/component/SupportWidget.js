@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { WhatsAppOutlined } from "@ant-design/icons";
 
-const Link = "https://wa.link/g933gf"
+const Link = "https://wa.link/pva8dc"
 
 export default function SupportWidget()
 {

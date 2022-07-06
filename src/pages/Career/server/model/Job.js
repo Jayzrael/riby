@@ -7,11 +7,11 @@ const mongoose = require("mongoose")
 // }
 
 const JobSchema = new mongoose.Schema({
-    Role: {
+    role: {
         type: String,
         required: true
     },
-    Description: {
+    description: {
         type: String,
         require: true
     }

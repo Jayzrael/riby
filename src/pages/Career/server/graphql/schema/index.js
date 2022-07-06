@@ -40,7 +40,6 @@ module.exports = buildSchema(`
         apply(input : ApplicantDetails): Applicant!
     }
 
-
     schema{
         query: RootQuery
         mutation: RootMutation

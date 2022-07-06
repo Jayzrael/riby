@@ -46,7 +46,8 @@ module.exports = {
     {
         const {role, description} = args.jobInput
         const newJob = new Job({ role, description })
-        return newJob._doc
+        await newJob.save()
+        return newJob
     },
 
     //Applicant Resolvers
@@ -54,10 +55,11 @@ module.exports = {
     getApplicant: async (args) =>
     {
         const applicant = await Applicant.findById(args.id)
+        await applicant.save()
         return applicant
     },
     //getAllApplicants
-    getAllApplicants: async (args) =>
+    getAllApplicants: async () =>
     {
         const allApplicants = await Applicant.find()
 
@@ -66,14 +68,15 @@ module.exports = {
     //apply
     apply: async (args) =>
     {
-        const { name, email, phone, mimetype, size } = args.ApplicantDetails
-        const newApplication = new Applicant.$where({
+        const { name, email, phone, mimetype, size } = args.input
+        const newApplication = new Applicant({
             name,
             email,
             phone,
             mimetype,
             size
         })
+        await newApplication.save()
         return newApplication
     }
 }
