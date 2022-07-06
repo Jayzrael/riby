@@ -2,6 +2,7 @@ import React from "react";
 import "./Career.css";
 import Footer from "../../component/Footer";
 import RoleCard from "../../component/RoleCard/RoleCard";
+import SupportWidget from "../../component/SupportWidget";
 
 const Career = () => {
   return (
@@ -82,7 +83,7 @@ const Career = () => {
           </div>
         </div>
       </div>
-
+      <SupportWidget />
       <Footer />
     </>
   );

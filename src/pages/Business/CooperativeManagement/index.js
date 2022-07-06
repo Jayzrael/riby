@@ -2,6 +2,7 @@ import React from "react";
 import "./Cooperative.css";
 import Footer from "../../../component/Footer";
 import Cardbox from "../../../component/Cardbox/Cardbox";
+import SupportWidget from "../../../component/SupportWidget";
 
 const Cooperative = () => {
   const cardItems = [
@@ -72,6 +73,7 @@ const Cooperative = () => {
           </ul>
         </div>
       </div>
+      <SupportWidget />
       <Footer />
     </>
   );
