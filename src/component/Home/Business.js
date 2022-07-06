@@ -47,7 +47,6 @@ const Business = () => {
                 <BsArrowRight />
               </LinkButton>
               </div>
-              
               <BusinessCard>
                 
               </BusinessCard>
@@ -132,7 +131,16 @@ const BusinessCard = styled.div`
 const BusinessContainer = styled.div`
   width: 100%;
   display: flex;
+  flex-direction: row;
+  height: 400px;
+overflow-x: hidden;
+overflow-y: auto;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  .BusinessContainer::-webkit-scrollbar {
+    display: none;
+  }
 `;
