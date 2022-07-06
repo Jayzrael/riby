@@ -33,12 +33,8 @@ const Business = () => {
         </TopFlex>
         <BusinessContainer>
           {data.map((data) => (
-            <div style={{
-              display: "flex",
-              justifyContent: "space-between",
-              width: "100%",
-            }}>
-              <div style={{
+            <Biz>
+              <div  className="Text" style={{
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "flex-start",
@@ -55,7 +51,7 @@ const Business = () => {
               <BusinessCard>
                 
               </BusinessCard>
-              </div>
+              </Biz>
           ))}
         </BusinessContainer>
       </Wrapper>
@@ -63,6 +59,29 @@ const Business = () => {
   );
 };
 export default Business;
+
+const Biz = styled.div`
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+@media (max-width: 768px) {
+  flex-direction: column-reverse;
+  align-items: flex-start;
+}
+`
+// const Text = styled.div`
+// display: flex;
+// flex-direction: column;
+// align-items: flex-start;
+// justify-content: space-between;
+// align-items: center;
+
+// @media (max-width: 768px) {
+//   flex-direction: column-reverse;
+//   align-items: flex-start;
+// }
+// `
 
 const LinkButton = styled(Link)`
   display: flex;

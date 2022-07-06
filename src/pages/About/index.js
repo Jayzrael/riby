@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../../component/Footer";
+import SupportWidget from "../../component/SupportWidget";
 import "./About.css";
 // import Footer from "../../component/Footer/Footer";
 
@@ -36,6 +37,7 @@ const About = () => {
           </p>
         </div>
       </div>
+      <SupportWidget/>
       <Footer />
     </>
   );

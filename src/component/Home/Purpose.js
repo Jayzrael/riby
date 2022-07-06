@@ -62,7 +62,7 @@ const Content = styled.div`
     margin: 0;
     font-family: "Outfit";
     font-style: normal;
-    font-weight: 300;
+    font-weight: 00;
     font-size: 0.9rem;
     line-height: 16px;
     color: #0f0738;
