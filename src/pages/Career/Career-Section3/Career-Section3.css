@@ -1,0 +1,40 @@
+.career-section3 {
+   width: 100%;
+   min-height: 70vh;
+   background-color: transparent;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+
+
+.careerSection3-text {
+   background-color: transparent;
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+@media (max-width: 768px) {
+   .careerSection3-text {
+      width: 90%;
+   }
+}
+
+.careerSection3-text>h2 {
+   font-family: "Poppins", sans-serif;
+   font-weight: 600;
+   font-size: 1.7rem;
+}
+
+.careerSection3-text>p {
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-size: 1.5rem;
+   line-height: 38px;
+   text-align: center;
+}
