@@ -78,5 +78,20 @@ module.exports = {
         })
         await newApplication.save()
         return newApplication
+    },
+    //delete Job
+    deleteJob: async (args) =>{
+        return Job.findByIdAndDelete(args.id)
+    },
+    updateJob: async (args) =>
+    {
+        const {id, role, description } = args.jobInput
+        const updatedJob = await Job.findByIdAndUpdate(id, {
+            $set: {
+                role,
+                description
+            }
+        }, { new: true })
+        return updatedJob
     }
 }

@@ -19,6 +19,11 @@ module.exports = buildSchema(`
         role: String!
         description: String!
     }
+    input JobInputUpdate{
+        id: ID!
+        role: String!
+        description: String!
+    }
     input ApplicantDetails{
         name: String!
         email: String!
@@ -38,6 +43,8 @@ module.exports = buildSchema(`
     type RootMutation{
         postJob(jobInput: JobInput): Job!
         apply(input : ApplicantDetails): Applicant!
+        deleteJob(id: ID): Job!
+        updateJob(jobInput: JobInputUpdate): Job!
     }
 
     schema{
