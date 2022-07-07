@@ -3,6 +3,8 @@ import "./App.css";
 import Navbar from "./component/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages";
+import { ApolloProvider, ApolloClient, InMemoryCache} from "@apollo/client";
+
 // import Products from "./pages/Product";
 // import Business from "./pages/Business";
 import About from "./pages/About";
@@ -18,8 +20,15 @@ import Career from "./pages/Career";
 import ScrollToTop from "./component/ScrollToTop";
 import AgentBankApp from "./pages/Product/AgentBank";
 
+const client = new ApolloClient({
+  uri: "http://localhost:5000/graphql",
+  cache: new InMemoryCache()
+})
+
 function App() {
   return (
+    <>
+      <ApolloProvider client={client}>
     <Router>
       <ScrollToTop />
       <Navbar />
@@ -36,10 +45,14 @@ function App() {
         <Route path="/business/FinancialInclusion" element={<FinancialInclusion />} />
         <Route path="/product/CobankingApp" element={<CobankingApp />} />
         <Route path="/product/agentbank" element={<AgentBankApp />} />
-
+        
         <Route path="/Career" element={<Career />} />
+  
+       
       </Routes>
-    </Router>
+      </Router>
+      </ApolloProvider>
+      </>
   );
 }
 

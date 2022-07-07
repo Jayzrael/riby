@@ -6,6 +6,7 @@ module.exports = buildSchema(`
         id: ID!
         role: String!
         description: String!
+        
     }
     type Applicant{
         id: ID!
@@ -34,14 +35,14 @@ module.exports = buildSchema(`
 
 
     type RootQuery{
-        getJob(id: ID): Job!
+        getJob(id: ID!): Job!
         getAllJobs: [Job!]!
         getApplicant(id : ID!) : Applicant!
         getAllApplicants: [Applicant!]!
 
     }
     type RootMutation{
-        postJob(jobInput: JobInput): Job!
+        postJob(jobInput: JobInput!): Job!
         apply(input : ApplicantDetails): Applicant!
         deleteJob(id: ID): Job!
         updateJob(jobInput: JobInputUpdate): Job!

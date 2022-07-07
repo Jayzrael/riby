@@ -14,7 +14,7 @@ const JobSchema = new mongoose.Schema({
     description: {
         type: String,
         require: true
-    }
+    },
 })
 
 module.exports = mongoose.model("Job", JobSchema)

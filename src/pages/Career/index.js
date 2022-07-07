@@ -1,10 +1,20 @@
 import React from "react";
+import {gql, useQuery} from '@apollo/client'
 import "./Career.css";
 import Footer from "../../component/Footer";
 import RoleCard from "../../component/RoleCard/RoleCard";
 import SupportWidget from "../../component/SupportWidget";
+import { GET_ALL_JOBS } from "../../utils/queries/allQueries";
 
-const Career = () => {
+
+
+
+const Career = () =>
+{
+  const { loading, error, data } = useQuery(GET_ALL_JOBS) 
+  
+  // if (loading) return <p>Loading...</p>
+  // if (error) return <p>There are no open positions</p>
   return (
     <>
       <div className="career-section">
@@ -32,13 +42,22 @@ const Career = () => {
       </section>
       <div className="joinGeng-text">
         <h1>Join the Riby Geng!</h1>
-
         <section className="career-section4">
-          <RoleCard career="Product Designer" />
-          <RoleCard career="Frontend Developer Intern" />
-          <RoleCard career="Data Analyst" />
-          <RoleCard career="Senior Frontend Developer" />
-        </section>
+          {
+            !loading && !error && (
+              <>
+             
+                {
+                  // console.log(data, data.getAllJobs)
+                  data.getAllJobs.map(job =>   <RoleCard key={job.id} {...job} /> )
+                }
+               
+              </>
+            )
+          }
+           </section>
+          
+       
       </div>
       <div className="careerSection">
         <div className="preprationContent">

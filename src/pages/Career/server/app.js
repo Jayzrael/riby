@@ -6,10 +6,12 @@ const schema = require("./graphql/schema/index")
 const graphqlResolvers = require("./graphql/resolver/index")
 const { graphqlHTTP } = require('express-graphql');
 const connectDB = require("./config/db")
+const cors  = require("cors")
 
 app.use(express.json())
 
 connectDB()
+app.use(cors())
 
 app.use("/graphql", graphqlHTTP({
     schema,
