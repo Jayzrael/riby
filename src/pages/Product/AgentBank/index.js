@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import SupportWidget from "../../../component/SupportWidget";
 
 const AgentBankApp = () => {
   return (
@@ -22,6 +23,7 @@ const AgentBankApp = () => {
           <HeroImg src="/mockup1.png" />
         </Hero>
       </Container>
+      <SupportWidget />
     </>
   );
 };

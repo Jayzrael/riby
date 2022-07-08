@@ -1,8 +1,8 @@
 .consent-container {
- width: 80%;
- margin: auto;
- overflow: hidden;
- padding-top: 30px;
+   width: 80%;
+   margin: auto;
+   overflow: hidden;
+   padding-top: 30px;
 }
 
 h5 {
@@ -16,7 +16,19 @@ li {
    padding: 15px;
 }
 
-table,th,td {
+
+.table-container {
+   width: 100%;
+   overflow-x: scroll;
+}
+
+table {
+   width: 100%;
+}
+
+table,
+th,
+td {
    border: 1px solid;
 }
 
@@ -29,14 +41,24 @@ td {
    padding: 20px;
 }
 
-.browsers li{
+.browsers li {
    padding: 5px;
 }
 
-.browsers li a{
+.browsers li a {
    color: blue;
 }
 
- .lastp {
-    padding-top: 20px;
- }
+.lastp {
+   padding-top: 20px;
+}
+
+@media(max-width:768px) {
+   h5 {
+      text-align: center;
+   }
+
+   .consent-container {
+      padding-top: 0px;
+   }
+}

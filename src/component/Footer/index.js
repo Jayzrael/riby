@@ -5,31 +5,23 @@ const Footer = () => {
   const socials = [
     {
       img: "/book.png",
-      link: "",
+      link: "https://web.facebook.com/ribyhq/",
     },
     {
       img: "/hole.png",
-      link: "",
+      link: "https://instagram.com/ribyhq/",
     },
     {
       img: "/inked.png",
-      link: "",
+      link: "https://www.linkedin.com/company/riby-finance/",
     },
     {
       img: "/tweet.png",
-      link: "",
-    },
-    {
-      img: "/call.png",
-      link: "",
-    },
-    {
-      img: "/emm.png",
-      link: "",
+      link: "https://twitter.com/riby_hq?t=7CylrG781oG-LCKYhG0s0Q&s=09",
     },
     {
       img: "/tube.png",
-      link: "",
+      link: "https://www.youtube.com/channel/UC4R1hiwCXMQT-_VFS6Q0LcA",
     },
 
     ,
@@ -45,8 +37,8 @@ const Footer = () => {
             <img src="/phone.png" alt="" style={{ width: "15px" }} />
 
             <div>
-              <Span>01-2914247</Span>
-              <Span>08092222109</Span>
+              <a href="tel: 01-2914247"><Span>01-2914247</Span></a>
+              <a href="tel: 08092222109"><Span>08092222109</Span></a>
             </div>
           </div>
           <div style={{ display: "flex", alignItems: "center" }}>
@@ -56,7 +48,7 @@ const Footer = () => {
             </a>
           </div>
           <div style={{ display: "flex", alignItems: "center" }}>
-            <span>Follow us:</span>
+            <span style={{ color: "white", fontSize: "15px", fontWeight: "700" }}>Follow us:</span>
             {socials.map((social, i) => (
               <a key={i} href={social.link} style={{ margin: "4px" }}>
                 <img src={social.img} alt={social.link} style={{ width: "20px" }} />
@@ -72,6 +64,8 @@ const Footer = () => {
             <UlP to="/contact">Contact Us</UlP>
             {/* <UlP to="/partners">Partners ad Program</UlP>` */}
             <UlP to="/career">Career </UlP>
+            <UlP to="/Terms">Terms of use </UlP>
+            <UlP to="/Privacy">Privacy Notice </UlP>
           </Ul>
         </Column>
         <Column>

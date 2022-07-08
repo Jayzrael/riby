@@ -1,6 +1,7 @@
 import React from "react";
 import "./FinancialInclusion.css";
 import Footer from "../../../component/Footer";
+import SupportWidget from "../../../component/SupportWidget";
 
 const FinancialInclusion = () => {
   return (
@@ -48,6 +49,7 @@ const FinancialInclusion = () => {
           <img src="" alt="" />
         </section>
       </section>
+      <SupportWidget />
 
       <Footer />
     </>

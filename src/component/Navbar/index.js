@@ -1,12 +1,19 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { FaAngleDown, FaTimes, FaBars } from "react-icons/fa";
+import { FaAngleDown } from "react-icons/fa";
 import { Dropdowns } from "../Dropdown";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
+import MobileNav from "./MobileNav";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const [navIcon, setNavIcon] = useState(false);
+
+  const handleToggleNav = () => {
+    setNavIcon(!navIcon);
+  };
+
   const handleToggle = () => {
     setToggle(!toggle);
     console.log("clicked");
@@ -15,10 +22,14 @@ const Navbar = () => {
   return (
     <Container>
       <Wrapper>
-        <Logo src="/Logo.png" />
-        <Hamburger>
+        <Link to="/">
+          <Logo src="/Logo.png" />
+        </Link>
+
+        <Hamburger onClick={handleToggleNav}>
           <GiHamburgerMenu style={{ fontSize: "30px", cursor: "pointer" }} />
         </Hamburger>
+        {navIcon && <MobileNav toggleNav={handleToggleNav} />}
         <Navigation>
           <Nav onClick={handleToggle}>
             Product
