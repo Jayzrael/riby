@@ -1,7 +1,6 @@
 import React from "react";
 import "./Career.css";
 import Footer from "../../component/Footer";
-import RoleCard from "../../component/RoleCard/RoleCard";
 import Section2 from "./Career-Section2/Career-Section2";
 import Section3 from "./Career-Section3/Career-Section3";
 import LastSection from "./LastSection/LastSection";

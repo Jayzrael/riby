@@ -33,14 +33,24 @@ const Business = () => {
         </TopFlex>
         <BusinessContainer>
           {data.map((data) => (
-            <BusinessCard>
+            <Biz>
+              <div  className="Text" style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-start",
+                width: "50%",
+              }}>
               <h5>{data.productTitle}</h5>
               <p>{data.productDesc}</p>
               <LinkButton to={data.link}>
                 <button>Learn More </button>
                 <BsArrowRight />
               </LinkButton>
-            </BusinessCard>
+              </div>
+              <BusinessCard>
+                
+              </BusinessCard>
+              </Biz>
           ))}
         </BusinessContainer>
       </Wrapper>
@@ -48,6 +58,29 @@ const Business = () => {
   );
 };
 export default Business;
+
+const Biz = styled.div`
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+@media (max-width: 768px) {
+  flex-direction: column-reverse;
+  align-items: flex-start;
+}
+`
+// const Text = styled.div`
+// display: flex;
+// flex-direction: column;
+// align-items: flex-start;
+// justify-content: space-between;
+// align-items: center;
+
+// @media (max-width: 768px) {
+//   flex-direction: column-reverse;
+//   align-items: flex-start;
+// }
+// `
 
 const LinkButton = styled(Link)`
   display: flex;
@@ -82,7 +115,7 @@ const BusinessCard = styled.div`
     font-family: "Outfit";
     font-style: normal;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 24px;
     color: #0f0738;
   }
@@ -90,7 +123,7 @@ const BusinessCard = styled.div`
     font-family: "Outfit";
     font-style: normal;
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 16px;
     color: #0f0738;
   }
@@ -98,7 +131,16 @@ const BusinessCard = styled.div`
 const BusinessContainer = styled.div`
   width: 100%;
   display: flex;
+  flex-direction: row;
+  height: 400px;
+overflow-x: hidden;
+overflow-y: auto;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  .BusinessContainer::-webkit-scrollbar {
+    display: none;
+  }
 `;

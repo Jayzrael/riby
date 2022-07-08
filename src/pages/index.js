@@ -8,6 +8,7 @@ import Sponsors from "../component/Home/Sponsors";
 import Testimonies from "../component/Home/Testimonies";
 import Footer from "../component/Footer";
 import Consent from "../component/Consent/Consent";
+import SupportWidget from "../component/SupportWidget";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
         <Testimonies />
       </Container>
       <Consent />
+      <SupportWidget />
       <Footer />
     </>
   );

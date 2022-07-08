@@ -1,6 +1,7 @@
 import React from "react";
 import AgentBusinessCards from "../../../component/AgentBusinessCards/AgentBusinessCards";
 import Footer from "../../../component/Footer";
+import SupportWidget from "../../../component/SupportWidget";
 import "./AgentBusiness.css";
 
 const AgentBusiness = () => {
@@ -45,6 +46,7 @@ const AgentBusiness = () => {
           <img src="" alt="" />
         </div>
       </div>
+      <SupportWidget />
       <Footer />
     </>
   );
