@@ -19,6 +19,8 @@ import Terms from "./pages/Terms/Terms";
 import ScrollToTop from "./component/ScrollToTop";
 import AgentBankApp from "./pages/Product/AgentBank";
 import Privacy from "./pages/Privacy/Privacy";
+import JobPosting from "./pages/JobPosting/JobPosting";
+import ApplicationForm from "./pages/JobPosting/ApplicationForm/ApplicationForm";
 
 function App() {
   return (
@@ -41,7 +43,10 @@ function App() {
         <Route path='/Terms' element={<Terms />} />
         <Route path='/Privacy' element={<Privacy />} />
 
+
         <Route path="/Career" element={<Career />} />
+        <Route path="/JobPosting" element={<JobPosting />} />
+        <Route path="/ApplicationForm" element={<ApplicationForm />} />
       </Routes>
     </Router>
   );
