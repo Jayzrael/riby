@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 export const HeroImg = styled.img `
   width: 350px;
+  margin-left: 50px;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
 `;
 export const ButtonContainer = styled.div `
   display: flex;
@@ -13,8 +18,13 @@ export const ButtonContainer = styled.div `
 
 export const HeroText = styled.div `
   width: 500px;
-  padding: 10px 30px;
+  // padding: 10px 30px;
   color: #0f0738;
+  margin-right: 50px;
+  @media (max-width: 768px) {
+    margin-right: 0;
+    padding: 10px 30px;
+  }
 
   h3 {
     font-family: "Poppins";
@@ -37,9 +47,13 @@ export const Hero = styled.div `
   height: 100%;
   min-height: 70vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+
+  @media (max-width: 768px) {
+    justify-content: space-around;
+  }
 `;
 export const Container = styled.div `
   width: 100%;
@@ -54,8 +68,42 @@ export const ProductInfo = styled.div `
 `;
 
 export const ProductAction = styled.div `
-  max-width: 600px;
+  width: 100%;
+  height: 100%;
+  min-height: 70vh;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+export const Content = styled.div `
+  width: 80%;
   height: 100%;
   min-height: 50vh;
-  background: red;
+  background: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  h2 {
+    width: 50%;
+    text-align: center;
+    color: #ffffff;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  p {
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    width: 60%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
 `;

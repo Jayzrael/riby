@@ -32,7 +32,7 @@ const MobileNav = ({ toggleNav }) => {
             <ProductItem>
               <Nav onClick={() => navigatePage("/product/CobankingApp")}>Riby CoBanking</Nav>
               <Nav onClick={() => navigatePage("/product/agentbank")}>AgentBanking</Nav>
-              <Nav onClick={() => navigatePage("/product/agentLogo")}>RibyGO</Nav>
+              <Nav onClick={() => navigatePage("/product/coagent")}>CoAgent</Nav>
             </ProductItem>
           )}
         </Nav>

@@ -6,13 +6,16 @@ import {
   HeroText,
   Hero,
   Container,
+  Content,
   ProductInfo,
 } from "./styles";
 import { ProductCard } from "./ProductCard";
 import SupportWidget from "../../../component/SupportWidget";
 import googleStoreImg from "../../../image/google.png";
 import playStoreImg from "../../../image/playstore.png";
-
+import googlelight from "../../../image/googlelight.png";
+import playstorelight from "../../../image/playstorelight.png";
+import Footer from "../../../component/Footer";
 const CobankingApp = () => {
   return (
     <>
@@ -67,10 +70,27 @@ const CobankingApp = () => {
             textDesc="Your financial safety is our highest priority. Riby CoBanking is PCI-DSS certified. Our systems are operating at the maximum levels of security. Your money is always safe with us and we protect your data from unauthorized access and alterations"
           />
         </ProductInfo>
-        <ProductInfo>hellow</ProductInfo>
-        {/* <ProductAction></ProductAction> */}
+
+        <ProductAction>
+          <Content>
+            <h2>Members Contributing With Ease And On The Go</h2>
+            <p>
+              Our app allows members of your group savings or cooperative to promptly save and make
+              contributions as at when due, easily and on the go
+            </p>
+            <ButtonContainer>
+              <a href="#">
+                <img src={googlelight} alt="" />
+              </a>
+              <a href="#">
+                <img src={playstorelight} alt="" />
+              </a>
+            </ButtonContainer>
+          </Content>
+        </ProductAction>
       </Container>
       <SupportWidget />
+      <Footer />
     </>
   );
 };

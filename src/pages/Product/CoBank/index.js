@@ -5,17 +5,21 @@ import googleStoreImg from "../../../image/google.png";
 import playStoreImg from "../../../image/playstore.png";
 import { HeroImg, ButtonContainer, HeroText, Hero, Container } from "../CobankingApp/styles";
 
-const AgentBankApp = () => {
+const Cobank = () => {
   return (
     <>
       <Container>
         <Hero>
           <HeroText>
-            <h3>Our Agency Banking Mobile App For All Financial Services Transactions</h3>
+            <h2>
+              A Cooperative Collection And Managment App For Thrift And Cooperative Collection{" "}
+            </h2>
 
             <p>
-              A specially designed agent banking mobile app that has the unique feature to integrate
-              with different payment channels.
+              Riby cooperative agent app allows for Cooperatives, Thrift Collectors, Trade Unions,
+              Associations and Groups automate and manage their entire process of member
+              registration, savings collections and loan booking/repayment from their members and
+              customers.
             </p>
             <ButtonContainer>
               <a href="#">
@@ -34,4 +38,4 @@ const AgentBankApp = () => {
   );
 };
 
-export default AgentBankApp;
+export default Cobank;
