@@ -1,83 +1,98 @@
 import React from "react";
-import styled from "styled-components";
-
+import {
+  HeroImg,
+  ProductAction,
+  ButtonContainer,
+  HeroText,
+  Hero,
+  Container,
+  Content,
+  ProductInfo,
+} from "./styles";
+import { ProductCard } from "./ProductCard";
+import SupportWidget from "../../../component/SupportWidget";
+import googleStoreImg from "../../../image/google.png";
+import playStoreImg from "../../../image/playstore.png";
+import googlelight from "../../../image/googlelight.png";
+import playstorelight from "../../../image/playstorelight.png";
+import Footer from "../../../component/Footer";
 const CobankingApp = () => {
   return (
     <>
       <Container>
         <Hero>
           <HeroText>
-            <h3>RIBY CO-BANKING APP</h3>
+            <h3>A Digital Cooperative Managment Platform That Suits Your Needs</h3>
             <p>
-              Riby CoBanking is a complete financial management tool for cooperatives, trade groups,
-              associations and savings group. Save your funds, make contributions, invest at great
-              interest rates, and get access to various loan packages.
+              Riby CoBanking is a complete financial management tool for Cooperatives, Trade Groups,
+              Associations and Savings Groups.
             </p>
             <ButtonContainer>
-              <Button>Download Android</Button>
-              <Button>Download Ios</Button>
+              <a href="#">
+                <img src={googleStoreImg} alt="" />
+              </a>
+              <a href="#">
+                <img src={playStoreImg} alt="" />
+              </a>
             </ButtonContainer>
           </HeroText>
           <HeroImg src="/mockup1.png" />
         </Hero>
+        <ProductInfo>
+          <ProductCard
+            fd
+            ta
+            textHead=" Save Consistently"
+            textDesc="Automate your savings and contribution process and make payments through a wide variety of efficient payment channels anywhere, anytime and on the go. "
+          />
+          <ProductCard
+            textHead="Loans and Credit Management"
+            textDesc="You can create the different loan types that are available in your Cooperatives and Savings Groups, profiling all your members based on their contributions, helping you identified members best suited for loans and easy loan repayment terms all on our platform."
+          />
+          <ProductCard
+            fd
+            ta
+            textHead="Member and Records Management"
+            textDesc="Manage/monitor all member activities and financial records. Review member contributions, loan repayments and all other data through any channel whenever you need it."
+          />
+          <ProductCard
+            textHead="Mobile Wallet Feature"
+            textDesc="Explore our seamless mobile wallet feature where you can add debit card detail, make contributions, carry out loan repayments, check contribution balance and withdraw from your wallet."
+          />
+          <ProductCard
+            fd
+            ta
+            textHead="Invest Together"
+            textDesc="Investment management and business advisory for economic groups. Pool group funds and get access to recommended high-interest-investments to provide more returns for your members. ."
+          />
+          <ProductCard
+            textHead="Security"
+            textDesc="Your financial safety is our highest priority. Riby CoBanking is PCI-DSS certified. Our systems are operating at the maximum levels of security. Your money is always safe with us and we protect your data from unauthorized access and alterations"
+          />
+        </ProductInfo>
+
+        <ProductAction>
+          <Content>
+            <h2>Members Contributing With Ease And On The Go</h2>
+            <p>
+              Our app allows members of your group savings or cooperative to promptly save and make
+              contributions as at when due, easily and on the go
+            </p>
+            <ButtonContainer>
+              <a href="#">
+                <img src={googlelight} alt="" />
+              </a>
+              <a href="#">
+                <img src={playstorelight} alt="" />
+              </a>
+            </ButtonContainer>
+          </Content>
+        </ProductAction>
       </Container>
+      <SupportWidget />
+      <Footer />
     </>
   );
 };
 
 export default CobankingApp;
-
-const HeroImg = styled.img`
-  width: 350px;
-`;
-const ButtonContainer = styled.div`
-  display: flex;
-  align-items: center;
-`;
-const Button = styled.button`
-  width: 222px;
-  height: 50px;
-  background: #ee095b;
-  border-radius: 33px;
-  margin-right: 10px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-
-  color: #ffffff;
-`;
-const HeroText = styled.div`
-  width: 500px;
-  padding: 10px 30px;
-  h3 {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 52px;
-    /* identical to box height */
-
-    color: #000000;
-  }
-  p {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-  }
-`;
-
-const Hero = styled.div`
-  width: 100%;
-  height: 100%;
-  min-height: 70vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-`;
-const Container = styled.div`
-  width: 100%;
-  height: 100%;
-  min-height: 80vh;
-`;

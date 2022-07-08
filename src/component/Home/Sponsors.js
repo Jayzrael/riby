@@ -1,6 +1,6 @@
 import react from "react";
 import { Container, Wrapper } from "./styles";
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import echo from "../../image/sponsor/echo.png";
 import efina from "../../image/sponsor/efina.png";
 import flutterwave from "../../image/sponsor/flutterwave.png";
@@ -22,7 +22,7 @@ import growthcapital from "../../image/sponsor/growthcapital.png";
 import boa from "../../image/sponsor/boa.png";
 
 const Sponsors = () => {
-  const img = [
+  const img1 = [
     norishing,
     echo,
     efina,
@@ -32,6 +32,8 @@ const Sponsors = () => {
     ilo,
     flutterwave,
     greencapital,
+  ];
+  const img2 = [
     mercycorps,
     passionincubator,
     nepc,
@@ -44,14 +46,20 @@ const Sponsors = () => {
     verve,
   ];
 
+
   return (
     <Container>
       <Wrapper>
         <SponsorCOntainer>
-          {img.map((data, index) => (
+          {img1.map((data, index) => (
             <Img src={data} key={index} />
           ))}
         </SponsorCOntainer>
+        <SponsorCOntainer1>
+          {img2.map((data, index) => (
+            <Img src={data} key={index} />
+          ))}
+        </SponsorCOntainer1>
       </Wrapper>
     </Container>
   );
@@ -61,10 +69,38 @@ export default Sponsors;
 const Img = styled.img`
   margin: 20px;
 `;
+
+const linear = keyframes`
+from{
+  transform: translateX(20)
+}
+to{
+  transform: translateX(100%)
+}
+`
+const linear2 = keyframes`
+from{
+  transform: translateX(-20%)
+}
+to{
+  transform: translateX(-100%)
+}
+`
+
 const SponsorCOntainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  animation: ${linear} infinite 20s linear;
 `;
+
+const SponsorCOntainer1 = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: ${linear2} infinite 20s linear;
+`;
+
+

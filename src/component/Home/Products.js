@@ -130,13 +130,10 @@ const ProductCard = styled.div`
   }
 `;
 const ProductContainer = styled.div`
-  overflow-x: scroll;
-  overflow-y: hidden;
   white-space: nowrap;
   color: whitesmoke;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  display:flex;
+  flex-wrap: wrap;
 `;
 
 const ButtonDiv = styled.div`
