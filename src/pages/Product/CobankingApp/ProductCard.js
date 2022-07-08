@@ -39,5 +39,6 @@ export const Wrapper = styled.div`
   align-items: center;
   flex-direction: ${({ fd }) => (fd ? "row" : "row-reverse")};
   margin: 20px 5px;
+  flex-wrap: wrap-reverse;
 `;
 export const Container = styled.div``;
