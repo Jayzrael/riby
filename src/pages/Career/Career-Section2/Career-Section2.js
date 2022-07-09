@@ -30,7 +30,7 @@ const Section2 = () => {
                <p>
                   At Riby, we are always looking for talented individuals who aligns with our mission to enabling access to collective growth for 63 million banked and unbanked Nigerians.
                </p>
-               <button className="see-all-openings"><Link to="/JobPosting"> See All Openings</Link></button>
+               <button className="see-all-openings"><Link to="/JobPosting" style={{ color: 'white' }}> See All Openings</Link></button>
             </div>
 
          </section>

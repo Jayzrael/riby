@@ -79,7 +79,7 @@ const ApplicationForm = () => {
                      </div>
                   </div>
                   <div class="button_container">
-                     <button type="submit">Apply Now</button>
+                     <button type="submit" class="form-button">Apply Now</button>
                   </div>
                </form>
             </div>

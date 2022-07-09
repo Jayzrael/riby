@@ -27,3 +27,8 @@
    margin-top: 50px;
    margin-left: 40%;
 }
+
+.apply-now:hover {
+   background-color: blue;
+   border: none;
+}
