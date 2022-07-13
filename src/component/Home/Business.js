@@ -34,23 +34,16 @@ const Business = () => {
         <BusinessContainer>
           {data.map((data) => (
             <Biz>
-              <div  className="Text" style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "flex-start",
-                width: "50%",
-              }}>
-              <h5>{data.productTitle}</h5>
-              <p>{data.productDesc}</p>
-              <LinkButton to={data.link}>
-                <button>Learn More </button>
-                <BsArrowRight />
-              </LinkButton>
-              </div>
-              <BusinessCard>
-                
-              </BusinessCard>
-              </Biz>
+              <Div>
+                <h5>{data.productTitle}</h5>
+                <p>{data.productDesc}</p>
+                <LinkButton to={data.link}>
+                  <span>Learn More</span>
+                  <BsArrowRight />
+                </LinkButton>
+              </Div>
+              <BusinessCard></BusinessCard>
+            </Biz>
           ))}
         </BusinessContainer>
       </Wrapper>
@@ -59,49 +52,44 @@ const Business = () => {
 };
 export default Business;
 
-const Biz = styled.div`
-display: flex;
-justify-content: space-between;
-align-items: center;
-width: 100%;
-@media (max-width: 768px) {
-  flex-direction: column-reverse;
-  align-items: flex-start;
-}
-`
-// const Text = styled.div`
-// display: flex;
-// flex-direction: column;
-// align-items: flex-start;
-// justify-content: space-between;
-// align-items: center;
+const Div = styled.div`
+  width: 500px;
 
-// @media (max-width: 768px) {
-//   flex-direction: column-reverse;
-//   align-items: flex-start;
-// }
-// `
+  h5 {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+const Biz = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+`;
 
 const LinkButton = styled(Link)`
   display: flex;
-  justify-content: center;
   align-items: center;
   color: #d80c1b;
-  button {
-    padding: 10px;
-    border: 0;
-    outline: none;
-    background: #fff;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
+
+  span {
+    padding-right: 10px;
   }
 `;
 const BusinessCard = styled.div`
   width: 360px;
   height: 300px;
-  background: #f8feff;
+  background: gray;
   box-shadow: 0px 3px 6px rgba(15, 7, 56, 0.16);
   border-radius: 10px;
   display: flex;
@@ -111,36 +99,36 @@ const BusinessCard = styled.div`
   padding: 20px;
   margin: 10px;
 
-  h5 {
-    font-family: "Outfit";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 24px;
-    color: #0f0738;
-  }
-  p {
-    font-family: "Outfit";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 16px;
-    color: #0f0738;
-  }
+  // h5 {
+  //   font-family: "Outfit";
+  //   font-style: normal;
+  //   font-weight: 500;
+  //   font-size: 1.5rem;
+  //   line-height: 24px;
+  //   color: #0f0738;
+  // }
+  // p {
+  //   font-family: "Outfit";
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   font-size: 1rem;
+  //   line-height: 16px;
+  //   color: #0f0738;
+  // }
 `;
 const BusinessContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
   height: 400px;
-overflow-x: hidden;
-overflow-y: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  scrollbar-width: none; 
+  scrollbar-width: none;
   -ms-overflow-style: none;
-  .BusinessContainer::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     display: none;
   }
 `;

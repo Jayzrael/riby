@@ -1,6 +1,6 @@
 import react from "react";
 import { Container, Wrapper } from "./styles";
-import styled, {keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components";
 import echo from "../../image/sponsor/echo.png";
 import efina from "../../image/sponsor/efina.png";
 import flutterwave from "../../image/sponsor/flutterwave.png";
@@ -46,7 +46,6 @@ const Sponsors = () => {
     verve,
   ];
 
-
   return (
     <Container>
       <Wrapper>
@@ -77,7 +76,18 @@ from{
 to{
   transform: translateX(100%)
 }
-`
+`;
+
+const scroll = keyframes`
+
+ 0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1500px, 0, 0); /* The image width */
+  }
+`;
+
 const linear2 = keyframes`
 from{
   transform: translateX(-20%)
@@ -85,14 +95,14 @@ from{
 to{
   transform: translateX(-100%)
 }
-`
+`;
 
 const SponsorCOntainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: ${linear} infinite 20s linear;
+  animation: ${scroll} infinite 20s linear;
 `;
 
 const SponsorCOntainer1 = styled.div`
@@ -100,7 +110,5 @@ const SponsorCOntainer1 = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: ${linear2} infinite 20s linear;
+  animation: ${linear} infinite 20s linear;
 `;
-
-

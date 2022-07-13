@@ -37,8 +37,12 @@ const Footer = () => {
             <img src="/phone.png" alt="" style={{ width: "15px" }} />
 
             <div>
-              <a href="tel: 01-2914247"><Span>01-2914247</Span></a>
-              <a href="tel: 08092222109"><Span>08092222109</Span></a>
+              <a href="tel: 01-2914247">
+                <Span>01-2914247</Span>
+              </a>
+              <a href="tel: 08092222109">
+                <Span>08092222109</Span>
+              </a>
             </div>
           </div>
           <div style={{ display: "flex", alignItems: "center" }}>
@@ -71,7 +75,7 @@ const Footer = () => {
         <Column>
           <ColumnHead>Newsletter</ColumnHead>
           <p>Be the First to know about our news.</p>
-          <FormFlex style={{ display: "flex", alignItems: "center" }}>
+          <FormFlex style={{ display: "flex", alignItems: "left" }}>
             <Input type="text" placeholder="Enter your Email" />
             <Button>Subscribe</Button>
           </FormFlex>
@@ -88,9 +92,9 @@ const FormFlex = styled.form`
   flex-wrap: wrap;
   @media (max-width: 768px) {
     flex-direction: column;
-    justify-content: left;
+    justify-content: flex-start;
     align-items: center;
-    width: 400px;
+    width: 100%;
   }
 `;
 const Button = styled.div`
