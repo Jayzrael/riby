@@ -16,6 +16,8 @@ import CobankingApp from "./pages/Product/CobankingApp";
 import AgentBusiness from "./pages/Business/AgentBusiness";
 import Career from "./pages/Career";
 import Terms from "./pages/Terms/Terms";
+import JobPosting from "./pages/JobPosting/JobPosting";
+import ApplicationForm from "./pages/JobPosting/ApplicationForm/ApplicationForm";
 import ScrollToTop from "./component/ScrollToTop";
 import AgentBankApp from "./pages/Product/AgentBank";
 import Privacy from "./pages/Privacy/Privacy";
@@ -44,6 +46,8 @@ function App() {
 
         <Route path="/Terms" element={<Terms />} />
         <Route path="/Privacy" element={<Privacy />} />
+        <Route path="/JobPosting" element={<JobPosting />} />
+        <Route path="/ApplicationForm" element={<ApplicationForm />} />
 
         <Route path="/Career" element={<Career />} />
         <Route path="*" element={<ErrorPage />} />
