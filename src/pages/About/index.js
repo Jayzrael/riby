@@ -1,46 +1,150 @@
 import React from "react";
+import styled from "styled-components";
 import Footer from "../../component/Footer";
 import SupportWidget from "../../component/SupportWidget";
 import "./About.css";
-// import Footer from "../../component/Footer/Footer";
+import AboutpageHero from "./Aboutpage-hero/Aboutpage-hero";
+import AboutpageSection1 from "./Aboutpage-section1/Aboutpage-section1";
+import AboutpageSection2 from "./Aboutpage-section2/Aboutpage-section2";
+import OurMission from "./OurMission/OurMission";
+import OurPrep2 from "./OurPrep2/OurPrep2";
+import OurPreposition from "./OurPreposition/OurPreposition";
+import OurVision from "./OurVision/OurVision";
+import SingleImage from "./SingleImage-section/SingleImage-section";
 
 const About = () => {
+
+  const Members = [
+    {
+      image: "",
+      memberName: "Member Name",
+      position: "Position"
+    },
+    {
+      image: "",
+      memberName: "Member Name",
+      position: "Position"
+    },
+    {
+      image: "",
+      memberName: "Member Name",
+      position: "Position"
+    },
+    {
+      image: "",
+      memberName: "Member Name",
+      position: "Position"
+    },
+    {
+      image: "",
+      memberName: "Member Name",
+      position: "Position"
+    },
+    {
+      image: "",
+      memberName: "Member Name",
+      position: "Position"
+    },
+    {
+      image: "",
+      memberName: "Member Name",
+      position: "Position"
+    },
+    {
+      image: "",
+      memberName: "Member Name",
+      position: "Position"
+    }
+  ]
+
   return (
     <>
       <div className="abt-container">
-        <div className="abtHero">
-          <h1>About Riby</h1>
-          <p>
-            We assist individuals in economy clusters, SMEs, Coopertives and Trade Groups access
-            financial services through our digital platrforms.
-          </p>
-        </div>
-        <div className="aboutContent">
-          <div className="aboutContentText">
-            <h3>The BetterTogether Story</h3>
-            <p>
-              Riby is a group-based digital platform focused on enabling access to collective growth
-              for 63 million banked, unbanked and undeserved Nigerians.
-            </p>
-            <p>
-              Collectively, Riby have supported over 4 million Nigerians(both formal and informal)
-              across 20 states in accessing financial services.
-            </p>
-          </div>
-          <img src="/Betatogether.png" alt="" className="aboutContentImg" />
-        </div>
-        <div className="mission">
-          <h1>Our Mission</h1>
-          <p>
-            Our mission is to keep helping millions of Africans achieve better financial access and
-            stability.
-          </p>
-        </div>
+        <AboutpageHero />
+        <AboutpageSection1 />
+        <AboutpageSection2 />
+        <SingleImage />
+        <OurVision />
+        <OurMission />
+        <OurPreposition />
+        <OurPrep2 />
+        <OurTeam>
+          <h1>Our Team</h1>
+        </OurTeam>
+        <FlexContainer>
+          {Members.map((Members, index) => (
+            <MemberCard key={index}>
+              <img src={Members.image} />
+              <MemberContent>
+                <p>{Members.memberName}</p>
+                <span>{Members.position}</span>
+              </MemberContent>
+            </MemberCard>
+          ))}
+        </FlexContainer>
       </div>
-      <SupportWidget/>
+      <SupportWidget />
       <Footer />
     </>
   );
 };
+
+
+const OurTeam = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 70px;
+`;
+
+
+const FlexContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  margin-bottom: 70px;
+`;
+
+
+const MemberCard = styled.div`
+  width: 250px;
+  height: 100%;
+  min-height: 250px;
+  padding: 7px;
+  background: #D9D9D9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 10px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
+`;
+
+const MemberContent = styled.div`
+  padding: 3px 6px;
+  h6 {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 600;
+    color: #0f0738;
+    font-size: 1.2rem;
+  }
+  p {
+    margin: 0;
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 00;
+    font-size: 0.9rem;
+    line-height: 16px;
+    color: #0f0738;
+  }
+`;
 
 export default About;

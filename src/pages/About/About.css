@@ -1,91 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 .abt-container {
     width: 100%;
     height: 100%;
     min-height: 80vh;
 }
 
-.abtHero {
-    width: 100%;
-    height: 100%;
-    min-height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/public/eat.png);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.abtHero h1 {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 700;
-    /* font-size: 40px; */
-    text-align: center;
-    color: #ffffff;
-}
-
-.abtHero p {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    text-align: center;
-    color: #ffffff;
-    width: 70%;
-}
-
-.aboutContent {
-    width: 100%;
-    height: 100%;
-    min-height: 70vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.aboutContentText {
-    width: 500px;
-}
-
-.aboutContentText>h3 {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-}
-
-.aboutContentText>p {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.1rem;
-}
-
-.aboutContentImg {
-    width: 400px;
-}
-
-.mission {
-    width: 100%;
-    height: 100%;
-    min-height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.mission p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    width: 70%;
-    text-align: center;
+.members-container {
+    background-color: black;
 }
 
 .hello {
@@ -107,9 +29,11 @@
         width: 100%;
         font-size: 1rem;
     }
+
     .aboutContentText>h3 {
         text-align: center;
     }
+
     .mission p {
         width: 100%;
     }
