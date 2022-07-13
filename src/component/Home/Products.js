@@ -74,15 +74,16 @@ const Products = () => {
 export default Products;
 
 const ProductContent = styled.div`
-  position: absolute;
-  width: inherit;
-  height: inherit;
-  display: flex;
-  justify-content: end;
-  align-items: baseline;
-  flex-direction: column;
   padding: 20px;
-  white-space: break-spaces;
+  // position: absolute;
+  // width: inherit;
+  // height: inherit;
+  // display: flex;
+  // justify-content: end;
+  // align-items: baseline;
+  // flex-direction: column;
+  // padding: 20px;
+  // white-space: break-spaces;
 `;
 const Desc = styled.div`
   font-family: "Outfit";
@@ -90,6 +91,10 @@ const Desc = styled.div`
   font-weight: 400;
   font-size: 1rem;
   line-height: 24px;
+
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
 `;
 const TextHead = styled.p`
   font-family: "Outfit";
@@ -115,9 +120,11 @@ const Logo = styled.img`
   width: 40px;
 `;
 const ProductCard = styled.div`
-  width: 600px;
+  width: 500px;
   display: inline-block;
-  height: 400px;
+
+  min-height: 30vh;
+  height: 100%;
   margin: 20px;
   position: relative;
   color: #fff;
@@ -130,9 +137,10 @@ const ProductCard = styled.div`
   }
 `;
 const ProductContainer = styled.div`
-  white-space: nowrap;
   color: whitesmoke;
-  display:flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 `;
 

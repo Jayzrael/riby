@@ -78,6 +78,11 @@ const Card = styled.div`
   align-items: center;
   justify-content: center;
   margin: 10px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 const FlexContainer = styled.div`
   display: flex;

@@ -47,7 +47,7 @@ const TextContainer = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
-    text-align: left;
+    text-align: center;
   }
 `;
 const Wrapper = styled.div`
@@ -69,5 +69,5 @@ const Container = styled.div`
   width: 100%;
   height: 100%;
   min-height: 70vh;
-  background-color: #ccc;
+  // background-color: #ccc;
 `;
