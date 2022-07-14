@@ -7,10 +7,15 @@ import { useNavigate } from "react-router-dom";
 
 const MobileNav = ({ toggleNav }) => {
   const navigate = useNavigate();
-  const [toggle, setToggle] = useState(false);
+  const [prodToggle, setProdToggle] = useState(false);
+  const [bizToggle, setBizToggle] = useState(false);
+
   const handleToggle = () => {
-    setToggle(!toggle);
-    console.log("clicked");
+    setProdToggle(!prodToggle);
+  };
+
+  const handleBizToggle = () => {
+    setBizToggle(!bizToggle);
   };
 
   const navigatePage = (page) => {
@@ -28,7 +33,7 @@ const MobileNav = ({ toggleNav }) => {
         <Nav onClick={handleToggle}>
           Product
           <FaAngleDown />
-          {toggle && (
+          {prodToggle && (
             <ProductItem>
               <Nav onClick={() => navigatePage("/product/CobankingApp")}>Riby CoBanking</Nav>
               <Nav onClick={() => navigatePage("/product/agentbank")}>AgentBanking</Nav>
@@ -37,9 +42,20 @@ const MobileNav = ({ toggleNav }) => {
           )}
         </Nav>
 
-        <Nav>
+        <Nav onClick={handleBizToggle}>
           Business
           <FaAngleDown />
+          {bizToggle && (
+            <ProductItem>
+              <Nav onClick={() => navigatePage("/business/Cooperative")}>Cooperative Business</Nav>
+              <Nav onClick={() => navigatePage("/business/AgentBusiness")}>
+                Agent Network Business
+              </Nav>
+              <Nav onClick={() => navigatePage("/business/FinancialInclusion")}>
+                Financial Inclusion Programs
+              </Nav>
+            </ProductItem>
+          )}
         </Nav>
         <Nav onClick={() => navigatePage("/about")}>About Us</Nav>
         <Nav>
@@ -84,7 +100,8 @@ const Nav = styled.div`
   }
 `;
 const Wrapper = styled.div`
-  width: 250px;
+  min-width: 250px;
+  // width: 100%;
   height: 100vh;
   transition: all 200ms ease;
   float: right;

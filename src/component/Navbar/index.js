@@ -2,6 +2,8 @@ import { useState } from "react";
 import styled from "styled-components";
 import { FaAngleDown } from "react-icons/fa";
 import { Dropdowns } from "../Dropdown";
+import { BusinessDropdown } from "../Dropdown/BusinessDropdown";
+
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import MobileNav from "./MobileNav";
@@ -9,9 +11,14 @@ import MobileNav from "./MobileNav";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [navIcon, setNavIcon] = useState(false);
+  const [businessNav, setBusinessNav] = useState(false);
 
   const handleToggleNav = () => {
     setNavIcon(!navIcon);
+  };
+
+  const handleBusinesNav = () => {
+    setBusinessNav(!businessNav);
   };
 
   const handleToggle = () => {
@@ -37,14 +44,20 @@ const Navbar = () => {
             {toggle && <Dropdowns />}
           </Nav>
 
-          <Nav>
+          <Nav onClick={handleBusinesNav}>
             Business
             <FaAngleDown />
+            {businessNav && <BusinessDropdown />}
           </Nav>
           <Link to="/about">
             <Nav>About Us</Nav>
           </Link>
-          <Nav>Blog</Nav>
+          <Nav>
+            {" "}
+            <a href="https://medium.com/riby" target="_blank" rel="noreferrer">
+              Blog
+            </a>
+          </Nav>
           <Link to="/contact">
             <Nav>Contact</Nav>
           </Link>
@@ -70,6 +83,13 @@ const Nav = styled.div`
   color: #0f0738;
   &:hover {
     color: #ee095b;
+  }
+  a {
+    color: #0f0738;
+
+    &:hover {
+      color: #ee095b;
+    }
   }
 `;
 const Navigation = styled.div`

@@ -1,7 +1,7 @@
 import coBank from "../image/RibyLogomark.svg";
 import agentLogo from "../image/agentlogomark.svg";
-import ribygo from "../image/ribygo.png";
-import ribycoop from "../image/ribycoop.png";
+// import ribygo from "../image/ribygo.png";
+// import ribycoop from "../image/ribycoop.png";
 
 export const ProductMenu = [
   {
@@ -17,22 +17,22 @@ export const ProductMenu = [
     img: agentLogo,
     link: "/product/agentbank",
   },
-  {
-    productName: "RibyGo",
-    descrip: "Individual or group savings mobile app",
-    img: ribygo,
-    link: "",
-  },
+  // {
+  //   productName: "RibyGo",
+  //   descrip: "Individual or group savings mobile app",
+  //   img: ribygo,
+  //   link: "",
+  // },
   {
     productName: "Riby CoAgent ",
     descrip: "A cooperative collection and management app",
     img: agentLogo,
     link: "/product/coagent",
   },
-  {
-    productName: "Cooper",
-    descrip: "A cooperative regularly platform for government and agencies",
-    img: ribycoop,
-    link: "",
-  },
+  // {
+  //   productName: "Cooper",
+  //   descrip: "A cooperative regularly platform for government and agencies",
+  //   img: ribycoop,
+  //   link: "",
+  // },
 ];

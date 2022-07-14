@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import "./Dropdown.css";
+// import "./Dropdown.css";
 import styled from "styled-components";
 import { ProductMenu } from "../MenuItems";
 
@@ -60,8 +60,8 @@ const Container = styled.div`
   left: -60px;
   padding: 20px;
   z-index: 1;
-  background: #ffffff;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+  background: #f8feff;
+  box-shadow: 0px 0px 6px 2px rgba(15, 7, 56, 0.1);
   border-radius: 10px;
 `;
 

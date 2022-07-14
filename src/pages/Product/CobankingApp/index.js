@@ -28,12 +28,16 @@ const CobankingApp = () => {
               Associations and Savings Groups.
             </p>
             <ButtonContainer>
-              <a href="#">
+              <a
+                href="https://play.google.com/store/apps/details?id=ng.riby.rcb"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={googleStoreImg} alt="" />
               </a>
-              <a href="#">
+              {/* <a href="#">
                 <img src={playStoreImg} alt="" />
-              </a>
+              </a> */}
             </ButtonContainer>
           </HeroText>
           <HeroImg src="/mockup1.png" />
@@ -79,12 +83,16 @@ const CobankingApp = () => {
               contributions as at when due, easily and on the go
             </p>
             <ButtonContainer>
-              <a href="#">
+              <a
+                href="https://play.google.com/store/apps/details?id=ng.riby.rcb"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={googlelight} alt="" />
               </a>
-              <a href="#">
+              {/* <a href="#">
                 <img src={playstorelight} alt="" />
-              </a>
+              </a> */}
             </ButtonContainer>
           </Content>
         </ProductAction>
