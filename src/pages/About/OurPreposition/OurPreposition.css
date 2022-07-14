@@ -24,11 +24,25 @@
    width: 40%;
 }
 
+@media (max-width: 768px) {
+   .Our-proposition-text {
+      width: 100%;
+      margin-top: 60px;
+      text-align: justify;
+   }
+}
+
 .Our-proposition-text>h3 {
    font-family: "Poppins";
    font-style: normal;
    font-weight: 600;
    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+   .Our-proposition-text>h3 {
+      text-align: center;
+   }
 }
 
 .Our-proposition-text>p {

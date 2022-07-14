@@ -24,6 +24,13 @@
    width: 40%;
 }
 
+@media (max-width: 768px) {
+   .Our-prop2-text {
+      width: 100%;
+      margin-top: 40px;
+   }
+}
+
 .Our-proposition-text>p {
    font-family: "Poppins";
    font-style: normal;

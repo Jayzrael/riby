@@ -24,6 +24,14 @@
    width: 40%;
 }
 
+@media (max-width: 768px) {
+   .aboutContentText {
+      width: 100%;
+      margin-top: 60px;
+      text-align: justify;
+   }
+}
+
 .aboutContentText>h3 {
    font-family: "Poppins";
    font-style: normal;

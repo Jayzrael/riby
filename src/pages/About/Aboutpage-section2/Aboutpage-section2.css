@@ -12,6 +12,13 @@
    padding: 50px;
 }
 
+@media (max-width: 768px) {
+   .Our-promises {
+      width: 100%;
+      padding: 50px;
+   }
+}
+
 .Our-promises>h1 {
    font-family: 'Outfit';
    font-style: normal;
