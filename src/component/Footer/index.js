@@ -78,7 +78,8 @@ const Footer = () => {
           <ColumnHead>Newsletter</ColumnHead>
           <p>Be the First to know about our news.</p>
           <FormFlex style={{ display: "flex", alignItems: "center" }}>
-            <Input type="text" placeholder="Enter your Email" />
+            <Input
+              type="text" placeholder="Enter your Email" />
             <Button>Subscribe</Button>
           </FormFlex>
         </Column>
