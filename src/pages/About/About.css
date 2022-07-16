@@ -127,6 +127,29 @@
     line-height: 24px;
 }
 
+
+.single-image {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-image-placeholder {
+    width: 90%;
+    padding: 270px;
+    background-color: #D9D9D9;
+}
+
+@media (max-width: 768px) {
+    .single-image-placeholder {
+        width: 70%;
+        padding: 200px;
+        background-color: #D9D9D9;
+    }
+}
+
 .members-container {
     background-color: black;
 }
