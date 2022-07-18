@@ -1,82 +1,98 @@
-import React from "react";
-import "./Cooperative.css";
-import Footer from "../../../component/Footer";
-import Cardbox from "../../../component/Cardbox/Cardbox";
+import styled from "styled-components";
+import { Container, Hero, Phead, ButtonContainer } from "./style";
+import { ProductCard } from "../CardContainer";
+import logo from "../../../image/brandLogo.png";
+import googleStoreImg from "../../../image/google.png";
+// import playStoreImg from "../../../image/playstore.png";
 import SupportWidget from "../../../component/SupportWidget";
+import Footer from "../../../component/Footer";
 
 const Cooperative = () => {
-  const cardItems = [
-    {
-      number: "1",
-      text: "We offer this services specifically to cooperatives that are not tech inclined to use the platform, needs us to serve as an external management consultants or in some cases carry out the activities of a cooperative admin.",
-    },
-    {
-      number: "2",
-      text: "Effective profiling for various financial opportunities like savings, investment and loans.",
-    },
-    {
-      number: "3",
-      text: "Provision of financial literacy through our enrich programs.",
-    },
-  ];
-
   return (
-    <>
-      <div className="main-section">
-        <h1>COOPERATIVE MANAGEMENT</h1>
+    <Container>
+      <Hero>
+        <h3>Cooperative Business</h3>
         <p>
-          We have Years of Experience Providing Technology and Management <br /> Solutions for
-          Cooperatives
+          We have years of experience providing technology and management solutions for
+          Cooperatives, Savings Groups and Associations.
         </p>
-      </div>
-      <section className="second-section">
-        <div className="second-section-text">
-          <h1>
-            Technology for cooperatives: <br />
-            RCB (RIBY COBANKING PLATFORM):
-          </h1>
-          <p>
-            A COOPERATIVE DIGITAL MANAGEMENT PLATFORM THAT SUITS YOUR NEEDS Riby CoBanking is a
-            complete financial management tool for cooperatives, trade groups, associations and
-            savings group. Save your funds, make contributions, invest at great interest rates, and
-            get access to various loan packages.
-          </p>
-        </div>
-        <img src="/Computer.png" alt="" />
-      </section>
-      <section className="third-section">
-        <div className="third-section-text">
-          <h1>Services to cooperatives: RCS (RIBY COOPERATIVE SERVICES):</h1>
-          <p>
-            It is designed to offer consulting and management services to both formal and informal
-            cooperatives, trade groups and associations. We sign up cooperatives to be manage by RCS
-            on the RCB platform.
-          </p>
-        </div>
-        <img src="/services.png" alt="" />
-      </section>
-      <section className="fouth-section">
-        {cardItems.map((item) => (
-          <Cardbox key={item.id} number={item.number} text={item.text} />
-        ))}
-      </section>
-
-      <div className="last-section">
-        <h1>Activities</h1>
-        <div className="list-section">
-          <ul>
-            <li>Customer Identification</li>
-            <li>Customer Education</li>
-            <li>Customer On-boarding</li>
-            <li>Activation and Engagement</li>
-            <li>Management</li>
-          </ul>
-        </div>
-      </div>
+      </Hero>
+      <Phead>Cooperative society</Phead>
+      <ProductCard
+        ta
+        fd
+        textHead={
+          <TextHead>
+            <img src={logo} alt="logo-img" /> Riby Cobanking
+          </TextHead>
+        }
+        textDesc={
+          <TextDesc>
+            Riby CoBanking is a complete financial management tool for Cooperatives, Trade Groups,
+            Associations and Savings Groups. Members can save and make contributions seamlessly,
+            create and manage different loans efficiently, make investments together and enjoy
+            access to financial services provided by Riby’s financial partners.
+          </TextDesc>
+        }
+        btn={
+          <ButtonContainer>
+            <a
+              href="https://play.google.com/store/apps/details?id=ng.riby.rcb"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={googleStoreImg} alt="" />
+            </a>
+            {/* <a href="#">
+              <img src={playStoreImg} alt="" />
+            </a> */}
+          </ButtonContainer>
+        }
+      />
+      <Phead>Cooperative Services</Phead>
+      <ProductCard
+        ta
+        textHead={<TextHead>Riby Cooperative Services</TextHead>}
+        textDesc={
+          <>
+            <TextDesc>
+              Our service unit is designed to offer consulting and management services to both
+              Formal and Informal Cooperatives, Trade Groups and Associations. Our service includes:
+            </TextDesc>
+            <ul>
+              <Li>Cooperative setup and registration with the regulatory body</Li>
+              <Li>Cooperative branding and website development</Li>
+              <Li>Administrative management of Cooperative activities</Li>
+              <Li>
+                Provision of financial literacy and engagement for Informal Groups and Cooperatives
+              </Li>
+              <Li>
+                Linking Cooperatives and Groups to Riby partnered financial service providers eg
+                credit and loans institution, insurance organisation, investments firms, HMOs etc
+              </Li>
+            </ul>
+          </>
+        }
+      />
       <SupportWidget />
       <Footer />
-    </>
+    </Container>
   );
 };
-
 export default Cooperative;
+
+const TextHead = styled.h4`
+  margin: 0;
+  padding: 0;
+`;
+const TextDesc = styled.p`
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+`;
+
+const Li = styled.li`
+  margin: 0;
+  padding: 0px;
+  font-size: 12px;
+`;

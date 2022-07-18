@@ -18,7 +18,7 @@ export const TopFlex = styled.div`
 export const Wrapper = styled.div`
   width: 100%;
   height: 100%;
-  min-height: 50vh;
+  min-height: 20vh;
   padding: 20px 50px;
   display: flex;
   justify-content: center;
@@ -28,6 +28,6 @@ export const Wrapper = styled.div`
 export const Container = styled.div`
   width: 100%;
   height: 100%;
-  min-height: 50vh;
+  min-height: 20vh;
   background: transparent;
 `;

@@ -12,9 +12,9 @@ import {
 import { ProductCard } from "./ProductCard";
 import SupportWidget from "../../../component/SupportWidget";
 import googleStoreImg from "../../../image/google.png";
-import playStoreImg from "../../../image/playstore.png";
+// import playStoreImg from "../../../image/playstore.png";
 import googlelight from "../../../image/googlelight.png";
-import playstorelight from "../../../image/playstorelight.png";
+// import playstorelight from "../../../image/playstorelight.png";
 import Footer from "../../../component/Footer";
 const CobankingApp = () => {
   return (
@@ -28,12 +28,16 @@ const CobankingApp = () => {
               Associations and Savings Groups.
             </p>
             <ButtonContainer>
-              <a href="#">
+              <a
+                href="https://play.google.com/store/apps/details?id=ng.riby.rcb"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={googleStoreImg} alt="" />
               </a>
-              <a href="#">
+              {/* <a href="#">
                 <img src={playStoreImg} alt="" />
-              </a>
+              </a> */}
             </ButtonContainer>
           </HeroText>
           <HeroImg src="/mockup1.png" />
@@ -79,12 +83,16 @@ const CobankingApp = () => {
               contributions as at when due, easily and on the go
             </p>
             <ButtonContainer>
-              <a href="#">
+              <a
+                href="https://play.google.com/store/apps/details?id=ng.riby.rcb"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={googlelight} alt="" />
               </a>
-              <a href="#">
+              {/* <a href="#">
                 <img src={playstorelight} alt="" />
-              </a>
+              </a> */}
             </ButtonContainer>
           </Content>
         </ProductAction>

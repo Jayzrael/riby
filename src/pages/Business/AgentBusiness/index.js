@@ -1,55 +1,96 @@
-import React from "react";
-import AgentBusinessCards from "../../../component/AgentBusinessCards/AgentBusinessCards";
-import Footer from "../../../component/Footer";
+import styled from "styled-components";
+import { Container, Hero } from "../CooperativeManagement/style";
+import { ProductCard } from "../CardContainer";
+
 import SupportWidget from "../../../component/SupportWidget";
-import "./AgentBusiness.css";
+import Footer from "../../../component/Footer";
 
 const AgentBusiness = () => {
   return (
-    <>
-      <div className="agentBusiness-section">
-        <h1>AGENT NETWORK BUSINESS</h1>
+    <Container>
+      <Hero>
+        <h3>Agent Network Business</h3>
         <p>
-          Our agents are trained and equipped to provide micro banking services within their
-          location or community. This is aimed at providing more value and service offering to boost
-          revenue generation for the agents in addition to cooperative services being offered to the
-          cooperatives and the general public.
+          Our Agents are trained and equipped to provide micro banking services within their
+          location or community. This is aimed at providing value and service offering to boost
+          revenue generation for those interested in working with Riby.
         </p>
-      </div>
-      <div className="agenBusiness-container">
-        <section className="agentBusinessCards">
-          <AgentBusinessCards
-            boldText="Cooperative Agents:"
-            middleText="These are agents carrying out Cooperatives services, these includes:"
-            list1="- Savings collection"
-            list2="- Loan booking"
-            list3="- Loan repayment"
-          />
-          <AgentBusinessCards
-            boldText="Banking Agent:"
-            middleText="These are agents that carry out banking services which includes:"
-            list1="- Cash out (Withdrawal)"
-            list2="- Cash in (Deposit)"
-            list3="- Bills payment"
-          />
-          <AgentBusinessCards
-            boldText="Thrift Agents: "
-            middleText="These are agents that mop up cash from the cooperative members or individuals, either in the market place, offices, shops, homes or anywhere they needed. They basically mop cash from the public"
-            list1="- Cash Collection"
-          />
-        </section>
-        <section className="singleImage">
-          <img src="" alt="" />
-        </section>
-        <div className="doubleImages">
-          <img src="" alt="" />
-          <img src="" alt="" />
-        </div>
-      </div>
+      </Hero>
+
+      <ProductCard
+        ta
+        fd
+        textHead={<TextHead>Cooperative Agents</TextHead>}
+        textDesc={
+          <>
+            <TextDesc>
+              These are Agents carrying out Cooperatives services, these includes:
+            </TextDesc>
+            <ul>
+              <Li>Cooperative identification and profiling </Li>
+              <Li>Cooperative branding and website development</Li>
+              <Li>Cooperative and member registration and on-boardings</Li>
+              <Li>Savings collection </Li>
+              <Li>Loan booking</Li>
+              <Li>Loan repayment</Li>
+            </ul>
+          </>
+        }
+      />
+
+      <ProductCard
+        ta
+        textHead={<TextHead>Banking Agents</TextHead>}
+        textDesc={
+          <>
+            <TextDesc>These are Agents that carry out banking services which includes:</TextDesc>
+            <ul>
+              <Li>Cash out (Withdrawal) </Li>
+              <Li>Cash in (Deposit)</Li>
+              <Li>Bills payment</Li>
+            </ul>
+          </>
+        }
+      />
+      <ProductCard
+        ta
+        fd
+        textHead={<TextHead>Agency Services</TextHead>}
+        textDesc={
+          <>
+            <TextDesc>
+              We have on the ground network of trained and skilled Agents, offering value and
+              support to customers across Nigeria far beyond the reaches of technology. These
+              services include:
+            </TextDesc>
+            <ul>
+              <Li>Address verification </Li>
+              <Li>Market penetration</Li>
+              <Li>Field research</Li>
+              <Li>Registrations and Enumeration </Li>
+            </ul>
+          </>
+        }
+      />
       <SupportWidget />
       <Footer />
-    </>
+    </Container>
   );
 };
-
 export default AgentBusiness;
+
+const TextHead = styled.h4`
+  margin: 0;
+  padding: 0;
+`;
+const TextDesc = styled.p`
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+`;
+
+const Li = styled.li`
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+`;
