@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Career-Section2.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 import { jobs } from "./JobData";
 import Modal from "../../../component/Modal";
