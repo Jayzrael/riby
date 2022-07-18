@@ -1,16 +1,21 @@
 import { useState } from "react";
-import { Dropdowns } from "../Dropdown";
-import styled from "styled-components";
+// import { Dropdowns } from "../Dropdown";
+import styled, { keyframes } from "styled-components";
 import { FaAngleDown, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const MobileNav = ({ toggleNav }) => {
   const navigate = useNavigate();
-  const [toggle, setToggle] = useState(false);
+  const [prodToggle, setProdToggle] = useState(false);
+  const [bizToggle, setBizToggle] = useState(false);
+
   const handleToggle = () => {
-    setToggle(!toggle);
-    console.log("clicked");
+    setProdToggle(!prodToggle);
+  };
+
+  const handleBizToggle = () => {
+    setBizToggle(!bizToggle);
   };
 
   const navigatePage = (page) => {
@@ -28,7 +33,7 @@ const MobileNav = ({ toggleNav }) => {
         <Nav onClick={handleToggle}>
           Product
           <FaAngleDown />
-          {toggle && (
+          {prodToggle && (
             <ProductItem>
               <Nav onClick={() => navigatePage("/product/CobankingApp")}>Riby CoBanking</Nav>
               <Nav onClick={() => navigatePage("/product/agentbank")}>AgentBanking</Nav>
@@ -37,9 +42,20 @@ const MobileNav = ({ toggleNav }) => {
           )}
         </Nav>
 
-        <Nav>
+        <Nav onClick={handleBizToggle}>
           Business
           <FaAngleDown />
+          {bizToggle && (
+            <ProductItem>
+              <Nav onClick={() => navigatePage("/business/Cooperative")}>Cooperative Business</Nav>
+              <Nav onClick={() => navigatePage("/business/AgentBusiness")}>
+                Agent Network Business
+              </Nav>
+              <Nav onClick={() => navigatePage("/business/FinancialInclusion")}>
+                Financial Inclusion Programs
+              </Nav>
+            </ProductItem>
+          )}
         </Nav>
         <Nav onClick={() => navigatePage("/about")}>About Us</Nav>
         <Nav>
@@ -83,8 +99,15 @@ const Nav = styled.div`
     color: #ee095b;
   }
 `;
+
+const navAnimate = keyframes`
+0%{opacity:0}
+40%{transform:translateX(250px); }
+// 100%{opacity:1}
+`;
 const Wrapper = styled.div`
-  width: 250px;
+  min-width: 0;
+  // width: 100%;
   height: 100vh;
   transition: all 200ms ease;
   float: right;
@@ -94,7 +117,9 @@ const Wrapper = styled.div`
 
   color: black;
   right: 0;
+  animation: ${navAnimate} 0.5s ease;
 `;
+
 const Container = styled.div`
   width: 100%;
   height: 100%;
@@ -103,5 +128,5 @@ const Container = styled.div`
   left: 0;
   background: rgb(0, 0, 0, 0.6);
   z-index: 1;
-  transition: all 350ms ease-in-out;
+  transition: all 0.5s ease;
 `;

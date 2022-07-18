@@ -23,8 +23,6 @@ const Footer = () => {
       img: "/tube.png",
       link: "https://www.youtube.com/channel/UC4R1hiwCXMQT-_VFS6Q0LcA",
     },
-
-    ,
   ];
 
   return (
@@ -47,8 +45,8 @@ const Footer = () => {
           </div>
           <div style={{ display: "flex", alignItems: "center" }}>
             <img src="/mail.png" alt="" style={{ width: "15px", marginRight: "10px" }} />
-            <a href="mailto:info@riby.me" style={{ color: "#fff" }}>
-              info@riby.me
+            <a href="mailto:info@riby.ng" style={{ color: "#fff" }}>
+              info@riby.ng
             </a>
           </div>
           <div style={{ display: "flex", alignItems: "center" }}>
@@ -64,7 +62,14 @@ const Footer = () => {
           <ColumnHead>Quick Links</ColumnHead>
           <Ul>
             <UlP to="/about">About Us</UlP>
-            <UlP to="/blogs">Blogs</UlP>
+            <UlPhref
+              href="https://medium.com/riby"
+              // style={{ color: "#0f0738" }}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Blog
+            </UlPhref>
             <UlP to="/contact">Contact Us</UlP>
             {/* <UlP to="/partners">Partners ad Program</UlP>` */}
             <UlP to="/career">Career </UlP>
@@ -135,6 +140,15 @@ const Span = styled.p`
   padding-left: 10px;
 `;
 const UlP = styled(Link)`
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  &:hover {
+    color: red;
+  }
+`;
+const UlPhref = styled.a`
   font-size: 1.2rem;
   color: #fff;
   margin: 0;
