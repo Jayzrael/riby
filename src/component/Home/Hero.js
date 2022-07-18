@@ -6,48 +6,49 @@ const Hero = () => {
     <Container>
       <Wrapper>
         <TextContainer>
-          <TextH1>
-            Building Affordable and Accessible Digital Platform to Promote Collective Growth
-          </TextH1>
-          <TextP>
-            Riby is a digital ad financial company and is one of Nigeria's foreemost digital
-            platform providers for Cooperatives, Savings Groups, Associations, Micro & Small-Scale
-            Enterprises and Trade Groups
-          </TextP>
+          <h1>Building Affordable and Accessible Digital Platform to Promote Collective Growth</h1>
+          <p>
+            RIBY is a digital and financial services company and is one of Nigeria’s foremost
+            digital platform providers for Cooperatives, Savings Groups, Associations, Micro &
+            Small-Scale Enterprises, and Trade Groups
+          </p>
         </TextContainer>
-        <Image></Image>
       </Wrapper>
     </Container>
   );
 };
 export default Hero;
 
-const Image = styled.div`
-  width: 400px;
-  height: 400px;
-  background: gray;
-`;
-const TextP = styled.p`
-  font-family: "Outfit";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  padding-right: 20px;
-`;
-
-const TextH1 = styled.h2`
-  font-weight: 600;
-  font-size: 32px;
-  color: #0f0738;
-`;
 const TextContainer = styled.div`
-  width: 600px;
-  padding-right: 20px;
+  width: 75%;
 
   @media (max-width: 768px) {
     width: 100%;
-    text-align: center;
+    padding: 20px;
+    text-align: left;
+  }
+
+  h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    // line-height: 88px;
+    color: #0f0738;
+    @media (max-width: 768px) {
+      width: 100%;
+      text-align: left;
+      font-size: 2.5rem;
+    }
+  }
+
+  p {
+    width: 50%;
+    margin: 0;
+    font-size: 1.2rem;
+    @media (max-width: 768px) {
+      width: 100%;
+      text-align: left;
+    }
   }
 `;
 const Wrapper = styled.div`
@@ -57,13 +58,14 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  // flex-wrap: wrap;
   color: #0f0738;
 
-  @media (max-width: 768px) {
-    padding: 30px;
-    flex-wrap: wrap-reverse;
-  }
+  // @media (max-width: 768px) {
+  //   padding: 30px;
+  //   flex-wrap: wrap-reverse;
+  // }
 `;
 const Container = styled.div`
   width: 100%;

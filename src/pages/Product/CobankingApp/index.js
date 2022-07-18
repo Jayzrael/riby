@@ -12,9 +12,9 @@ import {
 import { ProductCard } from "./ProductCard";
 import SupportWidget from "../../../component/SupportWidget";
 import googleStoreImg from "../../../image/google.png";
-import playStoreImg from "../../../image/playstore.png";
+// import playStoreImg from "../../../image/playstore.png";
 import googlelight from "../../../image/googlelight.png";
-import playstorelight from "../../../image/playstorelight.png";
+// import playstorelight from "../../../image/playstorelight.png";
 import Footer from "../../../component/Footer";
 const CobankingApp = () => {
   return (

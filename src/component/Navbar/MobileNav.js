@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Dropdowns } from "../Dropdown";
-import styled from "styled-components";
+// import { Dropdowns } from "../Dropdown";
+import styled, { keyframes } from "styled-components";
 import { FaAngleDown, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const MobileNav = ({ toggleNav }) => {
@@ -99,8 +99,14 @@ const Nav = styled.div`
     color: #ee095b;
   }
 `;
+
+const navAnimate = keyframes`
+0%{opacity:0}
+40%{transform:translateX(250px); }
+// 100%{opacity:1}
+`;
 const Wrapper = styled.div`
-  min-width: 250px;
+  min-width: 0;
   // width: 100%;
   height: 100vh;
   transition: all 200ms ease;
@@ -111,7 +117,9 @@ const Wrapper = styled.div`
 
   color: black;
   right: 0;
+  animation: ${navAnimate} 0.5s ease;
 `;
+
 const Container = styled.div`
   width: 100%;
   height: 100%;
@@ -120,5 +128,5 @@ const Container = styled.div`
   left: 0;
   background: rgb(0, 0, 0, 0.6);
   z-index: 1;
-  transition: all 350ms ease-in-out;
+  transition: all 0.5s ease;
 `;
