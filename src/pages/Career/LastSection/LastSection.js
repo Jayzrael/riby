@@ -1,12 +1,13 @@
 import "./LastSection.css";
 import { Link } from "react-router-dom";
+import img from "../../../image/applycareerimg.png";
 
 const LastSection = () => {
   return (
     <>
       <section className="last-section">
         <div className="last-section-image">
-          <img src="" alt="" />
+          <img src={img} alt="" />
         </div>
         <div className="last-section-text">
           <h1>Interview Tips</h1>

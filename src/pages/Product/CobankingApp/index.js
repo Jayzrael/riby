@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import {
   HeroImg,
   ProductAction,
@@ -16,31 +16,40 @@ import googleStoreImg from "../../../image/google.png";
 import googlelight from "../../../image/googlelight.png";
 // import playstorelight from "../../../image/playstorelight.png";
 import Footer from "../../../component/Footer";
+import Fade from "react-reveal/Fade";
+
 const CobankingApp = () => {
+  useEffect(() => {
+    document.title = "Download Co-banking App";
+  }, []);
   return (
     <>
       <Container>
         <Hero>
-          <HeroText>
-            <h3>A Digital Cooperative Managment Platform That Suits Your Needs</h3>
-            <p>
-              Riby CoBanking is a complete financial management tool for Cooperatives, Trade Groups,
-              Associations and Savings Groups.
-            </p>
-            <ButtonContainer>
-              <a
-                href="https://play.google.com/store/apps/details?id=ng.riby.rcb"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={googleStoreImg} alt="" />
-              </a>
-              {/* <a href="#">
+          <Fade left>
+            <HeroText>
+              <h3>A Digital Cooperative Managment Platform That Suits Your Needs</h3>
+              <p>
+                Riby CoBanking is a complete financial management tool for Cooperatives, Trade
+                Groups, Associations and Savings Groups.
+              </p>
+              <ButtonContainer>
+                <a
+                  href="https://play.google.com/store/apps/details?id=ng.riby.rcb"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={googleStoreImg} alt="" />
+                </a>
+                {/* <a href="#">
                 <img src={playStoreImg} alt="" />
               </a> */}
-            </ButtonContainer>
-          </HeroText>
-          <HeroImg src="/mockup1.png" />
+              </ButtonContainer>
+            </HeroText>
+          </Fade>
+          <Fade right>
+            <HeroImg src="/mockup1.png" />
+          </Fade>
         </Hero>
         <ProductInfo>
           <ProductCard
@@ -75,27 +84,29 @@ const CobankingApp = () => {
           />
         </ProductInfo>
 
-        <ProductAction>
-          <Content>
-            <h2>Members Contributing With Ease And On The Go</h2>
-            <p>
-              Our app allows members of your group savings or cooperative to promptly save and make
-              contributions as at when due, easily and on the go
-            </p>
-            <ButtonContainer>
-              <a
-                href="https://play.google.com/store/apps/details?id=ng.riby.rcb"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={googlelight} alt="" />
-              </a>
-              {/* <a href="#">
+        <Fade bottom>
+          <ProductAction>
+            <Content>
+              <h2>Members Contributing With Ease And On The Go</h2>
+              <p>
+                Our app allows members of your group savings or cooperative to promptly save and
+                make contributions as at when due, easily and on the go
+              </p>
+              <ButtonContainer>
+                <a
+                  href="https://play.google.com/store/apps/details?id=ng.riby.rcb"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={googlelight} alt="" />
+                </a>
+                {/* <a href="#">
                 <img src={playstorelight} alt="" />
               </a> */}
-            </ButtonContainer>
-          </Content>
-        </ProductAction>
+              </ButtonContainer>
+            </Content>
+          </ProductAction>
+        </Fade>
       </Container>
       <SupportWidget />
       <Footer />

@@ -18,11 +18,11 @@
     flex-direction: column;
 }
 
-.career-section>h1 {
+.career-hero>h1 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 3rem;
-    color: white;
+    color: #0f0738;
     text-align: center;
 }
 

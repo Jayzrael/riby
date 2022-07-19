@@ -1,5 +1,7 @@
-import react from "react";
+// import react from "react";
 import styled from "styled-components";
+import Fade from "react-reveal/Fade";
+
 const Purpose = () => {
   const data = [
     {
@@ -25,24 +27,28 @@ const Purpose = () => {
   return (
     <Container>
       <Wrapper>
-        <HeaderTxt>Save Consistently, Borrow Easily and Invest Together</HeaderTxt>
-        <HeaderP>
-          In partnership with banks, relevant corporates, payment & card processing companies, the
-          Riby platforms helps micro/small businesses and middle to low Income salary earners within
-          these groups/clusters to create and manage bank or mobile money accounts and gain access
-          to financial services
-        </HeaderP>
-        <FlexContainer>
-          {data.map((data, index) => (
-            <Card key={index}>
-              <Img src={data.img} />
-              <Content>
-                <h6>{data.textHeader}</h6>
-                <p>{data.description}</p>
-              </Content>
-            </Card>
-          ))}
-        </FlexContainer>
+        <Fade top>
+          <HeaderTxt>Save Consistently, Borrow Easily and Invest Together</HeaderTxt>
+          <HeaderP>
+            In partnership with banks, relevant corporates, payment & card processing companies, the
+            Riby platforms helps micro/small businesses and middle to low Income salary earners
+            within these groups/clusters to create and manage bank or mobile money accounts and gain
+            access to financial services
+          </HeaderP>
+        </Fade>
+        <Fade bottom>
+          <FlexContainer>
+            {data.map((data, index) => (
+              <Card key={index}>
+                <Img src={data.img} />
+                <Content>
+                  <h6>{data.textHeader}</h6>
+                  <p>{data.description}</p>
+                </Content>
+              </Card>
+            ))}
+          </FlexContainer>
+        </Fade>
       </Wrapper>
     </Container>
   );
