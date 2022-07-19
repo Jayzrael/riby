@@ -1,8 +1,9 @@
-import react from "react";
 import { Container, Wrapper, TopFlex, TitleHead } from "./styles";
 import styled from "styled-components";
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import Fade from "react-reveal/Fade";
+
 const Business = () => {
   const data = [
     {
@@ -28,21 +29,27 @@ const Business = () => {
   return (
     <Container>
       <Wrapper>
-        <TopFlex>
-          <TitleHead>Our Business Offering</TitleHead>
-        </TopFlex>
+        <Fade bottom>
+          <TopFlex>
+            <TitleHead>Our Business Offering</TitleHead>
+          </TopFlex>
+        </Fade>
         <BusinessContainer>
           {data.map((data) => (
             <Biz>
-              <Div>
-                <h5>{data.productTitle}</h5>
-                <p>{data.productDesc}</p>
-                <LinkButton to={data.link}>
-                  <span>Learn More</span>
-                  <BsArrowRight />
-                </LinkButton>
-              </Div>
-              <BusinessCard></BusinessCard>
+              <Fade left>
+                <Div>
+                  <h5>{data.productTitle}</h5>
+                  <p>{data.productDesc}</p>
+                  <LinkButton to={data.link}>
+                    <span>Learn More</span>
+                    <BsArrowRight />
+                  </LinkButton>
+                </Div>
+              </Fade>
+              <Fade right>
+                <BusinessCard></BusinessCard>
+              </Fade>
             </Biz>
           ))}
         </BusinessContainer>

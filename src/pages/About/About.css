@@ -71,7 +71,8 @@
 
 .Aboutpage-section2 {
     width: 100%;
-    min-height: 80vh;
+    min-height: 50vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,7 +81,7 @@
 
 .Our-promises {
     width: 70%;
-    padding: 50px;
+    /* padding: 50px; */
 }
 
 .Our-promises>h1 {
@@ -108,12 +109,6 @@
     align-items: center;
 }
 
-.single-image-placeholder {
-    width: 90%;
-    padding: 270px;
-    background-color: #d9d9d9;
-}
-
 .members-container {
     background-color: black;
 }
@@ -135,7 +130,7 @@
 @media (max-width: 768px) {
     .Our-promises {
         width: 100%;
-        padding: 50px;
+        padding: 10px;
     }
     .our-vision p {
         font-size: 20px;
@@ -150,9 +145,7 @@
     .mission p {
         width: 100%;
     }
-    .single-image-placeholder {
-        width: 70%;
-        padding: 200px;
-        background-color: #d9d9d9;
+    .single-image img {
+        width: 90%;
     }
 }

@@ -1,9 +1,14 @@
 import { useState } from "react";
 import "./Career-Section2.css";
-// import { Link } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 import { jobs } from "./JobData";
+import Fade from "react-reveal/Fade";
+
 import Modal from "../../../component/Modal";
+import img1 from "../../../image/careerImg1.png";
+import img2 from "../../../image/careerimg2.png";
+import img3 from "../../../image/careerimg3.png";
+import img4 from "../../../image/careerimg4.png";
 
 const Section2 = () => {
   const [showModal, setShowModal] = useState(false);
@@ -19,19 +24,30 @@ const Section2 = () => {
   return (
     <>
       <section className="career-section2">
-        <div className="section2-images"></div>
-        <div className="text-content">
-          <h1>Come Work With Us</h1>
-          <p>We're looking for great minds to join our #BETTERTOGETHER growing team.</p>
-          <p>
-            At Riby, we are always looking for talented individuals who aligns with our mission to
-            enabling access to collective growth for 63 million banked and unbanked Nigerians.
-          </p>
-          <button className="see-all-openings" onClick={handleShowJobs}>
-            {" "}
-            See All Openings
-          </button>
-        </div>
+        <Fade left>
+          <div className="text-content">
+            <h1>Come Work With Us</h1>
+            <p>We're looking for great minds to join our #BETTERTOGETHER growing team.</p>
+            <p>
+              At Riby, we are always looking for talented individuals who aligns with our mission to
+              enabling access to collective growth for 63 million banked and unbanked Nigerians.
+            </p>
+            <button className="see-all-openings" onClick={handleShowJobs}>
+              {" "}
+              See All Openings
+            </button>
+          </div>
+        </Fade>
+        <Fade right>
+          <div className="section2-images">
+            <Img mt="10px" src={img1} />
+            <Img mt="21px" src={img2} />
+            <Img mt="4px" src={img3} />
+            <Img mt="18px" src={img4} />
+          </div>
+        </Fade>
+      </section>
+      <>
         {showJob && (
           <Container>
             <h3>See available position</h3>
@@ -92,12 +108,22 @@ const Section2 = () => {
             </div>
           </Modal>
         )}
-      </section>
+      </>
     </>
   );
 };
 
 export default Section2;
+
+const Img = styled.img`
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 7px;
+  background: transparent;
+  margin: 7px;
+  margin-top: ${({ mt }) => mt};
+`;
 
 const Button = styled.button`
   width: 150px;
@@ -131,7 +157,7 @@ const Li = styled.li`
 
 const JobCard = styled.div`
   width: 200px;
-  height: 50px;
+  // height: 50px;
   padding: 10px;
   background: whitesmoke;
   color: #0f0738;
@@ -173,6 +199,9 @@ const scroll = keyframes`
   }
 `;
 const Container = styled.section`
+  h3 {
+    color: #0f0738;
+  }
   width: 100%;
   min-height: 20vh;
   height: 100%;

@@ -1,17 +1,26 @@
 import React from "react";
 import styled from "styled-components";
+import Typist from "react-typist";
+import Fade from "react-reveal/Fade";
 
 const Hero = () => {
   return (
     <Container>
       <Wrapper>
         <TextContainer>
-          <h1>Building Affordable and Accessible Digital Platform to Promote Collective Growth</h1>
-          <p>
-            RIBY is a digital and financial services company and is one of Nigeria’s foremost
-            digital platform providers for Cooperatives, Savings Groups, Associations, Micro &
-            Small-Scale Enterprises, and Trade Groups
-          </p>
+          <Fade top>
+            <h1>
+              Building Affordable and Accessible Digital Platform to Promote Collective Growth
+            </h1>
+          </Fade>
+
+          <Typist startDelay={15} cursor={{ show: false }}>
+            <p>
+              RIBY is a digital and financial services company and is one of Nigeria’s foremost
+              digital platform providers for Cooperatives, Savings Groups, Associations, Micro &
+              Small-Scale Enterprises, and Trade Groups
+            </p>
+          </Typist>
         </TextContainer>
       </Wrapper>
     </Container>
@@ -62,14 +71,16 @@ const Wrapper = styled.div`
   // flex-wrap: wrap;
   color: #0f0738;
 
-  // @media (max-width: 768px) {
-  //   padding: 30px;
-  //   flex-wrap: wrap-reverse;
-  // }
+  @media (max-width: 768px) {
+    min-height: 50vh;
+  }
 `;
 const Container = styled.div`
   width: 100%;
   height: 100%;
   min-height: 70vh;
-  // background-color: #ccc;
+
+  @media (max-width: 768px) {
+    min-height: 50vh;
+  }
 `;

@@ -1,15 +1,20 @@
 import styled from "styled-components";
+import Fade from "react-reveal/Fade";
 
 export const ProductCard = ({ fd, ta, textHead, textDesc, btn }) => {
   return (
     <Container>
       <Wrapper fd={fd}>
-        <TextContent ta={ta}>
-          <h3>{textHead}</h3>
-          <p>{textDesc} </p>
-          {btn}
-        </TextContent>
-        <ImageWrapper></ImageWrapper>
+        <Fade left>
+          <TextContent ta={ta}>
+            <h3>{textHead}</h3>
+            <p>{textDesc} </p>
+            {btn}
+          </TextContent>
+        </Fade>
+        <Fade right>
+          <ImageWrapper></ImageWrapper>
+        </Fade>
       </Wrapper>
     </Container>
   );
@@ -20,6 +25,9 @@ export const ProductCard = ({ fd, ta, textHead, textDesc, btn }) => {
 export const TextContent = styled.div`
   width: 400px;
   color: #0d223d;
+  h1 {
+    color: #0d223d;
+  }
 
   text-align: ${({ ta }) => (ta ? "left" : "right")};
   p {

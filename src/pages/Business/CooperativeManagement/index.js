@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useEffect } from "react";
 import { Container, Hero, Phead, ButtonContainer } from "./style";
 import { ProductCard } from "../CardContainer";
 import logo from "../../../image/brandLogo.png";
@@ -6,17 +7,24 @@ import googleStoreImg from "../../../image/google.png";
 // import playStoreImg from "../../../image/playstore.png";
 import SupportWidget from "../../../component/SupportWidget";
 import Footer from "../../../component/Footer";
+import Fade from "react-reveal/Fade";
 
 const Cooperative = () => {
+  useEffect(() => {
+    document.title = "Riby Cooperative Business";
+  }, []);
+
   return (
     <Container>
-      <Hero>
-        <h3>Cooperative Business</h3>
-        <p>
-          We have years of experience providing technology and management solutions for
-          Cooperatives, Savings Groups and Associations.
-        </p>
-      </Hero>
+      <Fade top>
+        <Hero>
+          <h3>Cooperative Business</h3>
+          <p>
+            We have years of experience providing technology and management solutions for
+            Cooperatives, Savings Groups and Associations.
+          </p>
+        </Hero>
+      </Fade>
       <Phead>Cooperative society</Phead>
       <ProductCard
         ta

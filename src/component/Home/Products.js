@@ -7,6 +7,7 @@ import ribygo from "../../image/ribygo.png";
 import ribycoop from "../../image/ribycoop.png";
 import { Container, Wrapper, TopFlex, TitleHead } from "./styles";
 import { Link } from "react-router-dom";
+import Fade from "react-reveal/Fade";
 
 const Products = () => {
   const data = [
@@ -44,27 +45,24 @@ const Products = () => {
   return (
     <Container>
       <Wrapper>
-        <TopFlex>
-          <TitleHead>Our Products</TitleHead>
-          <ButtonDiv style={{ display: "none" }}>
-            <button>
-              <IoIosArrowBack />
-            </button>
-            <button>
-              <IoIosArrowForward />
-            </button>
-          </ButtonDiv>
-        </TopFlex>
+        <Fade bottom>
+          <TopFlex>
+            <TitleHead>Our Products</TitleHead>
+          </TopFlex>
+        </Fade>
+
         <ProductContainer>
           {data.map((data) => (
-            <ProductCard>
-              <ProductContent>
-                <Logo src={data.img} />
-                <TextHead>{data.productTitle}</TextHead>
-                <Desc>{data.productDesc}</Desc>
-                <LinkButton to={data.productLink}>Learn More</LinkButton>
-              </ProductContent>
-            </ProductCard>
+            <Fade right>
+              <ProductCard>
+                <ProductContent>
+                  <Logo src={data.img} />
+                  <TextHead>{data.productTitle}</TextHead>
+                  <Desc>{data.productDesc}</Desc>
+                  <LinkButton to={data.productLink}>Learn More</LinkButton>
+                </ProductContent>
+              </ProductCard>
+            </Fade>
           ))}
         </ProductContainer>
       </Wrapper>

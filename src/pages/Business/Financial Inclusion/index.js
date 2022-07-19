@@ -1,19 +1,26 @@
+import { useEffect } from "react";
 import styled from "styled-components";
 import { ProductCard } from "../CardContainer";
 import SupportWidget from "../../../component/SupportWidget";
 import Footer from "../../../component/Footer";
 import { Container, Hero, Phead } from "../CooperativeManagement/style";
+import Fade from "react-reveal/Fade";
 
 const Cooperative = () => {
+  useEffect(() => {
+    document.title = "Be Financially Involved with Riby Finance";
+  }, []);
   return (
     <Container>
-      <Hero>
-        <h3>Financial Inclusion Programs</h3>
-        <p>
-          We have participated in a range of economic sustainable projects and programs in different
-          locations in Nigeria with some globally recognized partners
-        </p>
-      </Hero>
+      <Fade top>
+        <Hero>
+          <h3>Financial Inclusion Programs</h3>
+          <p>
+            We have participated in a range of economic sustainable projects and programs in
+            different locations in Nigeria with some globally recognized partners
+          </p>
+        </Hero>
+      </Fade>
 
       <ProductCard
         ta
