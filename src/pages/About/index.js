@@ -5,58 +5,20 @@ import SupportWidget from "../../component/SupportWidget";
 // import { ProductCard } from "../Product/CobankingApp/ProductCard";
 import "./About.css";
 import AboutpageSection1 from "./Aboutpage-section1/Aboutpage-section1";
-import OurPrep2 from "./OurPrep2/OurPrep2";
-import aboutImg from "../../image/about2.png";
-import Fade from "react-reveal/Fade";
+// import OurPrep2 from "./OurPrep2/OurPrep2";
+import aboutImg1 from "../../image/about1.png";
+import aboutImg2 from "../../image/about2.png";
+import aboutImg3 from "../../image/about3.png";
+import aboutImg4 from "../../image/about4.png";
 
+import Fade from "react-reveal/Fade";
+import { Members } from "../../helper/careerdata";
 const { useEffect } = React;
 
 const About = () => {
   useEffect(() => {
     document.title = "About Us - Riby";
   }, []);
-  const Members = [
-    {
-      image: "",
-      memberName: "Member Name",
-      position: "Position",
-    },
-    {
-      image: "",
-      memberName: "Member Name",
-      position: "Position",
-    },
-    {
-      image: "",
-      memberName: "Member Name",
-      position: "Position",
-    },
-    {
-      image: "",
-      memberName: "Member Name",
-      position: "Position",
-    },
-    {
-      image: "",
-      memberName: "Member Name",
-      position: "Position",
-    },
-    {
-      image: "",
-      memberName: "Member Name",
-      position: "Position",
-    },
-    {
-      image: "",
-      memberName: "Member Name",
-      position: "Position",
-    },
-    {
-      image: "",
-      memberName: "Member Name",
-      position: "Position",
-    },
-  ];
 
   return (
     <>
@@ -69,6 +31,8 @@ const About = () => {
           </div>
         </div>
         <AboutpageSection1
+          fd
+          img={aboutImg1}
           heading="Who We Are"
           text1="Riby is a digital and financial services company and is one of Nigeria’s foremost digital platforms providers for Cooperatives, Informal Savings Groups, Micro & Small-Scale Enterprises, and Trade Groups."
           text2="We assist individuals in economy clusters, SMEs, Cooperatives, and Trade Groups to access financial services through our digital platforms."
@@ -94,7 +58,7 @@ const About = () => {
         </Fade>
         <Fade bottom>
           <div className="single-image">
-            <img src={aboutImg} alt="" />
+            <img src={aboutImg2} alt="" />
           </div>
         </Fade>
 
@@ -113,12 +77,17 @@ const About = () => {
           </div>
         </Fade>
         <AboutpageSection1
+          fd
+          img={aboutImg3}
           heading="Our Proposition"
           text1="Riby responded to this need and market gap by building a group-based digital platform focused on enabling access to collective growth for this economic groups and subsequently for individuals."
           text2="In addition to the platform services the company provides for the efficient self- running of the groups for savings/ contributions, loans, and investments, Riby provides access to financial services for individuals in Cooperatives, Informal Savings Groups, Micro & Small- Scale Enterprises, Trade Groups as well as economic clusters"
         />
 
-        <OurPrep2 />
+        <AboutpageSection1
+          img={aboutImg4}
+          text2="Collectively, Riby have supported over 4 million Nigerians (both formal and informal) across the country in accessing financial services. Over the course of our journey, we’ve partnered with several organizations, including: Bank of Industry, MTN, Providus Bank, Sterling Bank, Union Bank and many more."
+        />
         <StaffContainer>
           <Fade top>
             <h1>Our Team</h1>
@@ -183,7 +152,10 @@ const MemberCard = styled.div`
   justify-content: center;
   margin: 10px;
   border-radius: 10px;
-
+  img {
+    width: 250px;
+    border-radius: 10px;
+  }
   @media (max-width: 768px) {
     flex-direction: column;
     text-align: center;

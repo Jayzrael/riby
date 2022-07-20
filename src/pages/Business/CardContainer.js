@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 
-export const ProductCard = ({ fd, ta, textHead, textDesc, btn }) => {
+export const ProductCard = ({ fd, ta, img, textHead, textDesc, btn }) => {
   return (
     <Container>
       <Wrapper fd={fd}>
@@ -13,7 +13,7 @@ export const ProductCard = ({ fd, ta, textHead, textDesc, btn }) => {
           </TextContent>
         </Fade>
         <Fade right>
-          <ImageWrapper></ImageWrapper>
+          <Image src={img} alt="" />
         </Fade>
       </Wrapper>
     </Container>
@@ -34,20 +34,28 @@ export const TextContent = styled.div`
     font-size: ${({ fs }) => fs};
   }
 `;
-export const ImageWrapper = styled.div`
+export const Image = styled.img`
   width: 400px;
-  height: 300px;
-  background: grey;
+  border-radius: 10px;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 `;
 export const Wrapper = styled.div`
   width: 100%;
   height: 100%;
-  min-height: 50vh;
+  min-height: 70vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: ${({ fd }) => (fd ? "row" : "row-reverse")};
   margin: 20px 5px;
   flex-wrap: wrap-reverse;
+  padding: 10px;
+
+  @media (max-width: 768px) {
+    margin: 0;
+    justify-content: center;
+  }
 `;
 export const Container = styled.div``;
