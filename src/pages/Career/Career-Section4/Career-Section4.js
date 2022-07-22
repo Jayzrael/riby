@@ -1,5 +1,4 @@
 import "./Career-Section4.css";
-import Zoom from "react-reveal/Zoom";
 import Flash from "react-reveal/Flash";
 
 const Section4 = () => {
