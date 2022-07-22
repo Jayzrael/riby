@@ -1,14 +1,19 @@
 import styled from "styled-components";
+import Fade from "react-reveal/Fade";
 
 export const ProductCard = ({ fd, ta, textHead, textDesc }) => {
   return (
     <Container>
       <Wrapper fd={fd}>
-        <TextContent ta={ta}>
-          <h3>{textHead}</h3>
-          <p>{textDesc} </p>
-        </TextContent>
-        <ImageWrapper></ImageWrapper>
+        <Fade left>
+          <TextContent ta={ta}>
+            <h3>{textHead}</h3>
+            <p>{textDesc} </p>
+          </TextContent>
+        </Fade>
+        <Fade right>
+          <ImageWrapper></ImageWrapper>
+        </Fade>
       </Wrapper>
     </Container>
   );

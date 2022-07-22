@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../../component/Footer";
 import Map from "../../component/map/Map";
 import "./Contact.css";
@@ -9,6 +9,10 @@ const location = {
   lng: 3.3785,
 };
 const Contact = () => {
+  useEffect(() => {
+    document.title = "Contact Riby - What Business need do you wan to solve, talk to us";
+  }, []);
+
   return (
     <>
       <div className="cnt-container">

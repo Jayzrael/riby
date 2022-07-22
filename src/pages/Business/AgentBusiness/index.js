@@ -1,21 +1,28 @@
+import { useEffect } from "react";
 import styled from "styled-components";
 import { Container, Hero } from "../CooperativeManagement/style";
 import { ProductCard } from "../CardContainer";
-
+import Fade from "react-reveal/Fade";
 import SupportWidget from "../../../component/SupportWidget";
 import Footer from "../../../component/Footer";
 
 const AgentBusiness = () => {
+  useEffect(() => {
+    document.title = "Agent Banking - Riby";
+  }, []);
+
   return (
     <Container>
-      <Hero>
-        <h3>Agent Network Business</h3>
-        <p>
-          Our Agents are trained and equipped to provide micro banking services within their
-          location or community. This is aimed at providing value and service offering to boost
-          revenue generation for those interested in working with Riby.
-        </p>
-      </Hero>
+      <Fade top>
+        <Hero>
+          <h3>Agent Network Business</h3>
+          <p>
+            Our Agents are trained and equipped to provide micro banking services within their
+            location or community. This is aimed at providing value and service offering to boost
+            revenue generation for those interested in working with Riby.
+          </p>
+        </Hero>
+      </Fade>
 
       <ProductCard
         ta

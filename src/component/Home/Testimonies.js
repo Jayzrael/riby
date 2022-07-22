@@ -3,6 +3,7 @@ import styled from "styled-components";
 import itesiwaju from "../../image/itesiwaju.png";
 import atlascop from "../../image/atlascop.png";
 import subcap from "../../image/subcap.png";
+import Fade from "react-reveal/Fade";
 
 const Testimonies = () => {
   const data = [
@@ -32,23 +33,25 @@ const Testimonies = () => {
   return (
     <Container>
       <Wrapper>
-        <TopFlex>
-          <TitleHead>Testimonies</TitleHead>
-        </TopFlex>
-        <TestimonyCon>
-          {data.map((data, index) => (
-            <TestimonyCard key={index}>
-              <h5>{data.testimony}</h5>
-              <Testify>
-                <img src={data.img} alt="" />
-                <TData>
-                  <h6>{data.testifier}</h6>
-                  <p>{data.location}</p>
-                </TData>
-              </Testify>
-            </TestimonyCard>
-          ))}
-        </TestimonyCon>
+        <Fade bottom>
+          <TopFlex>
+            <TitleHead>Testimonies</TitleHead>
+          </TopFlex>
+          <TestimonyCon>
+            {data.map((data, index) => (
+              <TestimonyCard key={index}>
+                <h5>{data.testimony}</h5>
+                <Testify>
+                  <img src={data.img} alt="" />
+                  <TData>
+                    <h6>{data.testifier}</h6>
+                    <p>{data.location}</p>
+                  </TData>
+                </Testify>
+              </TestimonyCard>
+            ))}
+          </TestimonyCon>
+        </Fade>
       </Wrapper>
     </Container>
   );

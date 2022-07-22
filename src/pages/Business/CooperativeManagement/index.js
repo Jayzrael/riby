@@ -1,26 +1,40 @@
 import styled from "styled-components";
+import { useEffect } from "react";
 import { Container, Hero, Phead, ButtonContainer } from "./style";
 import { ProductCard } from "../CardContainer";
 import logo from "../../../image/brandLogo.png";
-import googleStoreImg from "../../../image/google.png";
-// import playStoreImg from "../../../image/playstore.png";
+import { useNavigate } from "react-router-dom";
+
 import SupportWidget from "../../../component/SupportWidget";
 import Footer from "../../../component/Footer";
+import Fade from "react-reveal/Fade";
+import mockimg from "../../../image/cobankheroimg.png";
+import cobiz from "../../../image/cobiz1.png";
+
+import { Button } from "../../../component/Button";
 
 const Cooperative = () => {
+  const navigate = useNavigate();
+  useEffect(() => {
+    document.title = "Riby Cooperative Business";
+  }, []);
+
   return (
     <Container>
-      <Hero>
-        <h3>Cooperative Business</h3>
-        <p>
-          We have years of experience providing technology and management solutions for
-          Cooperatives, Savings Groups and Associations.
-        </p>
-      </Hero>
+      <Fade top>
+        <Hero>
+          <h3>Cooperative Business</h3>
+          <p>
+            We have years of experience providing technology and management solutions for
+            Cooperatives, Savings Groups and Associations.
+          </p>
+        </Hero>
+      </Fade>
       <Phead>Cooperative society</Phead>
       <ProductCard
         ta
         fd
+        img={mockimg}
         textHead={
           <TextHead>
             <img src={logo} alt="logo-img" /> Riby Cobanking
@@ -34,23 +48,11 @@ const Cooperative = () => {
             access to financial services provided by Riby’s financial partners.
           </TextDesc>
         }
-        btn={
-          <ButtonContainer>
-            <a
-              href="https://play.google.com/store/apps/details?id=ng.riby.rcb"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={googleStoreImg} alt="" />
-            </a>
-            {/* <a href="#">
-              <img src={playStoreImg} alt="" />
-            </a> */}
-          </ButtonContainer>
-        }
+        btn={<Button title="Get Started" onClick={() => navigate("/registercooperative")} />}
       />
       <Phead>Cooperative Services</Phead>
       <ProductCard
+        img={cobiz}
         ta
         textHead={<TextHead>Riby Cooperative Services</TextHead>}
         textDesc={

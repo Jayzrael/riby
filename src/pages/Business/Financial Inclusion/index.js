@@ -1,22 +1,37 @@
+import { useEffect } from "react";
 import styled from "styled-components";
 import { ProductCard } from "../CardContainer";
 import SupportWidget from "../../../component/SupportWidget";
 import Footer from "../../../component/Footer";
 import { Container, Hero, Phead } from "../CooperativeManagement/style";
+import Fade from "react-reveal/Fade";
+import finimg1 from "../../../image/finimg1.png";
+import finimg2 from "../../../image/finimg2.png";
+import finimg3 from "../../../image/finimg3.png";
+import finimg4 from "../../../image/finimg4.png";
+// import finicon1 from "../../../image/finicon1.png";
+import { finIncData } from "../../../helper/careerdata";
+// import finimg1 from "../../../image/finimg1.png";
 
 const Cooperative = () => {
+  useEffect(() => {
+    document.title = "Be Financially Involved with Riby Finance";
+  }, []);
   return (
     <Container>
-      <Hero>
-        <h3>Financial Inclusion Programs</h3>
-        <p>
-          We have participated in a range of economic sustainable projects and programs in different
-          locations in Nigeria with some globally recognized partners
-        </p>
-      </Hero>
+      <Fade top>
+        <Hero>
+          <h3>Financial Inclusion Programs</h3>
+          <p>
+            We have participated in a range of economic sustainable projects and programs in
+            different locations in Nigeria with some globally recognized partners
+          </p>
+        </Hero>
+      </Fade>
 
       <ProductCard
         ta
+        img={finimg1}
         fd
         textHead={<TextHead>What We Do</TextHead>}
         textDesc={
@@ -40,6 +55,7 @@ const Cooperative = () => {
       />
       <Phead>Projects And Programs</Phead>
       <ProductCard
+        img={finimg2}
         ta
         fd
         textHead={<TextHead>Riby Cooperative Services</TextHead>}
@@ -94,6 +110,7 @@ const Cooperative = () => {
       <ProductCard
         ta
         fd
+        img={finimg3}
         textDesc={
           <>
             <TextDesc>
@@ -119,14 +136,25 @@ const Cooperative = () => {
           </>
         }
       />
+
+      <ResultContainer>
+        <Phead>Key Accomplishment Of The Project</Phead>
+
+        {finIncData.map((data) => (
+          <ResultCard>
+            <img src={data.img} alt="" />
+            <h6>{data.title}</h6>
+            <p>{data.desc}</p>
+          </ResultCard>
+        ))}
+      </ResultContainer>
+
+      <Phead>Rebuilding The Financial Building Blocks For The People In The North-East</Phead>
+
       <ProductCard
+        img={finimg4}
         ta
         fd
-        textHead={
-          <TextHead>
-            Rebuilding The Financial Building Blocks For The People In The North-East
-          </TextHead>
-        }
         textDesc={
           <>
             <TextDesc>
@@ -158,4 +186,28 @@ const TextDesc = styled.p`
   margin: 0;
   padding: 0;
   font-size: 0.8rem;
+`;
+
+const ResultContainer = styled.section`
+  width: 100%;
+  height: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+`;
+
+const ResultCard = styled.div`
+  width: 200px;
+  height: 200px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 7px;
+  margin: 10px;
 `;

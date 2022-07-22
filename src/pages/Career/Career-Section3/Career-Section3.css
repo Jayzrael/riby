@@ -11,16 +11,17 @@
 
 .careerSection3-text {
     background-color: transparent;
-    width: 50%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 @media (max-width: 768px) {
     .careerSection3-text {
-        width: 90%;
+        width: 100%;
     }
 }
 

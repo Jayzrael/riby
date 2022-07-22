@@ -1,5 +1,5 @@
 import "./style.css";
-const Modal = ({ children, hideShowModal }) => {
+const Modal = ({ children }) => {
   return (
     <div className="modal-backdrop">
       <div className="modals">
