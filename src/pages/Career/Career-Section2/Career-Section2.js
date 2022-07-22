@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Career-Section2.css";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 import { jobs } from "./JobData";
 import Modal from "../../../component/Modal";
@@ -27,6 +27,7 @@ const Section2 = () => {
             At Riby, we are always looking for talented individuals who aligns with our mission to
             enabling access to collective growth for 63 million banked and unbanked Nigerians.
           </p>
+          <button><Link to="/JobPosting">HR PAGE</Link></button>
           <button className="see-all-openings" onClick={handleShowJobs}>
             {" "}
             See All Openings

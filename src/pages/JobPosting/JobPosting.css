@@ -4,12 +4,261 @@
    padding-bottom: 120px;
 }
 
-.job-role {
-   background-color: blue;
-   padding: 50px;
+
+
+.view-applicants {
+   background-color: darkslategray;
+   padding: 0.5em;
+   border-radius: 5px;
    color: white;
+}
+
+
+.job-role {
+   background-color: transparent;
+   padding: 50px;
+   color: black;
    margin-bottom: 50px;
 }
+
+
+
+
+.applied {
+   background-color: transparent;
+   border: 5px solid darkslategray;
+   border-radius: 5px;
+   color: white;
+   padding: 2em;
+}
+
+
+
+
+.applied-role {
+   color: black;
+}
+
+.individual {
+   font-size: 1.2rem;
+   color: black;
+}
+
+.view-details {
+   background-color: red;
+   padding: 0.6em;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.jobs-posted {
+   background-color: transparent;
+   border: 5px solid darkslategray;
+   border-radius: 10px;
+   /* margin-top: 10px; */
+   padding: 2em;
+   min-height: 112vh;
+}
+
+.recent-jobs {
+   margin-top: 70px;
+   background-color: darkslategray;
+   padding: 0.5em;
+   border-radius: 5px;
+   color: white;
+}
+
+
+
+.description-heading {
+   font-size: 1.3rem;
+   font-weight: 600;
+}
+
+
+
+
+.job-description {
+   font-size: 1rem;
+}
+
+
+.recruiting {
+   margin-top: 30px;
+   font-size: 1.2rem;
+}
+
+.the-position {
+   margin-top: 30px;
+}
+
+.about-you {
+   margin-top: 30px;
+}
+
+ul,
+li {
+   padding: 0;
+}
+
+
+
+.flexWith-buttons {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 100px;
+}
+
+@media (max-width: 768px) {
+   .job-posting {
+      width: 100%;
+   }
+
+   .view-applicants {
+      text-align: center;
+      font-size: 2rem;
+   }
+
+   .applied-role {
+      font-size: 1.6rem;
+   }
+
+   .recent-jobs {
+      text-align: center;
+      font-size: 2rem;
+   }
+
+   .role-added {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+   }
+
+   .flexWith-buttons {
+      gap: 2px;
+   }
+
+   .editDelete-btn {
+      position: absolute;
+      margin-top: 510px;
+   }
+
+
+   .edit,
+   .delete {
+      background-color: blue;
+      padding: 5px 10px;
+      color: white;
+   }
+
+
+   .addJob-form {
+      width: 100%;
+   }
+
+   .submit-btn {
+      width: 40%;
+   }
+}
+
+
+
+.editDelete-btn {
+   margin-left: 100px;
+}
+
+
+.edit,
+.delete {
+   background-color: red;
+   padding: 10px 25px;
+   color: white;
+   margin-right: 10px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.add-job {
+   background-color: transparent;
+   border: 5px solid darkslategray;
+   border-radius: 10px;
+   color: white;
+   padding: 2em;
+   margin-top: 50px;
+}
+
+
+
+.add-position {
+   display: flex;
+   gap: 10px;
+   margin-bottom: 10px;
+}
+
+.add-btn {
+   background-color: red;
+   padding: 0 17px;
+   font-size: 20px;
+   border-radius: 20px;
+}
+
+
+.addJob-form {
+   width: 50%;
+   border: 5px solid dimgray;
+   border-radius: 10px;
+   padding: 1.2em;
+}
+
+
+
+
+
+input,
+label,
+textarea {
+   display: block;
+   color: black;
+}
+
+input {
+   width: 100%;
+   padding: 6px 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   font-size: 15px;
+   outline: none;
+}
+
+
+
+textarea {
+   width: 100%;
+}
+
+.submit-btn {
+   background-color: red;
+   width: 100px;
+   margin-top: 10px;
+   margin-left: 30px;
+   border: none;
+   border-radius: 10px;
+   color: white;
+}
+
+
+
+.cancel-modal {
+   position: absolute;
+   top: 35px;
+   right: 10px;
+   font-size: 20px;
+   background: transparent;
+   outline: none;
+}
+
+
 
 .role-overview {
    margin-bottom: 50px;
@@ -31,4 +280,88 @@
 .apply-now:hover {
    background-color: blue;
    border: none;
+}
+
+
+
+
+
+.form-field {
+   flex: 2;
+}
+
+.output {
+   margin-left: 3rem;
+   flex: 1;
+}
+
+.form-field label,
+h2 {
+   margin: 0;
+   font-size: 18px;
+   font-weight: 500;
+   color: rgb(84, 84, 84);
+}
+
+input {
+   height: 35px;
+   width: 100%;
+   padding: 7px;
+   outline: none;
+   border-radius: 5px;
+   border: 1px solid rgb(220, 220, 220);
+}
+
+
+
+.services {
+   display: flex;
+   justify-content: space-between;
+}
+
+.first-division {
+   display: flex;
+   flex-direction: column;
+   margin: 0 5px 0.5rem 0;
+   width: 100%;
+}
+
+button {
+   background: none;
+   outline: none;
+   cursor: pointer;
+   font-weight: 500;
+   border-radius: 2px;
+   padding: 5px 10px;
+}
+
+.first-division button {
+   align-self: flex-start;
+   display: flex;
+   align-items: center;
+   margin-top: 0.5rem;
+   color: #fff;
+}
+
+.second-division button {
+   color: #fff;
+   background-color: red;
+
+}
+
+
+
+@media (max-width: 768px) {
+   .job-posting {
+      width: 100%;
+   }
+
+   .addJob-form {
+      width: 100%;
+   }
+
+   .submit-btn {
+      width: 40%;
+      max-width: 100px;
+   }
 }
