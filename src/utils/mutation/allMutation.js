@@ -1,29 +1,46 @@
 import { gql, useQuery } from '@apollo/client'
 
-// type RootMutation{
-//     postJob(jobInput: JobInput): Job!
-//     apply(input : ApplicantDetails): Applicant!
-//     deleteJob(id: ID): Job!
-//     updateJob(jobInput: JobInputUpdate): Job!
-// }
 
-
-const POST_JOB = gql`
- mutation postJob($JobInput: JobInput)  {
-    getApplicant(jobInput : $JobInput){
+const DELETE_JOB = gql`
+mutation{
+  deleteJob(id: "62d95540bdc19a372c32347c") {
     role
+    description
+  skills
+  }
+}
+`
+const UPDATE_JOB = gql`
+mutation{
+  updateJob(input: {
+    id: "62d954d9bdc19a372c323478"
+    skills: ["API Design", "Hasura", "AdobeXD"]
+    description: "He must sabi do backend"
+    role: "Backend Engineer"
+  }) {
+    role
+    description
+    skills
+    id
+  }
+}
+`
+
+const CREATE_JOB = gql`
+mutation{
+  createJob(jobInput: {
+    role: "Fullstack Developer"
+    description: "He will handle the backend"
+    skills: ["Nodejs", "React", "Vue"]
+  }){
+    id
+    role
+    skills
     description
   }
 }
 `
-const APPLY = gql`
- mutation apply($JobInput: JobInput)  {
-    getApplicant(jobInput : $JobInput){
-    role
-    description
-  }
-}
-`
 
 
-export {POST_JOB}
+
+export {CREATE_JOB, UPDATE_JOB,DELETE_JOB  }

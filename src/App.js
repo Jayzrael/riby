@@ -21,7 +21,7 @@ import ScrollToTop from "./component/ScrollToTop";
 import AgentBankApp from "./pages/Product/AgentBank";
 
 const client = new ApolloClient({
-  uri: "http://localhost:5000/graphql",
+  uri: "https://riby-career-backend.herokuapp.com/",
   cache: new InMemoryCache()
 })
 

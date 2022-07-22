@@ -8,40 +8,29 @@ import { gql, useQuery } from '@apollo/client'
 
 // }
 
-
 const GET_ALL_JOBS = gql`
- query {
-  getAllJobs{
+query{
+  getAllJobs {
     id
     description
     role
+    skills
   }
 }
 `
+
+
+
 const GET_JOB = gql`
  query getJob($id: ID!){
   getJob(id : $id){
     description
     role
+    skills
   }
 }
 `
-const GET_APPLICANT = gql`
- query getApplicant($id: ID!)  {
-    getApplicant(id : $id){
-   name
-   email
-  }
-}
-`
-const GET_ALL_APPLICANTS = gql`
- query {
-    getAllApplicants{
-    name
-    email
-  }
-}
-`
+
 
 
 
