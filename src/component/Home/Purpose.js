@@ -1,6 +1,7 @@
 // import react from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
 
 const Purpose = () => {
   const data = [
@@ -36,7 +37,7 @@ const Purpose = () => {
             access to financial services
           </HeaderP>
         </Fade>
-        <Fade bottom>
+        <Zoom bottom>
           <FlexContainer>
             {data.map((data, index) => (
               <Card key={index}>
@@ -48,7 +49,7 @@ const Purpose = () => {
               </Card>
             ))}
           </FlexContainer>
-        </Fade>
+        </Zoom>
       </Wrapper>
     </Container>
   );

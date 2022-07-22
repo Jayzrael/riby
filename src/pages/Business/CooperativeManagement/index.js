@@ -48,7 +48,7 @@ const Cooperative = () => {
             access to financial services provided by Riby’s financial partners.
           </TextDesc>
         }
-        btn={<Button title="Get Started" onClick={() => navigate("/")} />}
+        btn={<Button title="Get Started" onClick={() => navigate("/registercooperative")} />}
       />
       <Phead>Cooperative Services</Phead>
       <ProductCard

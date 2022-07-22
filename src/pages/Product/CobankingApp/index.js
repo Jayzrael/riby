@@ -40,7 +40,7 @@ const CobankingApp = () => {
                 Riby CoBanking is a complete financial management tool for Cooperatives, Trade
                 Groups, Associations and Savings Groups.
               </p>
-              <Button title="Get Started" onClick={() => navigate("/")} />
+              <Button title="Get Started" onClick={() => navigate("/registercooperative")} />
             </HeroText>
           </Fade>
           <Fade right>
@@ -91,33 +91,6 @@ const CobankingApp = () => {
 };
 
 export default CobankingApp;
-
-//  <Fade bottom>
-//    <ProductAction>
-//      <Content>
-//        <div>
-//          <h2>Members Contributing With Ease And On The Go</h2>
-//          <p>
-//            Our app allows members of your group savings or cooperative to promptly save and make
-//            contributions as at when due, easily and on the go
-//          </p>
-//          <ButtonContainer>
-//            <a
-//              href="https://play.google.com/store/apps/details?id=ng.riby.rcb"
-//              target="_blank"
-//              rel="noreferrer"
-//            >
-//              <img src={googlelight} alt="" />
-//            </a>
-//            {/* <a href="#">
-//                 <img src={playstorelight} alt="" />
-//               </a> */}
-//          </ButtonContainer>
-//        </div>
-//        <img src={cophone} alt="" width={200} />
-//      </Content>
-//    </ProductAction>
-//  </Fade>;
 
 const ProductContainer = styled.div`
   width: 100%;

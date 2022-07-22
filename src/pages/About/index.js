@@ -10,6 +10,7 @@ import aboutImg1 from "../../image/about1.png";
 import aboutImg2 from "../../image/about2.png";
 import aboutImg3 from "../../image/about3.png";
 import aboutImg4 from "../../image/about4.png";
+import Zoom from "react-reveal/Zoom";
 
 import Fade from "react-reveal/Fade";
 import { Members } from "../../helper/careerdata";
@@ -62,20 +63,20 @@ const About = () => {
           </div>
         </Fade>
 
-        <Fade bottom>
+        <Zoom bottom>
           <div className="our-vision">
             <h1>OurVision</h1>
             <p>Is to enable access to collective growth</p>
           </div>
-        </Fade>
-        <Fade bottom>
+        </Zoom>
+        <Zoom bottom>
           <div className="mission">
             <h1>Our Mission</h1>
             <p>
               Is to Build affordable and accessible digital platforms to promote collective growth.
             </p>
           </div>
-        </Fade>
+        </Zoom>
         <AboutpageSection1
           fd
           img={aboutImg3}

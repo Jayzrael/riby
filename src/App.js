@@ -22,6 +22,7 @@ import ScrollToTop from "./component/ScrollToTop";
 import AgentBankApp from "./pages/Product/AgentBank";
 import Privacy from "./pages/Privacy/Privacy";
 import Cobank from "./pages/Product/CoBank";
+import JoinCooperative from "./pages/JoinCooperative";
 import ErrorPage from "./pages/Errorpage";
 
 function App() {
@@ -43,7 +44,7 @@ function App() {
         <Route path="/product/CobankingApp" element={<CobankingApp />} />
         <Route path="/product/agentbank" element={<AgentBankApp />} />
         <Route path="/product/coagent" element={<Cobank />} />
-
+        <Route path="/registercooperative" element={<JoinCooperative />} />
         <Route path="/Terms" element={<Terms />} />
         <Route path="/Privacy" element={<Privacy />} />
         <Route path="/JobPosting" element={<JobPosting />} />
