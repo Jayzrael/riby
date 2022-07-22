@@ -1,6 +1,6 @@
 import coBank from "../image/RibyLogomark.svg";
 import agentLogo from "../image/agentlogomark.svg";
-// import ribygo from "../image/ribygo.png";
+import rico from "../image/rico.png";
 // import ribycoop from "../image/ribycoop.png";
 
 export const ProductMenu = [
@@ -26,7 +26,7 @@ export const ProductMenu = [
   {
     productName: "Riby CoAgent ",
     descrip: "A cooperative collection and management app",
-    img: agentLogo,
+    img: rico,
     link: "/product/coagent",
   },
   // {

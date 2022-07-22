@@ -3,22 +3,28 @@ import styled from "styled-components";
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
+import finImg from "../../image/agent2.png";
+import agentImg from "../../image/Agent1.png";
+import coImg from "../../image/finimg1.png";
 
 const Business = () => {
   const data = [
     {
+      img: coImg,
       productTitle: "Cooperative Banking  ",
       productDesc:
         "We have years of experience providing technology and management solutions for Cooperatives, Savings Groups and Associations",
       link: "/business/Cooperative",
     },
     {
+      img: agentImg,
       productTitle: "Agent Network Business ",
       productDesc:
         "Our Agents are trained and equipped to provide micro banking services within their location or community. This is aimed at providing value to boost revenue generation.",
       link: "/business/AgentBusiness",
     },
     {
+      img: finImg,
       productTitle: "Financial Inclusions ",
       productDesc:
         "We have years of experience providing technology and management solutions for Cooperatives, Savings Groups and Associations ",
@@ -48,7 +54,7 @@ const Business = () => {
                 </Div>
               </Fade>
               <Fade right>
-                <BusinessCard></BusinessCard>
+                <CardImg src={data.img} />
               </Fade>
             </Biz>
           ))}
@@ -92,19 +98,22 @@ const LinkButton = styled(Link)`
   span {
     padding-right: 10px;
   }
+  &:hover {
+    color: #0f0738;
+  }
 `;
-const BusinessCard = styled.div`
+const CardImg = styled.img`
   width: 360px;
-  height: 300px;
-  background: gray;
-  box-shadow: 0px 3px 6px rgba(15, 7, 56, 0.16);
-  border-radius: 10px;
-  display: flex;
-  justify-content: end;
-  align-items: baseline;
-  flex-direction: column;
-  padding: 20px;
-  margin: 10px;
+  // height: 300px;
+  // background: gray;
+  // box-shadow: 0px 3px 6px rgba(15, 7, 56, 0.16);
+  // border-radius: 10px;
+  // display: flex;
+  // justify-content: end;
+  // align-items: baseline;
+  // flex-direction: column;
+  // padding: 20px;
+  // margin: 10px;
 
   // h5 {
   //   font-family: "Outfit";

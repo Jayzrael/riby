@@ -1,47 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 .aboutContent {
-   width: 100%;
-   height: 100%;
-   min-height: 70vh;
-   display: flex;
-   flex-direction: row-reverse;
-   justify-content: space-around;
-   align-items: center;
-   flex-wrap: wrap;
-   padding: 20px;
-   margin-top: 80px;
+    width: 100%;
+    height: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 80px;
 }
 
+.aboutContentImg {
+    /* width: 100%; */
+    transition: 0.5s all ease-in-out;
+    /* display: none; */
+}
 
-.aboutpage-section1-image {
-   background: #D9D9D9;
-   width: 40%;
-   padding: 12rem;
+.aboutContentImg:hover {
+    transform: scale(1.5);
 }
 
 .aboutContentText {
-   width: 40%;
+    width: 40%;
 }
 
 @media (max-width: 768px) {
-   .aboutContentText {
-      width: 100%;
-      margin-top: 60px;
-      text-align: justify;
-   }
+    .aboutContentText {
+        width: 100%;
+        margin-top: 60px;
+        text-align: justify;
+    }
+    .aboutContentImg {
+        width: 90%;
+        transition: 0.5s all ease-in-out;
+    }
 }
 
 .aboutContentText>h3 {
-   font-family: "Poppins";
-   font-style: normal;
-   font-weight: 600;
-   font-size: 30px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
 }
 
 .aboutContentText>p {
-   font-family: "Poppins";
-   font-style: normal;
-   font-weight: 400;
-   font-size: 16px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
 }

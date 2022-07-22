@@ -24,6 +24,7 @@ export const HeroText = styled.div`
   @media (max-width: 768px) {
     margin-right: 0;
     padding: 10px 30px;
+    width: 100%;
   }
 
   h3 {
@@ -81,30 +82,27 @@ export const Content = styled.div`
   width: 80%;
   height: 100%;
   min-height: 50vh;
-  background: gray;
+  background: rgba(13, 34, 61, 0.5);
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: #ffffff;
+  justify-content: space-around;
   border-radius: 5px;
+  align-items: center;
   padding: 20px;
-  h2 {
-    width: 50%;
-    text-align: center;
-    color: #ffffff;
-    @media (max-width: 768px) {
-      width: 100%;
-    }
-  }
-  p {
-    font-weight: 400;
-    font-size: 1rem;
-    text-align: center;
-    width: 60%;
+  flex-wrap: wrap-reverse;
+`;
 
-    @media (max-width: 768px) {
-      width: 100%;
-    }
+export const TextContent = styled.div`
+  width: 400px;
+  color: white;
+  h2 {
+    color: #ffffff;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 `;
