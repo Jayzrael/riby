@@ -3,7 +3,9 @@ import "./Career-Section2.css";
 import styled, { keyframes } from "styled-components";
 import { jobs } from "./JobData";
 import Fade from "react-reveal/Fade";
-
+// import { GET_ALL_JOBS } from "../../../utils/queries/allQueries";
+import { GET_ALL_JOBS } from "../../../utils/queries/allQueries";
+import { gql, useQuery } from "@apollo/client";
 import Modal from "../../../component/Modal";
 import img1 from "../../../image/careerImg1.png";
 import img2 from "../../../image/careerimg2.png";
@@ -13,6 +15,10 @@ import img4 from "../../../image/careerimg4.png";
 const Section2 = () => {
   const [showModal, setShowModal] = useState(false);
   const [showJob, setShowJob] = useState(false);
+
+  const { loading, error, data } = useQuery(GET_ALL_JOBS);
+
+  console.log(data);
 
   const handleShowJobs = () => {
     setShowJob(!showJob);
@@ -53,11 +59,13 @@ const Section2 = () => {
             <h3>See available position</h3>
             <Wrapper>
               {/* implement job.lentgth here */}
-              {jobs.map((data) => (
-                <JobCard key={data.id} onClick={displayModal}>
-                  {data.role}
-                </JobCard>
-              ))}
+              {!loading &&
+                !error &&
+                data?.getAllJobs.map((data) => (
+                  <JobCard key={data.id} onClick={displayModal}>
+                    {data.role}
+                  </JobCard>
+                ))}
             </Wrapper>
           </Container>
         )}

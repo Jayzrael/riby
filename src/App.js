@@ -25,35 +25,46 @@ import Cobank from "./pages/Product/CoBank";
 import JoinCooperative from "./pages/JoinCooperative";
 import ErrorPage from "./pages/Errorpage";
 
-function App() {
-  return (
-    <Router>
-      <ScrollToTop />
-      <Navbar />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        {/* <Route path="/products" element={<Products />} />
-        <Route path="/business" element={<Business />} /> */}
-        <Route path="/about" element={<About />} />
-        <Route path="/blogs" element={<Blogs />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/ConsentPage" element={<ConsentPage />} />
-        <Route path="/business/Cooperative" element={<Cooperative />} />
-        <Route path="/business/AgentBusiness" element={<AgentBusiness />} />
-        <Route path="/business/FinancialInclusion" element={<FinancialInclusion />} />
-        <Route path="/product/CobankingApp" element={<CobankingApp />} />
-        <Route path="/product/agentbank" element={<AgentBankApp />} />
-        <Route path="/product/coagent" element={<Cobank />} />
-        <Route path="/registercooperative" element={<JoinCooperative />} />
-        <Route path="/Terms" element={<Terms />} />
-        <Route path="/Privacy" element={<Privacy />} />
-        <Route path="/JobPosting" element={<JobPosting />} />
-        <Route path="/ApplicationForm" element={<ApplicationForm />} />
+import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 
-        <Route path="/Career" element={<Career />} />
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
-    </Router>
+function App() {
+  const client = new ApolloClient({
+    uri: "https://riby-career-backend.herokuapp.com/",
+    cache: new InMemoryCache(),
+  });
+
+  return (
+    <>
+      <ApolloProvider client={client}>
+        <Router>
+          <ScrollToTop />
+          <Navbar />
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            {/* <Route path="/products" element={<Products />} />
+        <Route path="/business" element={<Business />} /> */}
+            <Route path="/about" element={<About />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/ConsentPage" element={<ConsentPage />} />
+            <Route path="/business/Cooperative" element={<Cooperative />} />
+            <Route path="/business/AgentBusiness" element={<AgentBusiness />} />
+            <Route path="/business/FinancialInclusion" element={<FinancialInclusion />} />
+            <Route path="/product/CobankingApp" element={<CobankingApp />} />
+            <Route path="/product/agentbank" element={<AgentBankApp />} />
+            <Route path="/product/coagent" element={<Cobank />} />
+            <Route path="/registercooperative" element={<JoinCooperative />} />
+            <Route path="/Terms" element={<Terms />} />
+            <Route path="/Privacy" element={<Privacy />} />
+            <Route path="/JobPosting" element={<JobPosting />} />
+            <Route path="/ApplicationForm" element={<ApplicationForm />} />
+
+            <Route path="/Career" element={<Career />} />
+            <Route path="*" element={<ErrorPage />} />
+          </Routes>
+        </Router>
+      </ApolloProvider>
+    </>
   );
 }
 
