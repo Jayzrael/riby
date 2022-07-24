@@ -1,5 +1,9 @@
 import { useState } from "react";
 import "./Career-Section2.css";
+<<<<<<< HEAD
+import { Link } from "react-router-dom";
+=======
+>>>>>>> c5122254d7788020eaa30894aba14af46c6deab6
 import styled, { keyframes } from "styled-components";
 import { jobs } from "./JobData";
 import Fade from "react-reveal/Fade";
@@ -24,6 +28,22 @@ const Section2 = () => {
   return (
     <>
       <section className="career-section2">
+<<<<<<< HEAD
+        <div className="section2-images"></div>
+        <div className="text-content">
+          <h1>Come Work With Us</h1>
+          <p>We're looking for great minds to join our #BETTERTOGETHER growing team.</p>
+          <p>
+            At Riby, we are always looking for talented individuals who aligns with our mission to
+            enabling access to collective growth for 63 million banked and unbanked Nigerians.
+          </p>
+          <button><Link to="/JobPosting">HR PAGE</Link></button>
+          <button className="see-all-openings" onClick={handleShowJobs}>
+            {" "}
+            See All Openings
+          </button>
+        </div>
+=======
         <Fade left>
           <div className="text-content">
             <h1>Come Work With Us</h1>
@@ -48,6 +68,7 @@ const Section2 = () => {
         </Fade>
       </section>
       <>
+>>>>>>> c5122254d7788020eaa30894aba14af46c6deab6
         {showJob && (
           <Container>
             <h3>See available position</h3>
