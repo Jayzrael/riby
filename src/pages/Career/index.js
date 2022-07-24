@@ -6,6 +6,7 @@ import Section3 from "./Career-Section3/Career-Section3";
 import LastSection from "./LastSection/LastSection";
 import Section4 from "./Career-Section4/Career-Section4";
 import Section1 from "./Career-Section1/Career-Section1";
+import SupportWidget from "../../component/SupportWidget";
 
 const Career = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const Career = () => {
       <Section3 />
       <Section4 />
       <LastSection />
+      <SupportWidget />
       <Footer />
     </>
   );

@@ -3,6 +3,8 @@ import "./App.css";
 import Navbar from "./component/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages";
+import { ApolloProvider, ApolloClient, InMemoryCache} from "@apollo/client";
+
 // import Products from "./pages/Product";
 // import Business from "./pages/Business";
 import About from "./pages/About";
@@ -25,8 +27,15 @@ import Cobank from "./pages/Product/CoBank";
 import JoinCooperative from "./pages/JoinCooperative";
 import ErrorPage from "./pages/Errorpage";
 
+const client = new ApolloClient({
+  uri: "https://riby-career-backend.herokuapp.com/",
+  cache: new InMemoryCache()
+})
+
 function App() {
   return (
+    <>
+      <ApolloProvider client={client}>
     <Router>
       <ScrollToTop />
       <Navbar />
@@ -52,8 +61,14 @@ function App() {
 
         <Route path="/Career" element={<Career />} />
         <Route path="*" element={<ErrorPage />} />
+        
+        <Route path="/Career" element={<Career />} />
+  
+       
       </Routes>
-    </Router>
+      </Router>
+      </ApolloProvider>
+      </>
   );
 }
 

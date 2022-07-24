@@ -1,6 +1,9 @@
 import { useState } from "react";
 import "./Career-Section2.css";
 import styled, { keyframes } from "styled-components";
+import { gql, useQuery } from "@apollo/client";
+import { GET_ALL_JOBS } from "../../../utils/queries/allQueries";
+
 import { jobs } from "./JobData";
 import Fade from "react-reveal/Fade";
 
@@ -13,6 +16,8 @@ import img4 from "../../../image/careerimg4.png";
 const Section2 = () => {
   const [showModal, setShowModal] = useState(false);
   const [showJob, setShowJob] = useState(false);
+
+  const { loading, error, data } = useQuery(GET_ALL_JOBS);
 
   const handleShowJobs = () => {
     setShowJob(!showJob);
@@ -52,12 +57,13 @@ const Section2 = () => {
           <Container>
             <h3>See available position</h3>
             <Wrapper>
-              {/* implement job.lentgth here */}
-              {jobs.map((data) => (
-                <JobCard key={data.id} onClick={displayModal}>
-                  {data.role}
-                </JobCard>
-              ))}
+              {!loading &&
+                !error &&
+                data.map((data) => (
+                  <JobCard key={data.id} onClick={displayModal}>
+                    {data.role}
+                  </JobCard>
+                ))}
             </Wrapper>
           </Container>
         )}
