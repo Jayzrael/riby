@@ -35,9 +35,9 @@ const Footer = () => {
             <img src="/phone.png" alt="" style={{ width: "15px" }} />
 
             <div>
-              <a href="tel: 01-2914247">
+              {/* <a href="tel: 01-2914247">
                 <Span>01-2914247</Span>
-              </a>
+              </a> */}
               <a href="tel: 08092222109">
                 <Span>08092222109</Span>
               </a>
