@@ -26,7 +26,7 @@ const Contact = () => {
             <h3>Get in Touch</h3>
             <p>Block G, House 4, Moore Road, Yaba, Lagos.</p>
             <hr />
-            <p style={{ color: "#A12029" }}>info@riby.me </p>
+            <p style={{ color: "#A12029" }}>info@riby.ng </p>
             <p>+234 809 222 2109</p>
             <p>01 291 4247</p>
           </div>

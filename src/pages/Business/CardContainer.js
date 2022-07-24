@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 
-export const ProductCard = ({ fd, ta, img, textHead, textDesc, btn }) => {
+export const ProductCard = ({ fd, ta, fs, img, textHead, textDesc, btn }) => {
   return (
     <Container>
       <Wrapper fd={fd}>
         <Fade left>
           <TextContent ta={ta}>
             <h3>{textHead}</h3>
-            <p>{textDesc} </p>
+            <p fs={fs}>{textDesc} </p>
             {btn}
           </TextContent>
         </Fade>
@@ -25,11 +25,12 @@ export const ProductCard = ({ fd, ta, img, textHead, textDesc, btn }) => {
 export const TextContent = styled.div`
   width: 400px;
   color: #0d223d;
-  h1 {
-    color: #0d223d;
+  text-align: ${({ ta }) => (ta ? "left" : "right")};
+
+  h3 {
+    color: #0d223d !important;
   }
 
-  text-align: ${({ ta }) => (ta ? "left" : "right")};
   p {
     font-size: ${({ fs }) => fs};
   }

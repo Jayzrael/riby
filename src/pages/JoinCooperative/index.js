@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Button } from "../../component/Button";
 import { Link } from "react-router-dom";
@@ -6,12 +6,58 @@ import { ProductAction, ButtonContainer, TextContent } from "../Product/Cobankin
 import googlelight from "../../image/googlelight.png";
 import cophone from "../../image/cophone.png";
 import Fade from "react-reveal/Fade";
+import emailjs from "@emailjs/browser";
 import Zoom from "react-reveal/Zoom";
 
 const JoinCooperative = () => {
   useEffect(() => {
     document.title = "Join Riby Cooperative platform";
   }, []);
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState("");
+  const [values, setValues] = useState({
+    institutionName: "",
+    contactPerson: "",
+    contactPhone: "",
+    email: "",
+    state: "",
+    contactPosition: "",
+  });
+
+  const handleChange = (e) => {
+    setValues((values) => ({
+      ...values,
+      [e.target.name]: e.target.value,
+    }));
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(values);
+    setLoading(true);
+    try {
+      const response = await emailjs.send(
+        "service_tbuqi1b",
+        "template_e1y1bup",
+        values,
+        "u11kiUitp6eXmPPM1"
+      );
+      const result = await response.text;
+      setStatus(result);
+      setLoading(false);
+      setValues({
+        institutionName: "",
+        contactPerson: "",
+        contactPhone: "",
+        email: "",
+        state: "",
+        contactPosition: "",
+      });
+    } catch (error) {
+      setLoading(false);
+      console.log(error);
+      //  setStatus(result);
+    }
+  };
   return (
     <>
       <Section>
@@ -24,43 +70,79 @@ const JoinCooperative = () => {
               <SectionInput>
                 <label htmlFor="">Institution name</label>
                 <br />
-                <Input type="text" required />
+                <Input
+                  type="text"
+                  required
+                  name="institutionName"
+                  value={values.institutionName}
+                  onChange={handleChange}
+                />
               </SectionInput>
               <SectionInput>
                 <label htmlFor="">Contact Person name</label>
                 <br />
-                <Input type="text" required />
+                <Input
+                  type="text"
+                  required
+                  name="contactPerson"
+                  value={values.contactPerson}
+                  onChange={handleChange}
+                />
               </SectionInput>
             </SectionContainer>
             <SectionContainer>
               <SectionInput>
                 <label htmlFor="">Contact Person phone</label>
                 <br />
-                <Input type="text" required />
+                <Input
+                  type="text"
+                  required
+                  name="contactPhone"
+                  value={values.contactPhone}
+                  onChange={handleChange}
+                />
               </SectionInput>
               <SectionInput>
                 <label htmlFor="">Email</label>
                 <br />
-                <Input type="email" required />
+                <Input
+                  type="email"
+                  required
+                  name="email"
+                  value={values.email}
+                  onChange={handleChange}
+                />
               </SectionInput>
             </SectionContainer>
             <SectionContainer>
               <SectionInput>
                 <label htmlFor="">State</label>
                 <br />
-                <Input type="text" required />
+                <Input
+                  type="text"
+                  required
+                  name="state"
+                  value={values.state}
+                  onChange={handleChange}
+                />
               </SectionInput>
               <SectionInput>
-                <label htmlFor="">State</label>
+                <label htmlFor="">Contact Person Position</label>
                 <br />
-                <Input type="text" required />
+                <Input
+                  type="text"
+                  name="contactPosition"
+                  value={values.contactPosition}
+                  onChange={handleChange}
+                />
               </SectionInput>
             </SectionContainer>
             <FormFooter>
               <p>
                 Please check our <Span to="/Terms"> Terms of service </Span>
               </p>
-              <Button title="Get Started" />
+              <Button title={loading ? "Loading" : "Get Started"} onClick={handleSubmit} />
+              {status === "OK" && <p>Request sent successfully!</p>}
             </FormFooter>
           </form>
         </Zoom>

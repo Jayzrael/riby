@@ -34,6 +34,7 @@ const Cooperative = () => {
       <ProductCard
         ta
         fd
+        fs="0.9rem"
         img={mockimg}
         textHead={
           <TextHead>
@@ -52,6 +53,7 @@ const Cooperative = () => {
       />
       <Phead>Cooperative Services</Phead>
       <ProductCard
+        fs="0.9rem"
         img={cobiz}
         ta
         textHead={<TextHead>Riby Cooperative Services</TextHead>}

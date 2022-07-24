@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import { FaAngleDown } from "react-icons/fa";
 import { Dropdowns } from "../Dropdown";
@@ -12,6 +12,22 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [navIcon, setNavIcon] = useState(false);
   const [businessNav, setBusinessNav] = useState(false);
+  const outSideNav = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (outSideNav.current && !outSideNav.current.contains(event.target)) {
+        // alert("you clicked outside");
+        setToggle(false);
+        setBusinessNav(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [outSideNav]);
 
   const handleToggleNav = () => {
     setNavIcon(!navIcon);
@@ -19,15 +35,16 @@ const Navbar = () => {
 
   const handleBusinesNav = () => {
     setBusinessNav(!businessNav);
+    setToggle(false);
   };
 
   const handleToggle = () => {
     setToggle(!toggle);
-    console.log("clicked");
+    setBusinessNav(false);
   };
 
   return (
-    <Container>
+    <Container ref={outSideNav}>
       <Wrapper>
         <Link to="/">
           <Logo src="/Logo.png" />

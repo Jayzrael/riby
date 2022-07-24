@@ -51,7 +51,7 @@ const TextContainer = styled.div`
   }
 
   p {
-    width: 50%;
+    width: 100%;
     margin: 0;
     font-size: 1.2rem;
     @media (max-width: 768px) {

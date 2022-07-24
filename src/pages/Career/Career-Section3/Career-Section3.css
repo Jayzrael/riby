@@ -26,15 +26,17 @@
 }
 
 .careerSection3-text>h2 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Outfit", sans-serif;
     font-weight: 600;
+    color: #0d223d;
     font-size: 1.7rem;
 }
 
 .careerSection3-text>p {
-    font-family: "Poppins", sans-serif;
+    font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 38px;
+    color: #0d223d;
     text-align: center;
 }

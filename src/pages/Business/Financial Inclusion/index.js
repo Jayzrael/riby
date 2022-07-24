@@ -139,14 +139,15 @@ const Cooperative = () => {
 
       <ResultContainer>
         <Phead>Key Accomplishment Of The Project</Phead>
-
-        {finIncData.map((data) => (
-          <ResultCard>
-            <img src={data.img} alt="" />
-            <h6>{data.title}</h6>
-            <p>{data.desc}</p>
-          </ResultCard>
-        ))}
+        <CardFlex>
+          {finIncData.map((data) => (
+            <ResultCard>
+              <img src={data.img} alt="" />
+              <h6>{data.title}</h6>
+              <p>{data.desc}</p>
+            </ResultCard>
+          ))}
+        </CardFlex>
       </ResultContainer>
 
       <Phead>Rebuilding The Financial Building Blocks For The People In The North-East</Phead>
@@ -188,6 +189,14 @@ const TextDesc = styled.p`
   font-size: 0.8rem;
 `;
 
+const CardFlex = styled.section`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  flex-wrap: wrap;
+`;
+
 const ResultContainer = styled.section`
   width: 100%;
   height: 100%;
@@ -203,6 +212,7 @@ const ResultCard = styled.div`
   width: 200px;
   height: 200px;
   background: transparent;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
