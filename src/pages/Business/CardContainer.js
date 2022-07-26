@@ -23,8 +23,9 @@ export const ProductCard = ({ fd, ta, fs, img, textHead, textDesc, btn }) => {
 // export const Container = styled.div``;
 // export const Container = styled.div``;
 export const TextContent = styled.div`
-  width: 400px;
+  width: 600px;
   color: #0d223d;
+  margin: 5px 20px;
   text-align: ${({ ta }) => (ta ? "left" : "right")};
 
   h3 {
@@ -32,11 +33,13 @@ export const TextContent = styled.div`
   }
 
   p {
-    font-size: ${({ fs }) => fs};
+    font-size: 1.05rem;
+    // font-size: ${({ fs }) => fs};
   }
 `;
 export const Image = styled.img`
   width: 400px;
+  margin: 5px 20px;
   border-radius: 10px;
   @media (max-width: 768px) {
     width: 90%;
@@ -47,7 +50,7 @@ export const Wrapper = styled.div`
   height: 100%;
   min-height: 70vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: ${({ fd }) => (fd ? "row" : "row-reverse")};
   margin: 20px 5px;

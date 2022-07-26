@@ -4,7 +4,7 @@
     min-height: 70vh;
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin-top: 20px;
     color: #0d223d;
@@ -13,7 +13,7 @@
 
 .career-section2 .text-content {
     padding: 20px;
-    width: 500px;
+    width: 600px;
 }
 
 .career-section2 .text-content>h1 {
