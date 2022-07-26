@@ -73,6 +73,9 @@ const Div = styled.div`
     padding: 0;
     text-align: left;
   }
+  p {
+    font-size: 18px;
+  }
 
   @media (max-width: 768px) {
     width: 100%;
@@ -81,7 +84,8 @@ const Div = styled.div`
 
 const Biz = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 20px;
   align-items: center;
   width: 100%;
   @media (max-width: 768px) {
@@ -104,33 +108,6 @@ const LinkButton = styled(Link)`
 `;
 const CardImg = styled.img`
   width: 360px;
-  // height: 300px;
-  // background: gray;
-  // box-shadow: 0px 3px 6px rgba(15, 7, 56, 0.16);
-  // border-radius: 10px;
-  // display: flex;
-  // justify-content: end;
-  // align-items: baseline;
-  // flex-direction: column;
-  // padding: 20px;
-  // margin: 10px;
-
-  // h5 {
-  //   font-family: "Outfit";
-  //   font-style: normal;
-  //   font-weight: 500;
-  //   font-size: 1.5rem;
-  //   line-height: 24px;
-  //   color: #0f0738;
-  // }
-  // p {
-  //   font-family: "Outfit";
-  //   font-style: normal;
-  //   font-weight: 400;
-  //   font-size: 1rem;
-  //   line-height: 16px;
-  //   color: #0f0738;
-  // }
 `;
 const BusinessContainer = styled.div`
   width: 100%;
@@ -140,6 +117,7 @@ const BusinessContainer = styled.div`
   overflow-x: hidden;
   overflow-y: scroll;
   justify-content: center;
+  background: transparent;
   align-items: center;
   flex-wrap: wrap;
   scrollbar-width: none;

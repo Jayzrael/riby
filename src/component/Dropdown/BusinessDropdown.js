@@ -17,7 +17,7 @@ export const BusinessDropdown = () => {
 const NavLink = styled(Link)`
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 1.1rem;
   color: #0f0738;
   transition: all 350ms;
 
@@ -27,7 +27,7 @@ const NavLink = styled(Link)`
   }
 `;
 const Container = styled.div`
-  width: 250px;
+  width: 300px;
   position: absolute;
   top: 35px;
   left: -30px;

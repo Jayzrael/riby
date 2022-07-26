@@ -1,19 +1,20 @@
 .terms-container {
-   width: 80%;
-   margin: auto;
-   overflow: hidden;
-   padding-top: 30px;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 30px;
 }
 
 ol li {
-   display: list-item;
+    display: list-item;
 }
 
 p {
-   padding-top: 5px;
-   padding-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1rem;
 }
 
 h4 {
-   padding-left: 0;
+    padding-left: 0;
 }

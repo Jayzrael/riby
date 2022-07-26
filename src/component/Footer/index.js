@@ -165,7 +165,7 @@ const Ul = styled.div`
   flex-direction: column;
 `;
 const ColumnHead = styled.div`
-  font-family: "Poppins";
+  font-family: "Outfit";
   font-weight: 600;
   font-size: 28px;
   color: white;
@@ -177,7 +177,7 @@ const Column = styled.div`
   // background: red;
 
   p {
-    font-family: "Poppins";
+    font-family: "Outfit";
     font-weight: 500;
     font-size: 15px;
     color: white;
