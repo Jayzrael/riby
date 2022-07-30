@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./Career-Section2.css";
 import styled, { keyframes } from "styled-components";
-import { jobs } from "./JobData";
+// import { jobs } from "./JobData";
 import Fade from "react-reveal/Fade";
 // import { GET_ALL_JOBS } from "../../../utils/queries/allQueries";
-import { GET_ALL_JOBS } from "../../../utils/queries/allQueries";
+import { GET_ALL_JOBS } from "../../../Utils/Queries/AllQueries";
 import { gql, useQuery } from "@apollo/client";
 import Modal from "../../../component/Modal";
 import img1 from "../../../image/careerImg1.png";
